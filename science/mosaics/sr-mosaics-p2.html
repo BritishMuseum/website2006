@@ -1,0 +1,227 @@
+ 
+<html>
+  
+<head>
+<!-- #BeginEditable "doctitle" --> 
+<title>Turquoise Mosaics from Mexico</title>
+
+
+
+<!--===============ADDED KEYWORDS PROPERTIES TO ALLOW SEARCH ENGINES TO FIND US===-->
+<Meta name="keywords" content="British Museum, Science, Mexico, Mosaics, Aztec, Central America, Microscopy, Radiography,Pyrite,Fools gold,Garnet, Conch shell, Sharks, Tesserae">
+<!--===============ADDED STYLE PROPERTIES TO COVER EACH PAGE EXCEPT WHEN OVERWRITTEN IN TEXT===-->
+
+<Style type="text/css">
+   P {font-family:arial, helvetica, sans-serif; }H3 {text-align: left;font-family:arial, helvetica, sans-serif;}
+   
+H3 {text-align: left;font-family:arial, helvetica, sans-serif;}
+   A:link {color:blue}
+   A:active {color:red}
+   A:visited {color:blue}
+</style>
+<SCRIPT Language="JavaScript">
+ <!--
+ // Copyright 1999, 2000 by Ray Stott - ver 2.0
+ // OK to use on noncommercial sites as long as copyright is included
+ // Commercial Sites, please see http://www.crays.com/jsc/jsCom.htm 
+ // Script is available at http://www.crays.com/jsc          
+
+ var popWin = null    // use this when referring to pop-up window
+ var winCount = 0
+ var winName = "popWin"
+ function openPopWin(winURL, winWidth, winHeight, winFeatures, winLeft, winTop){
+   var d_winLeft = 20  // default, pixels from screen left to window left
+   var d_winTop = 20   // default, pixels from screen top to window top
+   winName = "popWin" + winCount++ //unique name for each pop-up window
+   closePopWin()           // close any previously opened pop-up window
+   if (openPopWin.arguments.length >= 4)  // any additional features? 
+     winFeatures = "," + winFeatures
+   else 
+     winFeatures = "" 
+   if (openPopWin.arguments.length == 6)  // location specified
+     winFeatures += getLocation(winWidth, winHeight, winLeft, winTop)
+   else
+     winFeatures += getLocation(winWidth, winHeight, d_winLeft, d_winTop)
+   popWin = window.open(winURL, winName, "width=" + winWidth 
+            + ",height=" + winHeight + winFeatures)
+   }
+ function closePopWin(){    // close pop-up window if it is open 
+   if (navigator.appName != "Microsoft Internet Explorer" 
+       || parseInt(navigator.appVersion) >=4) //do not close if early IE
+     if(popWin != null) if(!popWin.closed) popWin.close() 
+   }
+ function getLocation(winWidth, winHeight, winLeft, winTop){
+   return ""
+   }
+ //-->
+ </SCRIPT>
+ 
+<SCRIPT Language="JavaScript1.2">
+<!--
+// for Netscape 4+ and IE 4+
+ <!--
+ function getLocation(winWidth, winHeight, winLeft, winTop){
+   var winLocation = ""
+   if (winLeft < 0)
+     winLeft = screen.width - winWidth + winLeft
+   if (winTop < 0)
+     winTop = screen.height - winHeight + winTop
+   if (winTop == "cen")
+     winTop = (screen.height - winHeight)/2 - 20
+   if (winLeft == "cen")
+     winLeft = (screen.width - winWidth)/2
+   if (winLeft>0 & winTop>0)
+     winLocation =  ",screenX=" + winLeft + ",left=" + winLeft   
+                 + ",screenY=" + winTop + ",top=" + winTop
+   else
+     winLocation = ""
+   return winLocation
+   }
+ //-->
+
+function MM_findObj(n, d) { //v3.0
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document); return x;
+}
+
+function MM_nbGroup(event, grpName) { //v3.0
+  var i,img,nbArr,args=MM_nbGroup.arguments;
+  if (event == "init" && args.length > 2) {
+    if ((img = MM_findObj(args[2])) != null && !img.MM_init) {
+      img.MM_init = true; img.MM_up = args[3]; img.MM_dn = img.src;
+      if ((nbArr = document[grpName]) == null) nbArr = document[grpName] = new Array();
+      nbArr[nbArr.length] = img;
+      for (i=4; i < args.length-1; i+=2) if ((img = MM_findObj(args[i])) != null) {
+        if (!img.MM_up) img.MM_up = img.src;
+        img.src = img.MM_dn = args[i+1];
+        nbArr[nbArr.length] = img;
+    } }
+  } else if (event == "over") {
+    document.MM_nbOver = nbArr = new Array();
+    for (i=1; i < args.length-1; i+=3) if ((img = MM_findObj(args[i])) != null) {
+      if (!img.MM_up) img.MM_up = img.src;
+      img.src = (img.MM_dn && args[i+2]) ? args[i+2] : args[i+1];
+      nbArr[nbArr.length] = img;
+    }
+  } else if (event == "out" ) {
+    for (i=0; i < document.MM_nbOver.length; i++) {
+      img = document.MM_nbOver[i]; img.src = (img.MM_dn) ? img.MM_dn : img.MM_up; }
+  } else if (event == "down") {
+    if ((nbArr = document[grpName]) != null)
+      for (i=0; i < nbArr.length; i++) { img=nbArr[i]; img.src = img.MM_up; img.MM_dn = 0; }
+    document[grpName] = nbArr = new Array();
+    for (i=2; i < args.length-1; i+=2) if ((img = MM_findObj(args[i])) != null) {
+      if (!img.MM_up) img.MM_up = img.src;
+      img.src = img.MM_dn = args[i+1];
+      nbArr[nbArr.length] = img;
+  } }
+}
+
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+//-->
+</SCRIPT>
+<!-- #EndEditable --> 
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+</head>
+<body bgcolor="#FFFFFF" onLoad="MM_preloadImages('../images/cad193l.gif','../buttons/bladeo.gif','../images/cu605.gif','../buttons/cordo.gif')">
+<table width="700" border="0">
+  <tr> 
+   <!--==================added /template to allow access to template images===================-->
+    <td colspan="3" height="85"><a href="../text/mosaics/sr-mos-p1-t.html"><img src="../template/templates/images/logo.gif" width="162" height="80" border="0" alt="Link to Scientific Research Text Pages"></a></td>
+  </tr>
+  <tr> 
+  <!--==================added /templates to allow access to template images===================-->
+    <td rowspan="3" width="70"><img src="../template/templates/images/spacer.gif" width="70" height="4"></td>
+    <!--==================added /templates to allow access to template images===================-->
+    <td width="630" colspan="2" height="34"><img src="../template/templates/images/dept.gif" width="310" height="30"></td>
+  </tr>
+  <tr> 
+    <td width="315" height="21" valign="top"> 
+    <!-- change table width from 315 to 630 to cover space from removed table -->
+      <table width="600" border="0">
+        <tr> 
+          <!-- Removedtable elements (3)
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>-->
+        </tr>
+        <tr> 
+          <!-- Removedtable elements (1) <td>&nbsp;</td>-->
+          <td> 
+<!--==========================================================================================-->
+<!--===================ENTER DEPARTMENT PAGES FROM HERE ======================================-->
+	        <h3>Turquoise Mosaics </h3>
+			
+                 <!--end of title-->
+			
+		 	 <!--rest of text--> 
+	        <table align="left" width="347">
+              <tr>
+                <td height="181"><img src="../images/cu612.gif" align="left" 
+					width="300" height=178 alt="Image of The chalcedony blade" usemap="#blade" name="blade" border="0" ><map name="blade" align = "top"> 
+                    <area coords="0,59,300,59" href="sr-mosaics-p2r.html" alt="Click here to see the radiograph of the blade" shape=rect title="Click here to see the radiograph of the blade"> 
+                  </map></td>
+              </tr>
+              <tr> 
+                <td height="32"> 
+                  <table width="39%" border="0" align="center">
+                    <tr> 
+                      <td height="29" width="8%"><a href="#" onClick="MM_nbGroup('down','group1','blade1','',1)" onMouseOut="MM_nbGroup('out')" onMouseOver="MM_nbGroup('over','blade1','../buttons/bladeo.gif','','blade','../images/cad193l.gif','../images/cad193l.gif',1)"><img src="../buttons/bladew.gif" width="123" height="23" align="absbottom" name="blade1" border="0" onLoad=""></a></td>
+                      <td height="29" width="92%"><a href="#" onClick="MM_nbGroup('down','group1','cordw','../buttons/cordo.gif',1)" onMouseOut="MM_nbGroup('out')" onMouseOver="MM_nbGroup('over','cordw','../buttons/cordo.gif','../buttons/cordo.gif','blade','../images/cu605.gif','../images/cu605.gif',1)"><img src="../buttons/cordw.gif" width="123" height="23" border="0" name="cordw" onLoad=""></a></td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+            </table>
+	<table>
+		<tr>
+			<td>
+			      <p><font size="-1">As well as <a href="JAVASCRIPT:openPopWin('../glossary/sr-glossary-opt.html',  600, 400)">optical 
+                    microscopy</a>, we have used <a href="JAVASCRIPT:openPopWin('../glossary/sr-glossary-rad.html',  600, 400)">X-radiography</a> 
+                    to investigate concealed details of the Mexican mosaics. For 
+                    example, the radiograph reveals the way in which the haft 
+                    of the chalcedony blade was set into the handle of the knife.</font> 
+                  </p>
+			</td>
+		</tr>
+	</table>
+                     
+	   <br clear="all">
+            <div align="right">
+<p><a href="sr-mosaics-p3.html"><font size="-1">Next<!--===================END DEPARTMENT PAGES FROM HERE ======================================--> 
+                </font></a> <!--==========================================================================================--> 
+              </p>
+            </div>
+          </td>
+           <!-- Removedtable elements (1) <td>&nbsp;</td>-->
+        </tr>
+        <tr> 
+        <!-- Removedtable elements (3) <td>&nbsp;</td> <td>&nbsp;</td> <td>&nbsp;</td>-->
+        </tr>
+      </table>
+    </td>
+    <!-- <td width="315" height="21" align="center" valign="middle"><font size="2" face="Arial, Helvetica, sans-serif">-->
+    <!--#BeginEditable "image" --><!--{image}<!-- #EndEditable --><!--</font></td> -->
+  <!-- #EndEditable --></tr>
+  <tr> 
+  <!--==================added /templates to allow access to template images===================-->
+   <td width="630" colspan="2"><map name="homebar" align = "top"> <area coords="0,18,50,37" href="http://www.thebritishmuseum.ac.uk" alt="British Museum Home" shape=rect title="British Museum Home"> 
+        <area coords="324,18,432,37" href="../techniques/sr-tech-intro.html" alt="Research Techniques" shape=rect title="Research Techniques"> 
+        <area coords="446,19,551,37" href="../dept/sr-dept-p1b.html" alt="The history of the department" shape=rect title="The history of the department"> 
+        <area coords="572,18,634,40" href="../whatsnew/sr-news-p1.html" alt="News From Scientific Research" shape=rect title="News From Scientific Research"> 
+      </map> <img title="homebar" src="../template/templates/images/home_tdn.gif" usemap=#homebar 
+         border="0"></td>
+  </tr>
+</table>
+<script  type="text/javascript">
+</script>
+<script type="text/javascript">
+
+
+</script></body></html>

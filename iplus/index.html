@@ -1,0 +1,174 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<SCRIPT language=JavaScript>
+<!--
+
+function sendData(){
+	var args ="?";
+	action_type = (document.subbox.action_type[1].checked) ? "unsubscribe" : "subscribe";
+	    if (action_type == "unsubscribe") {
+	        args = args + "action=remoteBox&errorPage=/public/remotebox_error.jsp&gid=40005330&action_type=unsubscribe"
+        	args = args + "&";
+	        args =args + "uemail=";
+	        args =args + document.subbox.uemail.value;
+	    }  else {
+	        args = args + "action=register&errorPage=/public/remotebox_error.jsp&gid=40005330&iso_lang=en&iso_country=EN&agb=1&mps=4jcmf60aq60rfmudtzq7c&action_type=subscribe"
+	        args = args + "&";
+	        args =args + "uemail=";
+	        args =args + document.subbox.uemail.value;
+	    }
+        mywin =window.open("http://britishmuseum.ecircle-ag.com/public/remotebox_welcome.jsp"+args,"mywin","tolbar=no,scrollbars=no,menubar=no,width=400,height=250");
+        mywin.focus();
+        return false;
+}
+
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+//-->
+</script>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<title>Welcome to the British Museum</title>
+<META 
+content="Enlightenment Gallery, Kings Library, British Museum, visiting London, museums, history, archaeology, art, ethnography, prehistory, ancient history, Rosetta Stone, Elgin Marbles, Parthenon Sculptures, Lindow Man, Sutton Hoo Burial, Cuerdale Hoard, Fishpool Hoard, Hoxne Treasure, Lewis Chessmen, Mildenhall Treasure, Mold Cape, Rillaton Gold Cup, Snettisham Torcs, Vindolanda Tablets, Egypt, mummies, prints, drawings, coins, medals British Museum&#10;visiting London, London museums, history, archaeology, art, ethnography, ancient history, Rosetta Stone, Elgin Marbles, Parthenon sculptures, Portland Vase, Lindow Man, Sutton Hoo, Egypt, mummies, prints, drawings, coins, medals, anglo-saxon artefacts, medieval" 
+name=Keywords>
+<META 
+content="The British Museum has outstanding collections that cover world cultures from Prehistory to the present day. Visit our website for information about the galleries, collections, special exhibitions and events. View the collections and take online tours." 
+name=Description>
+<link href="../frontpage.css" rel="stylesheet" type="text/css">
+</head>
+
+<body onLoad="MM_preloadImages('../frontimages/news_over.jpg','../frontimages/about_over.jpg','../frontimages/sitemap_over.jpg','images/departments_over.jpg','images/iplus_over.jpg')">
+<table width="801"  border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td width="298"><img src="../frontimages/bm_logo.jpg" width="298" height="106"></td>
+    <td colspan="2" rowspan="4" valign="top"><div align="left"><img src="../frontimages/treetop.jpg" width="349" height="184"><br>
+        <img src="../frontimages/maintitle.jpg" width="399" height="276" border="0" usemap="#Map4"></div></td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td width="298" height="78" valign="middle">
+	<table height="78" border="0" cellpadding="0" cellspacing="0">
+	  <tr>
+	    <td>&nbsp;</td>
+	    <td colspan="2" align="left" valign="middle" class="smalltext">Register for  our newsletter </td>
+	    </tr>
+	  <tr>
+        <td><img src="../frontimages/spacer.gif" width="50" height="20"></td>
+        <td width="135" align="left" valign="middle"><form name=subbox onSubmit="return sendData();" action=# method=post><input name=uemail class="textbox" size=15>
+          <img src="../frontimages/spacer.gif" width="5" height="5"> </td>
+        <td align="left" valign="middle"><input type=image value=Send name=submit src="../frontimages/send.gif"></td>
+      </tr>
+      <tr>
+        <td>&nbsp;</td>
+		<td colspan="2" align="left" valign="top">
+		
+         			<span class=smalltext>subscribe</span> 
+                    <input name=action_type type=radio value=subscribe checked>
+                     <span class=smalltext>unsubscribe</span> 
+                     <input type=radio value=unsubscribe name=action_type>
+          </form></td>
+      </tr></table>
+	
+	</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td valign="top"><img src="../frontimages/main_menu.jpg" width="298" height="246" border="0" usemap="#Map5"></td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td width="298"><img src="../frontimages/sitemap.jpg" name="Image4" width="298" height="30" border="0" usemap="#Map" id="Image4"></td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td><img src="../frontimages/flags.jpg" width="298" height="27" border="0" usemap="#Map2"></td>
+    <td valign="top">&nbsp;</td>
+    <td rowspan="3" valign="top"><img src="../frontimages/africa05_logo.jpg" width="156" height="191" border="0" usemap="#Map3"></td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td colspan="2"><div align="left"><a href="news/index.html" onMouseOver="MM_swapImage('Image1','','../frontimages/news_over.jpg',1)" onMouseOut="MM_swapImgRestore()"><img src="../frontimages/spacer.gif" width="32" height="14"><img src="../frontimages/news.jpg" alt="news" name="Image1" width="56" height="24" border="0" id="Image1"></a><a href="aboutus/about.html" onMouseOver="MM_swapImage('Image2','','../frontimages/about_over.jpg',1)" onMouseOut="MM_swapImgRestore()"><img src="../frontimages/about.jpg" alt="about us" name="Image2" width="66" height="24" border="0" id="Image2"></a><a href="visit/depts.html" onMouseOver="MM_swapImage('Image3','','images/departments_over.jpg',1)" onMouseOut="MM_swapImgRestore()"><img src="images/departments.jpg" alt="departments" name="Image3" width="87" height="24" border="0" id="Image3"></a><a href="iplus.html" onMouseOver="MM_swapImage('Image5','','images/iplus_over.jpg',1)" onMouseOut="MM_swapImgRestore()"><img src="images/iplus.jpg" name="Image5" width="101" height="24" border="0" id="Image5"></a></div></td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td valign="top"><a href="mummy/index.html"><img src="../frontimages/mummy.jpg" alt="BP mummy exhibition" width="298" height="117" border="0"></a></td>
+    <td valign="top"><img src="../frontimages/garden_box.jpg" width="349" height="117" border="0" usemap="#Map6"></td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+    <td colspan="2" valign="top">&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+</table>
+<map name="Map">
+  <area shape="rect" coords="46,11,164,29" href="sitemap/sitemap.html" alt="site map and search" onMouseOver="MM_swapImage('Image4','','../frontimages/sitemap_over.jpg',1)" onMouseOut="MM_swapImgRestore()">
+</map>
+<map name="Map2">
+  <area shape="rect" coords="49,7,75,25" href="french/index.html" alt="This site in French">
+  <area shape="rect" coords="79,9,102,23" href="italian/index.html" alt="This site in Italian">
+  <area shape="rect" coords="107,8,131,23" href="japanese/index.html" alt="This site in Japanese">
+  <area shape="rect" coords="137,9,159,22" href="spanish/index.html" alt="This site in Spanish">
+</map>
+<map name="Map3">
+  <area shape="circle" coords="79,55,50" href="http://www.bbc.co.uk/africa05/" target="_blank" alt="Africa 05 website">
+  <area shape="rect" coords="24,117,133,171" href="http://www.bbc.co.uk/africa05/" alt="the BBC Africa 05 website">
+</map>
+<map name="Map4">
+  <area shape="rect" coords="13,11,390,167" href="africa05/" alt="enter Views from Africa">
+</map>
+<map name="Map5">
+  <area shape="rect" coords="50,7,134,22" href="whatson/index.html" alt="What's on at the museum">
+  <area shape="rect" coords="50,32,86,44" href="visit/index.html" alt="Visiting the museum">
+  <area shape="rect" coords="49,56,177,70" href="world/world.html" alt="World Cultures">
+  <area shape="rect" coords="49,80,121,92" href="education/index.html" alt="Learning">
+  <area shape="rect" coords="51,104,118,115" href="compass/index.html" alt="Compass">
+  <area shape="rect" coords="50,128,187,142" href="childrenscompass/index.html" alt="Children's Compass">
+  <area shape="rect" coords="50,152,104,164" href="tickets/index.html" alt="Order Tickets">
+  <area shape="rect" coords="49,176,81,190" href="join/index.html" alt="Join the museum">
+  <area shape="rect" coords="49,199,89,213" href="http://www.britishmuseum.co.uk/" alt="Museum on-line shop">
+  <area shape="rect" coords="50,223,76,236" href="visit/restaurants.html" alt="Museum dining">
+</map>
+<map name="Map6">
+  <area shape="rect" coords="15,9,249,95" href="africagarden/index.html" alt="Commission for Africa">
+</map>
+</body>
+</html>

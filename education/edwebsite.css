@@ -1,0 +1,106 @@
+
+BODY {
+	background-color : White;
+	color : Black;
+	margin-top : 0px;
+}
+td {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: smaller;
+	vertical-align : top;
+}
+TD.topnav {
+	vertical-align : baseline;
+}
+ {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: smaller;
+	vertical-align : top;
+}
+a:link {
+	color: #666600;
+	text-decoration: underline;
+	background-color : transparent;
+}
+a:active {
+	color: #cc6600;
+	text-decoration: underline;
+	background-color : transparent;
+}
+a:visited {
+	color: #000066;
+	text-decoration: underline;
+	background-color : transparent;
+}
+h3 {
+	color: #999933;
+	font-family: Arial, Helvetica, sans-serif;
+	background-color : transparent;
+}
+.c999933 {
+	color : #999933;
+	background-color : transparent;
+	font-weight : bold;
+}
+DIV.caption {
+	color : #666666;
+	font-size : 75%;
+	background-color : transparent;
+}
+
+DIV.copyright {
+	color : #000066;
+	font-size : 75%;
+	background-color : transparent;
+}
+
+DIV.news {
+	color : #000066;
+	background-color : transparent;
+}
+
+DIV.breadcrumb {
+	color : #000066;
+	background-color : transparent;
+}
+.menus {
+	font-size : 90%;
+	font-family : "Comic Sans MS";
+}
+.big {
+	color : #999933;
+	font-size : 125%;
+	font-family: Arial, Helvetica, sans-serif;
+	background-color : transparent;
+	font-weight : bold;
+}
+.small {
+	color : #000066;
+	font-size : 85%;
+	font-family: Arial, Helvetica, sans-serif;
+	background-color : transparent;
+	font-weight : bold;
+}
+img.box{
+    margin-right: 20px;
+}
+<!-- for content tables -->
+
+TABLE.yellowBack {
+	background-color: #ffffee;
+	border: #000000;
+	border-style: solid;
+	border-top-width: 1px;
+	border-right-width: 1px;
+	border-bottom-width: 1px;
+	border-left-width: 1px;
+
+}
+TD.darkStripe {
+	background-color : #ffffdd;
+	
+}
+TR.darkStripe {
+	background-color : #ffffdd;
+	
+}

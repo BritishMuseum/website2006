@@ -1,0 +1,21 @@
+/*
+ * Inforeq.css: 
+ *    Stylesheets for the Information Request System.
+ *    
+ * Copyright (c) 2000, Trustees of the British Museum,
+ *  All rights reserved.
+ */
+
+BODY,TABLE,TBODY,THEAD,TD,TH {
+       font-family: verdana;
+       background-color: white	
+       font-size: 12pt; 
+     }
+
+.prompt { 
+	font-weight: 900; text-align: right;
+	}
+	
+tt { 
+	font-family: "lucida console", "lucida typewriter", "courier new", courier, fixed 
+}

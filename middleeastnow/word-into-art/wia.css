@@ -1,0 +1,30 @@
+.main-area-left{
+	width: 55%;
+}
+.main-area-right{
+	width: 220px;
+}
+.interview{
+	width: 160px;
+	float: left;
+	margin-right: 20px;
+	margin-bottom: 20px;
+}
+.interview-m{
+	width: 160px;
+	float: left;
+	margin-right: 25px;
+}
+.interview-r{
+	width: 160px;
+	float: left;
+	margin-right: 25px;
+}
+ h3{
+	margin-top: 0px;
+	color: #0181C8;
+	font-size: 130%;
+}
+ .footnote{
+	font-size: 90%;
+}

@@ -1,0 +1,100 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<title>Museum Plans - Middle Floor</title>
+<link href="style/floor.css" rel="stylesheet" type="text/css" media="screen">
+<link href="style/print.css" rel="stylesheet" type="text/css" media="print">
+<style>
+#colleft
+	{
+	position: absolute;
+	left: 10px;
+	top: 640px;
+	}
+</style>
+<script src="javascript/findDOM.js"></script>
+<script>
+
+function toggleVisibility(objectID)
+	{
+
+	var dom = findDOM(objectID,1);
+	state = dom.visibility;
+	
+	if (state == 'hidden' || state == 'hide')
+		dom.visibility = 'visible';
+	else
+		{
+		if (state == 'visible' || state == 'show')
+			dom.visibility = 'hidden';
+	else dom.visibility = 'visible';
+
+
+		}
+
+
+	}
+
+</script>
+</head>
+
+<body>
+<div id="header">
+<h1 style="float: left;">Lower floor</h1><a href="upperfloor.html">Upper floor</a> | <a href="mainfloor.html">Main floor</a> | <a href="lowerfloor.html">Lower floor</a> | <a href="greatcourt.html">Great court</a>
+</div>
+
+<map name="mi_06_imagemaps_Map">
+<area shape="poly" onmouseover="toggleVisibility('worldpopup')" onmouseout="toggleVisibility('worldpopup')" alt="" coords="319,129, 278,170, 309,189, 314,183, 312,181, 331,159, 406,204, 386,226, 382,225, 377,229, 415,253, 450,207" href="#">
+<area shape="poly" onmouseover="toggleVisibility('ancientpopup')" onmouseout="toggleVisibility('ancientpopup')" alt="" coords="183,167,206,182,149,239,125,222" href="#">
+<area shape="poly" onmouseover="toggleVisibility('ancientpopup')" onmouseout="toggleVisibility('ancientpopup')" alt="" coords="179,90, 209,109, 212,106, 258,133, 295,97, 251,72, 229,92, 227,91, 222,96, 191,77, 78,175, 112,199, 168,146, 189,160, 201,150, 147,118" href="#">
+</map>
+<img src="images/lo_06.gif" alt="Map of the British Museum, middle floor." usemap="#mi_06_imagemaps_Map" id="map" style="position: relative; top: 50px;"/>
+<div id="ancientpopup" class="box">
+<div id="ancient"></div><h1>Ancient Civilisations</h1>
+77&ndash;85: Greece &amp; Rome<br />
+88: New Testament<br />
+89: Assyria<br />
+</div>
+
+<div id="worldpopup" class="box">
+<div id="world"></div><h1>World cultures</h1>
+25: Africa<br />
+</div>
+
+<div id="key">
+<h1>Key</h1>
+<ul>
+<li id="info">Information Desk &amp; Box Office</li>
+<li id="toilets">Toilets</li>
+<li id="accessible">Accessible toilets</li>
+<li id="babycare">Babycare</li>
+<li id="cloakroom">Cloakroom</li>
+<li id="lostproperty">Lost property</li>
+<li id="restaurant">Restaurant</li>
+<li id="cafe">Caf&eacute;</li>
+<li id="shop">Shop</li>
+<li id="audio">Audio Tour</li>
+<li id="telephone">Telephone</li>
+<li id="lift">Lift</li>
+</ul>
+</div>
+
+<div id="colleft">
+<div class="containers">
+<div id="world"></div><h1>World cultures</h1>
+25: Africa
+</div>
+
+<div class="containers">
+<div id="ancient"></div><h1>Ancient Civilisations</h1>
+77&ndash;85: Greece &amp; Rome<br />
+88: New Tesament<br />
+89: Assyria
+</div>
+
+</div>
+
+</body>
+</html>

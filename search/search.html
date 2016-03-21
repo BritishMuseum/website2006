@@ -1,0 +1,161 @@
+<html>
+<head>
+<title>The British Museum Search</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+</head>
+<script language = "JavaScript">
+
+<!--
+
+function XXX(msg)
+{
+    alert('XXX = ' + msg)
+}
+
+function isblank(str)
+{
+    var i, c
+    for(i=0; i<str.length; i++) {
+      c = str[i]
+      if((c!=' ') && (c!='\t')) return false
+    }
+    return true
+}
+
+function pick_val(type, spage)
+{
+    var x
+    x = new String()
+    x = document.searchform[0].value
+
+    if(isblank(x)){
+        window.location='hixclient.exe?_IXDB_=compass&search-form=' + type + '/no_matches.html&_IXspage=' + spage + '&submit-button=search'
+        return false
+    }
+    x = escape(x)
+    document.searchform._IXsearchterm.value=x
+
+    return true 
+  
+} 
+
+function paste_item(ixsearchterm)
+{
+    var pos = ixsearchterm.lastIndexOf('|link')
+    if(pos<0){
+        // some search spec had to be there, so treat pos==0 as pos ==-1
+        // only paste when link absent
+        document.searchform[0].value = unescape(ixsearchterm) 
+    }
+    document.searchform.elements[0].focus()
+}
+
+function dispatch_suggested_search(index, sterm, type, spage)
+{
+    sterm = escape(sterm)
+    ixsearchspec = escape(sterm + "|link")
+
+    window.location = 'hixclient.exe?_IXDB_=compass&' + '%3a' + index + '=' + sterm + '&_IXSPFX_=' + type + '/summary/&_IXFPFX_=' + type + '/full/&_IXNOMATCHES_=' + type + '%2Fno_matches.html&%24+%28with+v2_searchable_index%29+sort=.&_IXspage='+spage+'&_IXsearchterm=' + ixsearchspec + '&submit-button=summary'
+
+}
+
+function setfocus(clr)
+{
+        document.searchform.elements[0].focus()
+        if(clr == "clear")
+            document.searchform.elements[0].value = ""
+}
+
+//-->
+
+</script>
+
+<body bgcolor="#FFFFFF" link="#000066" leftmargin="0" topmargin="0" marginwidth="0" marginheight="0" text="#FFFFFF" vlink="#CC6600" alink="#330099">
+<table width="105%" border="0" cellspacing="0" cellpadding="0">
+  <tr bgcolor="#006666"> 
+    <td valign="top" width="93"><img src="ser_lo.gif" width="138" height="120"></td>
+    <td width="826">
+      <div align="left"><img src="ser_ti.jpg" width="525" height="120" alt="search, phot : Phil Sayer"></div>
+    </td>
+    <td width="119">&nbsp;</td>
+  </tr>
+</table>
+<table width="724" border="0" cellspacing="0" cellpadding="0">
+  <tr> 
+    <td width="40" height="320"><img src="shim.gif" width="40" height="1"></td>
+    <td colspan="3" height="320" valign="top"> 
+      <p><font face="Arial, Helvetica, sans-serif" size="2" color="#666666"><br>
+        </font>
+      <form method="post" action="/cgi-bin/htsearch">
+        <div align="left"><img src="ssea.gif" width="74" height="16" alt="site search"> 
+          <br>
+          <input size="20" name="words" >
+          <a href="javascript:document.forms[0].submit();"><img align=middle border=0 src="search.gif" width="16" height="22" alt="Click to search"></a> 
+          <br>
+          <input type=hidden name=method value=or>
+          <input type=hidden name=format value=builtin-long>
+          <input type=hidden name=sort value=score>
+          <input type=hidden name=search-algorithm value="exact:1 prefix:0.6 synonyms:0.5 endings 0.1">
+          <input name=exclude type=hidden value="www.thebritishmuseum.ac.uk/text_only">
+          <input name=exclude type=hidden value="www.thebritishmuseum.ac.uk/compass/">
+          <input type="hidden" name="config" value="htdig">
+        </div>
+      </form>
+      <div align="left"> </div>
+      <form method="get" action="../compass/ixbin/hixclient.exe" name=searchform onSubmit="return pick_val('graphical', '')">
+        <div align="left"><img src="sercom.gif" width="134" height="22" alt="collections search"> 
+          <font color="#666666" size="2" face="Arial, Helvetica, sans-serif"> 
+          - the Museum's object database </font><br>
+          <input type="text" name="{UPPER}:v2_free_text_tindex" size="20">
+          <a href="javascript:if(pick_val('graphical', ''))document.searchform.submit(); else setfocus()"><img align=middle src="search.gif" border="0" alt="Click to search" name="img4" width="16" height="22"></a> 
+          <input type=hidden name=_IXDB_ value=compass>
+          <input type=hidden name=_IXSPFX_ value="../compass/graphical/summary/">
+          <input type=hidden name=_IXFPFX_ value="../compass/graphical/full/">
+          <input type=hidden name=_IXNOMATCHES_ value="../compass/graphical/no_matches.html">
+          <input type=hidden name="$ (with v2_searchable_index) sort" value=.>
+          <input type=hidden name="_IXsearchterm">
+          <input type=hidden name=submit-button value=summary>
+          <script>
+          ixsearchterm = ''
+          paste_item(ixsearchterm)
+        </script>
+        </div>
+      </form>
+      <p> 
+      </td>
+  </tr>
+  <tr> 
+    <td height="3" width="40">&nbsp;</td>
+    <td width="85" height="3"> 
+      <div align="left"><a href="javascript:history.back()"><img src="back.gif" width="49" height="21" border="0" alt="back"></a><br>
+        <br>
+      </div>
+    </td>
+    <td colspan="2" height="3" width="599"> 
+      <div align="center"><font face="Arial, Helvetica, sans-serif" size="2"><font size="1">&copy; 
+        The British Museum, 2002</font></font> </div>
+      <div align="right"></div>
+    </td>
+  </tr>
+  <tr> 
+    <td height="3" width="40">&nbsp;</td>
+    <td colspan="3" height="3"> 
+      <div align="left"><font face="Arial, Helvetica, sans-serif" size="2"><a href="../index.html"><font color="#000066">home</font></a><font color="#000066"> 
+        | <a href="../visit/index.html">visit</a> | <a href="../whatson/index.html">what's 
+        on</a> | <a href="../join/index.html">join</a> | <a href="http://www.britishmuseum.co.uk">shop</a> 
+        | <a href="../education/index.html">learning</a> | <a href="../compass">COMPASS</a> 
+        | <a href="../world/world.html">world cultures</a> | <a href="../sitemap/sitemap.html">sitemap</a> 
+        | <a href="../visit/contact.html">contact us</a> | <a href="../corporate/copyright.html">copyright</a><br>
+        </font></font></div>
+      <div align="center"><font face="Arial, Helvetica, sans-serif" size="2" color="#000066"><font size="1">&copy; 
+        The British Museum, 2002</font></font> </div>
+    </td>
+  </tr>
+</table><script  type="text/javascript">
+</script>
+<script type="text/javascript">
+
+
+</script>
+</body>
+</html>

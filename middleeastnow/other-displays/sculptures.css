@@ -1,0 +1,16 @@
+.main-area-left{
+	width: 185px;
+}
+.main-area-left h3{
+	margin-bottom: 10px;
+}
+.main-area-mid{
+	width: 180px;
+	float: left;
+}
+.main-area-right{
+	width: 200px;
+}
+.main-area-right img{
+	margin-bottom: 10px;
+}

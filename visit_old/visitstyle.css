@@ -1,0 +1,74 @@
+.supersmall {
+	font-size: 5px;
+}
+.Whitebody {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 0.80em;
+	color: #ffffff;
+	line-height: 1.3em;
+}
+.redbody {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 0.80em;
+	color: #9A0034;
+	line-height: 1.3em;
+}
+.blackbody {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 0.80em;
+	color: #000000;
+	line-height: 1.3em;
+}
+.redlarge {
+
+
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 1.2em;
+	color: #9A0235;
+}
+.captionwhite {
+
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 0.7em;
+	color: #ffffff;
+}
+.strongred {
+	background-color: #9a0034;
+}
+.palered {
+	background-color: #FAF2ED;
+}
+.redbody a:link {
+	color: #9A0034;
+	text-decoration: none;
+}
+.redbody a:visited {
+	color: #9A0034;
+	text-decoration: none;
+}
+.redbody a:hover {
+	color: #A84026;
+	text-decoration: none;
+	background-color: #F1CFCF;
+}
+.redbodyactive {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 0.80em;
+	color: #A92546;
+	background-color: #f1cfcf;
+	line-height: 1.3em;
+}
+.captionred {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 0.7em;
+	color: #9B0336;
+}
+.redbodyactive a:link {
+	text-decoration: none;
+	color: #9A0034;
+}
+.redbodyactive a:visited {
+
+	text-decoration: none;
+	color: #9A0034;
+}

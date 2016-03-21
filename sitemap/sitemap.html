@@ -1,0 +1,354 @@
+<html>
+<head>
+<title>The British Museum Site Map</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<style type="text/css">
+<!--
+.med {
+	font-size: 0.7em;
+}
+-->
+</style>
+</head>
+<script language = "JavaScript">
+
+<!--
+
+function XXX(msg)
+{
+    alert('XXX = ' + msg)
+}
+
+function isblank(str)
+{
+    var i, c
+    for(i=0; i<str.length; i++) {
+      c = str[i]
+      if((c!=' ') && (c!='\t')) return false
+    }
+    return true
+}
+
+function pick_val(type, spage)
+{
+    var x
+    x = new String()
+    x = document.searchform[0].value
+
+    if(isblank(x)){
+        window.location='hixclient.exe?_IXDB_=compass&search-form=' + type + '/no_matches.html&_IXspage=' + spage + '&submit-button=search'
+        return false
+    }
+    x = escape(x)
+    document.searchform._IXsearchterm.value=x
+
+    return true 
+  
+} 
+
+function paste_item(ixsearchterm)
+{
+    var pos = ixsearchterm.lastIndexOf('|link')
+    if(pos<0){
+        // some search spec had to be there, so treat pos==0 as pos ==-1
+        // only paste when link absent
+        document.searchform[0].value = unescape(ixsearchterm) 
+    }
+    document.searchform.elements[0].focus()
+}
+
+function dispatch_suggested_search(index, sterm, type, spage)
+{
+    sterm = escape(sterm)
+    ixsearchspec = escape(sterm + "|link")
+
+    window.location = 'hixclient.exe?_IXDB_=compass&' + '%3a' + index + '=' + sterm + '&_IXSPFX_=' + type + '/summary/&_IXFPFX_=' + type + '/full/&_IXNOMATCHES_=' + type + '%2Fno_matches.html&%24+%28with+v2_searchable_index%29+sort=.&_IXspage='+spage+'&_IXsearchterm=' + ixsearchspec + '&submit-button=summary'
+
+}
+
+function setfocus(clr)
+{
+        document.searchform.elements[0].focus()
+        if(clr == "clear")
+            document.searchform.elements[0].value = ""
+}
+
+//-->
+
+</script>
+
+<body bgcolor="#FFFFFF" link="#000066" leftmargin="0" topmargin="0" marginwidth="0" marginheight="0" text="#000066" vlink="#999999" alink="#CC6600">
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr bgcolor="#666699"> 
+    <td valign="top" width="85"><a href="/index.html" target="_self"><img src="images/sit_lo.gif" width="138" height="120" alt="The British Museum" border="0"></a></td>
+    <td width="804"><img src="images/si_ti.jpg" width="525" height="120" alt="Sitemap photo Phil Sayer"></td>
+    <td width="116">&nbsp;</td>
+  </tr>
+</table>
+<table width="862" border="0" cellspacing="0" cellpadding="0" height="721">
+  <tr> 
+    <td rowspan="2" width="40"><img src="images/shim.gif" width="40" height="8"></td>
+    <td width="822" colspan="3" valign="top"> 
+      <p>&nbsp;</p>
+      <table width="100%">
+        <tr align="left" valign="top"> 
+          <td height="94" width="44%"> 
+            <form method="post" action="/cgi-bin/htsearch">
+              <div align="left"><img src="images/ssea.gif" width="74" height="16" alt="site search"> 
+                <br>
+                <input size="20" name="words" >
+                <a href="javascript:document.forms[0].submit();"><img align=middle border=0 src="images/search.gif" width="16" height="22" alt="Click to search"></a> 
+                <br>
+                <input type=hidden name=method value=or>
+                <input type=hidden name=format value=builtin-long>
+                <input type=hidden name=sort value=score>
+                <input type=hidden name=search-algorithm value="exact:1 prefix:0.6 synonyms:0.5 endings 0.1">
+                <input name=exclude type=hidden value="www.thebritishmuseum.ac.uk/text_only">
+                <input name=exclude type=hidden value="www.thebritishmuseum.ac.uk/compass/">
+                <input type="hidden" name="config" value="htdig">
+              </div>
+            </form>
+          </td>
+          <td height="94" width="56%"> 
+            <form method="get" action="../compass/ixbin/hixclient.exe" name=searchform onSubmit="return pick_val('graphical', '')">
+              <div align="left"><img src="images/sercom.gif" width="134" height="22" alt="search COMPASS"> 
+                <font color="#666666" size="2" face="Arial, Helvetica, sans-serif"> 
+                the Museum's objects database </font><br>
+                <input type="text" name="{UPPER}:v2_free_text_tindex" size="20">
+                <a href="javascript:if(pick_val('graphical', ''))document.searchform.submit(); else setfocus()"><img align=middle src="images/search.gif" border="0" alt="Click to search" name="img4" width="16" height="22"></a> 
+                <input type=hidden name=_IXDB_ value=compass>
+                <input type=hidden name=_IXSPFX_ value="../compass/graphical/summary/">
+                <input type=hidden name=_IXFPFX_ value="../compass/graphical/full/">
+                <input type=hidden name=_IXNOMATCHES_ value="../compass/graphical/no_matches.html">
+                <input type=hidden name="$ (with v2_searchable_index) sort" value=.>
+                <input type=hidden name="_IXsearchterm">
+                <input type=hidden name=submit-button value=summary>
+                <script>
+          ixsearchterm = ''
+          paste_item(ixsearchterm)
+        </script>
+              </div>
+            </form>
+            <p> 
+          </td>
+        </tr>
+      </table>
+      <table width="100%" cellspacing="2" cellpadding="2" height="526">
+        <tr> 
+          <td width="135" height="14"> <font color="#000066" face="Arial, Helvetica, sans-serif" size="1"><a href="../visit/index.html" target="_self"><img src="images/visit.gif" width="106" height="18" name="visit" border="0" alt="visit"></a></font></td>
+          <td width="123" height="14" align="left" valign="baseline"> <font color="#000066" face="Arial, Helvetica, sans-serif" size="1"><a href="../whatson/index.html" target="_self"><img src="images/what.gif" width="106" height="18" name="what" border="0" alt="what's on"></a></font></td>
+          <td width="117" height="14"><font color="#000066" face="Arial, Helvetica, sans-serif" size="1"><a href="../world/world.html" target="_self"><img src="images/world.gif" width="106" height="18" border="0" alt="world cultures"></a></font></td>
+          <td width="193" height="14"> <font color="#000066" face="Arial, Helvetica, sans-serif" size="1"><a href="../visit/depts.html" target="_self"><img src="images/dept.gif" width="106" height="18" border="0" alt="departments"></a></font></td>
+          <td height="14" align="left" valign="baseline" width="220"> <font color="#000066" face="Arial, Helvetica, sans-serif" size="1"><a href="../aboutus/about.html" target="_self"><img src="images/about.gif" width="106" height="18" border="0" alt="about us"></a></font></td>
+        </tr>
+        <tr align="left" valign="bottom" class="med">
+          <td width="135"><font face="Arial, Helvetica, sans-serif"><a href="../visit/access.html">Access</a></font> </td> 
+          <td width="123" height="20"> <font face="Arial, Helvetica, sans-serif"><a href="../whatson/exhibitions/index.html">Current 
+            exhibitions</a></font></td>
+          <td width="117" height="20"><font face="Arial, Helvetica, sans-serif"><a href="../world/africa/africa.html">Africa</a></font></td>
+          <td width="193" height="20"> <font face="Arial, Helvetica, sans-serif"><a href="../aes/aeshome.html">Ancient 
+            Egypt &amp; Sudan</a></font></td>
+          <td width="220"><font face="Arial, Helvetica, sans-serif"><a href="../aboutus/cf.html">Commercial 
+            filming </a></font></td>
+        </tr>
+        <tr align="left" valign="bottom" class="med">
+          <td width="135"><font face="Arial, Helvetica, sans-serif"><a href="../visit/admiss.html">Admissions</a></font> </td> 
+          <td width="123" height="20"><font face="Arial, Helvetica, sans-serif"> <a href="/whatson/events/index.html">Events calendar</a></font></td>
+          <td width="117" height="20"><font face="Arial, Helvetica, sans-serif"><a href="../world/americas/americas.html">Americas</a></font></td>
+          <td width="193" height="20"> <font face="Arial, Helvetica, sans-serif"><a href="../ane/anehome.html">Ancient 
+            Near East</a></font></td>
+          <td width="220"><font face="Arial, Helvetica, sans-serif"><a href="../aboutus/contact.html">Contact 
+            us</a></font> </td>
+        </tr>
+        <tr align="left" valign="bottom" class="med">
+          <td width="135"><font face="Arial, Helvetica, sans-serif"><a href="../visit/plans.html">Floor plans</a> </font></td> 
+          <td width="123" height="20"><font face="Arial, Helvetica, sans-serif"><a href="../whatson/comingsoon/index.html">Coming soon</a></font></td>
+          <td width="117" height="20"><font face="Arial, Helvetica, sans-serif"><a href="../world/asia/asia.html">Asia</a></font></td>
+          <td width="193" height="20"><font face="Arial, Helvetica, sans-serif"><a href="../asia/ashome.html">Asia</a></font></td>
+          <td width="220"><font face="Arial, Helvetica, sans-serif"><a href="../aboutus/copyright.html">Copyright</a></font> 
+          </td>
+        </tr>
+        <tr align="left" valign="bottom" class="med">
+          <td width="135"><font face="Arial, Helvetica, sans-serif"><a href="../tours/index.html">Tours</a></font> </td> 
+          <td width="123"><font face="Arial, Helvetica, sans-serif" color="#000066"><a href="../whatson/events/special.html">Special events </a></font></td>
+          <td width="117" height="20"><font face="Arial, Helvetica, sans-serif"><a href="../world/britain/britain.html">Britain</a></font></td>
+          <td width="193" height="20"><font face="Arial, Helvetica, sans-serif"><a href="../cm/cmhome.html">Coins 
+            &amp; Medals</a></font></td>
+          <td width="220"><font face="Arial, Helvetica, sans-serif"><a href="../aboutus/faqs/faqs1_4.html">FAQs</a></font> 
+          </td>
+        </tr>
+        <tr align="left" valign="bottom" class="med">
+          <td width="135"><a href="/visit/galleries.html"><font face="Arial, Helvetica, sans-serif">Galleries</font></a></td> 
+          <td width="123"><font face="Arial, Helvetica, sans-serif"><a href="/tours/index.html">Tours</a> </font></td>
+          <td width="117" height="20"><font face="Arial, Helvetica, sans-serif"><a href="../world/egypt/egypt.html">Egypt</a></font> 
+          </td>
+          <td width="193" height="20"><font face="Arial, Helvetica, sans-serif"> <a href="../ethno/ethhome.html">Africa, Oceania and the Americas</a></font></td>
+          <td width="220"><font face="Arial, Helvetica, sans-serif"><a href="../aboutus/gift.html">Gift 
+            aid</a></font></td>
+        </tr>
+        <tr align="left" valign="bottom" class="med">
+          <td width="135"><font face="Arial, Helvetica, sans-serif"><a href="../visit/group.html">Group visits</a></font> </td> 
+          <td width="123"><font face="Arial, Helvetica, sans-serif" color="#000066"><a href="../whatson/events/regular.html">Regular events </a></font></td>
+          <td width="117" height="20"><font face="Arial, Helvetica, sans-serif"><a href="../world/europe/europe.html">Europe</a></font> 
+          </td>
+          <td width="193" height="20"><font face="Arial, Helvetica, sans-serif"> <a href="../gr/grhome.html">Greek &amp; Roman Antiquities</a></font> </td>
+          <td width="220"><a href="corporate/index.html"><font face="Arial, Helvetica, sans-serif">Governance</font></a>
+            <font face="Arial, Helvetica, sans-serif">- new: <a href="../corporate/guidance/Museum%20Plam%202006-07/Museum%20Plan%202006-07.pdf" target="_blank">Museum Plan 2006/07</a></font></td>
+        </tr>
+        <tr align="left" valign="bottom" class="med">
+          <td width="135"><font face="Arial, Helvetica, sans-serif"><a href="../visit/onlinetours/index.html">Online tours</a></font></td> 
+          <td width="123"><font face="Arial, Helvetica, sans-serif"> <a href="../whatson/events/family.html">Families </a></font></td>
+          <td width="117" height="20"><font face="Arial, Helvetica, sans-serif"><a href="../world/greece/greece.html">Greece</a></font></td>
+          <td width="193" height="20"><font face="Arial, Helvetica, sans-serif"><a href="../ethno/ethhome.html"> 
+          </a> <a href="../pe/pehome.html">Prehistory & Europe</a></font> </td>
+          <td width="220"><font face="Arial, Helvetica, sans-serif"><a href="../greatcourt/index.html">Great 
+            Court</a></font> </td>
+        </tr>
+        <tr align="left" valign="bottom" class="med">
+          <td width="135"><font face="Arial, Helvetica, sans-serif"><a href="../visit/opening.html">Opening hours</a></font> </td> 
+          <td width="123"><font face="Arial, Helvetica, sans-serif"> <a href="../whatson/events/lectures.html">Lectures</a></font></td>
+          <td width="117" height="20"><font face="Arial, Helvetica, sans-serif"><a href="../world/asia/japan/japan.html">Japan</a></font> 
+          </td>
+          <td width="193" height="20"><font face="Arial, Helvetica, sans-serif"> <a href="../pd/pdhome.html">Prints &amp; Drawings</a></font></td>
+          <td width="220"><font face="Arial, Helvetica, sans-serif"><a href="../visit/history.html">History 
+            of the Museum</a></font> </td>
+        </tr>
+        <tr align="left" valign="bottom" class="med">
+          <td width="135"><font face="Arial, Helvetica, sans-serif"><a href="../visit/camera.html">Photography</a></font> </td> 
+          <td width="123"><font face="Arial, Helvetica, sans-serif"><a href="../partnershipuk/touring.html">Touring exhibitions</a></font></td>
+          <td width="117" height="20"><font face="Arial, Helvetica, sans-serif"><a href="../world/neareast/near.html">Near 
+            East</a></font> </td>
+          <td width="193" rowspan="2" valign="top"><font face="Arial, Helvetica, sans-serif"><a href="../visit/depts_notice2.html">Conservation, <br>
+Documentation &amp; Science</a></font></td>
+          <td width="220"><font face="Arial, Helvetica, sans-serif"><a href="../jobs/index.html">Jobs</a></font></td>
+        </tr>
+        <tr align="left" valign="bottom" class="med">
+          <td width="135"><font face="Arial, Helvetica, sans-serif"><a href="../visit/trans.html">Getting here </a></font></td> 
+          <td width="123"><font face="Arial, Helvetica, sans-serif"><a href="../whatson/events/workshops.html">Adult learning</a></font></td>
+          <td width="117" height="20"><font face="Arial, Helvetica, sans-serif"><a href="../world/pacific/pacific.html">Pacific</a></font> 
+          </td>
+          <td width="220"><font face="Arial, Helvetica, sans-serif"><a href="../partnershipuk/index.html">Partnership 
+            UK</a></font> </td>
+        </tr>
+        <tr align="left" valign="bottom" class="med">
+          <td width="135"><font face="Arial, Helvetica, sans-serif"><a href="../visit/shops.html">Shop</a></font></td> 
+          <td width="123"><font face="Arial, Helvetica, sans-serif"><a href="../whatson/events/films.html">Films</a></font></td>
+          <td width="117" height="20"><font face="Arial, Helvetica, sans-serif"><a href="../world/rome/rome.html">Rome</a></font></td>
+          <td width="193"><font face="Arial, Helvetica, sans-serif"><a href="../education/index.html">Learning and Information</a></font></td>
+          <td width="220"><font face="Arial, Helvetica, sans-serif"><a href="../greatcourt/read.html">Reading 
+            Room</a></font> </td>
+        </tr>
+        <tr align="left" valign="bottom" class="med">
+          <td width="135"><font face="Arial, Helvetica, sans-serif"><a href="../visit/restaurants.html">Eat</a></font></td> 
+          <td width="123"><font face="Arial, Helvetica, sans-serif"><a href="../whatson/events/conferences.html">Conferences</a></font></td>
+          <td width="117" height="20">&nbsp;</td>
+          <td width="193"><font face="Arial, Helvetica, sans-serif"><a href="/education/libraries/home.html">Libraries &amp; Archives</a></font></td>
+          <td width="220"><font face="Arial, Helvetica, sans-serif"><a href="/jobs/volunteering.html">Volunteers</a></font></td>
+        </tr>
+        <tr align="left" valign="bottom" class="med">
+          <td width="135"><font face="Arial, Helvetica, sans-serif"><a href="http://www.britishmuseum.co.uk">Shopping online</a></font> </td> 
+          <td width="123">&nbsp;</td>
+          <td width="117" height="20">&nbsp; </td>
+          <td width="193" height="20">&nbsp; </td>
+          <td width="220"><font face="Arial, Helvetica, sans-serif"><a href="../aboutus/ww2prov.html">War-time 
+            provenance</a></font> </td>
+        </tr>
+        <tr align="left" valign="bottom" class="med">
+          <td width="135"><font face="Arial, Helvetica, sans-serif"><a href="../tickets/index.html">Tickets online</a> </font> </td> 
+          <td width="123">&nbsp;</td>
+          <td width="117" height="20">&nbsp; </td>
+          <td width="193" height="20">&nbsp; </td>
+          <td width="220">&nbsp;</td>
+        </tr>
+        <tr align="left" valign="bottom" class="med"> 
+          <td width="135" height="20">&nbsp;</td>
+          <td width="123" height="20">&nbsp;</td>
+          <td width="117" height="20">&nbsp;</td>
+          <td width="193" height="20">&nbsp;</td>
+          <td width="220" height="20">&nbsp;</td>
+        </tr>
+        <tr align="left" valign="bottom" class="med"> 
+          <td width="135" height="20"><font face="Arial, Helvetica, sans-serif" color="#000066"><a href="../education/index.html"><img src="images/learn.gif" width="106" height="18" border="0" alt="learning"></a></font></td>
+          <td width="123" height="20"><font color="#000066" face="Arial, Helvetica, sans-serif"><a href="../news/index.html" target="_self"><img src="images/news.gif" width="106" height="18" border="0" alt="newsroom"></a></font></td>
+          <td width="117" height="20"><font color="#000066" face="Arial, Helvetica, sans-serif"><a href="../join/index.html" target="_self"><img src="images/join.gif" width="106" height="18" border="0" alt="join"></a></font></td>
+          <td width="193" height="20"><font color="#000066" face="Arial, Helvetica, sans-serif"><img src="images/serv.gif" width="106" height="18" alt="services"></font></td>
+          <td width="220" height="20">&nbsp;</td>
+        </tr>
+        <tr align="left" valign="bottom" class="med"> 
+          <td width="135" height="20"><font face="Arial, Helvetica, sans-serif"><a href="http://www.ancientcivilizations.co.uk" target="_blank">Ancient 
+            Civilizations</a></font></td>
+          <td width="123" height="20"><font face="Arial, Helvetica, sans-serif"><a href="../news/index.html" target="_self">News homepage</a> </font></td>
+          <td width="117" height="20"><font face="Arial, Helvetica, sans-serif"><a href="../friends/index.html">BM 
+            Friends</a></font></td>
+          <td width="193" height="20"><a href="corporate/hire/index.html"><font face="Arial, Helvetica, sans-serif">Corporate
+            events</font></a></td>
+          <td width="220" height="20"><font face="Arial, Helvetica, sans-serif"><a href="http://www.britishmuseum.co.uk" target="_blank">BM 
+            Company</a></font></td>
+        </tr>
+        <tr align="left" valign="bottom" class="med"> 
+          <td width="135" height="20"><font face="Arial, Helvetica, sans-serif"><a href="../compass">COMPASS</a></font></td>
+          <td width="123" height="20"><font face="Arial, Helvetica, sans-serif"><a href="/newsroom/presscurrent.html">Press 
+            releases</a></font></td>
+          <td width="117" height="20"><font face="Arial, Helvetica, sans-serif"><a href="../friends/index.html">BM 
+            Young Friends</a></font></td>
+          <td width="193" height="20"><font face="Arial, Helvetica, sans-serif"><a href="../education/index.html">Educational 
+            materials</a></font></td>
+          <td width="220" height="20">&nbsp;</td>
+        </tr>
+        <tr align="left" valign="bottom" class="med"> 
+          <td width="135" height="20"><font face="Arial, Helvetica, sans-serif"><a href="../childrenscompass">Children's 
+            COMPASS</a></font></td>
+          <td width="123" height="20">&nbsp;</td>
+          <td width="117" height="20"><font face="Arial, Helvetica, sans-serif"><a href="http://www.afbm.org/" target="_blank">American 
+            Friends</a></font></td>
+          <td width="193" height="20">&nbsp;</td>
+          <td width="220" height="20">&nbsp;</td>
+        </tr>
+        <tr align="left" valign="bottom" class="med"> 
+          <td width="135" height="20"><font face="Arial, Helvetica, sans-serif"><a href="../education/index.html">Learning &amp; Information  
+            Department</a></font></td>
+          <td width="123" height="20">&nbsp;</td>
+          <td width="117" height="20">&nbsp;</td>
+          <td width="193" height="20">&nbsp;</td>
+          <td width="220" height="20">&nbsp;</td>
+        </tr>
+        <tr align="left" valign="bottom" class="med"> 
+          <td width="135" height="20"><font face="Arial, Helvetica, sans-serif"><a href="../pd/factsheets/index.html">Factsheets 
+            (P&amp;D)</a></font></td>
+          <td width="123" height="20">&nbsp;</td>
+          <td width="117" height="20">&nbsp;</td>
+          <td width="193" height="20">&nbsp;</td>
+          <td width="220" height="20">&nbsp;</td>
+        </tr>
+        <tr align="left" valign="bottom" class="med"> 
+          <td width="135" height="20"><font face="Arial, Helvetica, sans-serif"><a href="../occasionalpapers/index.html">Occasional 
+            Papers / Research Publications.</a><br>
+            </font></td>
+          <td width="123" height="20">&nbsp;</td>
+          <td width="117" height="20">&nbsp;</td>
+          <td width="193" height="20">&nbsp;</td>
+          <td width="220" height="20">&nbsp;</td>
+        </tr>
+        <tr align="left" valign="bottom" class="med"> 
+          <td width="135" height="20"><font face="Arial, Helvetica, sans-serif"><a href="../worldofmoney/index.html">World 
+            of Money</a></font></td>
+          <td width="123" height="20">&nbsp;</td>
+          <td width="117" height="20">&nbsp;</td>
+          <td height="20" colspan="2">&nbsp;</td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+  <tr> 
+    <td colspan="3" height="3" align="left" valign="top"><a href="javascript:history.back()"><br>
+      <img src="images/back.gif" width="51" height="21" border="0" alt="back"></a></td>
+  </tr>
+</table><script  type="text/javascript">
+</script>
+<script type="text/javascript">
+
+
+</script>
+</body>
+</html>

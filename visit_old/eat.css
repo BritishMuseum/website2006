@@ -1,0 +1,11 @@
+body {
+	background-image: url(eat_images/spoons.jpg);
+	background-repeat: no-repeat;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 9pt;
+	background-position: 340px top;
+	background-attachment: fixed;
+}
+.tableBorder {
+	border: 1px solid #AAAAAA;
+}

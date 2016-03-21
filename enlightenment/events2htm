@@ -1,0 +1,428 @@
+<html>
+<head>
+<title>A new gallery: Enlightenment: Discovering the world in the Eighteenth century</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<style>
+body { 
+scrollbar-3d-light-color:#999999;
+scrollbar-arrow-color:#4B4B4B;
+scrollbar-base-color:black;
+scrollbar-dark-shadow-color:#333333;
+scrollbar-face-color:#666666;
+scrollbar-highlight-color:#999999;
+scrollbar-shadow-color:black}
+</style>
+<style>
+body { 
+scrollbar-3d-light-color:#999999;
+scrollbar-arrow-color:#4B4B4B;
+scrollbar-base-color:black;
+scrollbar-dark-shadow-color:#333333;
+scrollbar-face-color:#666666;
+scrollbar-highlight-color:#999999;
+scrollbar-shadow-color:black}
+</style>
+<style type="text/css">
+<!--
+.main {  font-family: Arial, Helvetica, sans-serif; font-size: x-small; color: #FFFFFF}
+.mainCopy { font-family: Arial, Helvetica, sans-serif; font-size: xx-small; color: #FFFFFF }
+.main {  font-family: Arial, Helvetica, sans-serif; font-size: x-small; color: #FFFFFF}
+.mainCopy { font-family: Arial, Helvetica, sans-serif; font-size: 10px; color: #FFFFFF }
+.new {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	font-weight: normal;
+	text-decoration: none;
+}
+.sponsortext {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11px;
+}
+.newCopy {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	font-weight: bold;
+	text-decoration: none;
+	color: #FFCC66;
+}
+.new2 {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	font-weight: bold;
+	color: #FFCC33;
+	text-decoration: none;
+}
+.unnamed1 {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	font-weight: bolder;
+	color: #FFFFFF;
+}
+.unnamed2 {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 18px;
+	color: #FFFFFF;
+}
+-->
+</style>
+<script language="JavaScript" type="text/JavaScript">
+<!--
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+
+function MM_displayStatusMsg(msgStr) { //v1.0
+  status=msgStr;
+  document.MM_returnValue = true;
+}
+//-->
+</script>
+</head>
+
+<body bgcolor="#000000" text="#CCCCCC" link="#CCCCCC" vlink="#A6A6A6" alink="#CCCCCC" leftmargin="0" topmargin="0" marginwidth="0" marginheight="0" onLoad="MM_preloadImages('images/book1.gif')">
+<table width=100% border=0 cellpadding=0 cellspacing=0>
+				
+	<tr>
+					
+		
+    <td colspan=2 height="89"> <a href="http://www.thebritishmuseum.ac.uk"><img src="images/logo.gif" width=150 height=94 alt="The British Museum" border="0"></a> 
+      <strong><font size="2" face="Arial, Helvetica, sans-serif"><span class="normblack"><a name="top" id="top"></a></span></font></strong> 
+    </td>
+	</tr>
+			
+</table>
+
+<table cellpadding="0" cellspacing="0" border="0" height="70%">
+  <tr> 
+    <td width="42%" height="653" valign="top"> <table width="96%" cellpadding="0" cellspacing="0" border="0" height="2975">
+        <tr> 
+          <td width="7%" height="306" rowspan="2" valign="top"><em><strong><font size="2" face="Arial, Helvetica, sans-serif"></font></strong></em><img src="images/spacer.gif" width="45" height="14"></td>
+          <td height="107" width="93%" class="main" valign="top"> 
+            <p class="unnamed1"><img src="images/title.gif" width="299" height="90"><br>
+              <span class="new"><br>
+              </span></p></td>
+        </tr>
+        <tr> 
+          <td height="2868" width="93%" class="main" valign="top"> 
+            <p><strong></strong> 
+            </p>
+            <p><font color="#B4AC94" size="3"><strong><a href="#one">Tours</a><br>
+              </strong></font><font color="#FF9966" size="3"><strong><a href="#two">Your 
+              Chance to be 'Hands on'</a><br>
+              <font color="#FFFFFF" size="3"><a href="#three">More Information 
+              <br>
+              </a><a href="#four">Events</a></font></strong></font></p>
+            <p><strong>The following are available to help you enjoy this exhibition: 
+              </strong><br>
+              <font color="#B4AC94" size="2" face="Arial, Helvetica, sans-serif"><strong><em><span class="normblack"><a name="one" id="one"> 
+              </a></span></em></strong></font> <br>
+              <img src="images/line.gif" width="100%" height="1"></p>
+            <table width="414" height="226" border="0" cellpadding="0" cellspacing="0">
+              <tr> 
+                <td width="263" height="226" valign="top"> <p align="justify"><font color="#B4AC94" size="3"><strong><font size="2" face="Arial, Helvetica, sans-serif">Tours 
+                    <br>
+                    <br>
+                    </font></strong></font><font color="#FFFFFF" size="2" face="Arial, Helvetica, sans-serif">A 
+                    separate Audio Guide tour (available from the Desk in the 
+                    Great Court) </font></p>
+                  <p align="justify"><font color="#FFFFFF" size="2" face="Arial, Helvetica, sans-serif"><a href="tours/index.html#eye">Eye
+                    Opener Tours</a> (free daily at 12.30; please meet at the 
+                    Enlightenment Gallery)</font></p>
+                  <p align="justify"><font color="#FFFFFF" size="2" face="Arial, Helvetica, sans-serif">A 
+                    variety of <a href="en_tours.htm?_IXDB_=compass&search-form=graphical/main.html&submit-button=search">online 
+                    tours</a> are available on the British Museum&#8217;s Compass 
+                    database and in the Information Centre in the Round Reading 
+                    Room of the British Museum.</font></p></td>
+                <td width="151" valign="top"><img src="images/PS193935.jpg" width="151" height="214"></td>
+              </tr>
+            </table>
+            <p align="right"><font color="#FF9966" size="3"><strong><font color="#FF9966" size="3"><strong><font size="2" face="Arial, Helvetica, sans-serif"><em><span class="normblack"><a href="#Top" class="mainCopy">To</a></span></em></font><font size="2" face="Arial, Helvetica, sans-serif"><em><span class="normblack"><a href="#Top" class="mainCopy">p</a></span></em></font><font color="#FF9966" size="3"><strong><font color="#FF9966" size="3"><strong><font color="#FF9966" size="3"><strong><font color="#FF9966" size="3"><strong><font size="2" face="Arial, Helvetica, sans-serif"><em><span class="normblack"><a name="two" id="two"> 
+              </a></span></em></font></strong></font></strong></font></strong></font></strong></font><font size="2" face="Arial, Helvetica, sans-serif"><em><span class="normblack"> 
+              </span></em></font></strong></font></strong></font><img src="images/line1.gif" width="100%" height="1"><font color="#FF9966" size="3"><strong><font color="#FF9966" size="3"><strong><font size="2" face="Arial, Helvetica, sans-serif"><em></em></font></strong></font></strong></font> 
+            </p>
+            <p align="justify"><font color="#FF9966" size="2"><strong>Your Chance 
+              to be 'Hands on'</strong></font><font color="#FF9966" size="3"><strong><br>
+              <br>
+              </strong></font>A <a href="whatson/events/regular.html#handson">Handling
+              Collection</a> (every day, between 10:00 and 4:00 at the desk near 
+              the central area of the exhibition) <br>
+              LARGE PRINT copies of the labels (available from the Hands On desk)<br>
+            </p>
+            <table width="100%" border="0" cellspacing="0" cellpadding="0">
+              <tr>
+                <td><div align="right"><a href="#Top" class="mainCopy"><em>Top</em></a> 
+                  </div></td>
+              </tr>
+            </table>
+            <p><img src="images/line2.gif" width="100%" height="1"></p>
+            <table width="100%" border="0" cellspacing="0" cellpadding="0">
+              <tr> 
+                <td height="766"> 
+                  <p align="justify"><strong><font size="2" face="Arial, Helvetica, sans-serif"><em></em></font><font size="2" face="Arial, Helvetica, sans-serif"><em><span class="normblack"><a name="three" id="three"> 
+                    </a></span></em></font><br>
+                    <font color="#FFCC66" size="2">More Information &amp; Events</font></strong></p>
+                  <p align="justify"><font color="#FFCC66" size="3"><font color="#FFFFFF" size="2" face="Arial, Helvetica, sans-serif"> 
+                    An gallery guide leaflet (Available at the entrance to the 
+                    gallery)</font> <font size="2" face="Arial, Helvetica, sans-serif"><br>
+                    <br>
+                    <font color="#FFFFFF">A handlist of the objects on display 
+                    (available for reference from the Information/Handling Collection 
+                    desk in the gallery.</font></font></font></p>
+                  <p align="justify"><font color="#FFFFFF" size="2" face="Arial, Helvetica, sans-serif">A 
+                    catalogue of the books from the House of Commons Library which 
+                    are incorporated into the exhibition (available on the computer 
+                    terminals in the Information Centre in the Round Reading Room 
+                    of the British Museum).</font></p>
+                  <p align="justify"><font color="#FFFFFF" size="2" face="Arial, Helvetica, sans-serif">A 
+                    beautifully illustrated <a href="http://www.britishmuseum.co.uk/product.asp?product=709" target="_blank">book</a> 
+                    entitled <em>Enlightenment. Discovering the World in the Eighteenth 
+                    Century, edited by Kim Sloan (British Museum Press, 2003)</em> 
+                    (for sale in the <a href="http://www.britishmuseum.co.uk/product.asp?product=709" target="_blank">Museum 
+                    Bookshop</a>, from the <a href="http://www.britishmuseum.co.uk/product.asp?product=709" target="_blank">British 
+                    Museum Press website</a> or from booksellers). </font></p>
+                  <p align="justify"><font color="#FFFFFF" size="2" face="Arial, Helvetica, sans-serif">Two 
+                    free trails and a study pack are available from the Information 
+                    Desks in the Great Court and Reading Room or by post from 
+                    the <a href="education/index.html">Department
+                    of Education and Information.</a></font></p>
+                  <p align="justify"><font color="#FFFFFF" size="2" face="Arial, Helvetica, sans-serif"><em>Eighteenth 
+                    century</em> <em>to eBay</em> is a family trail round the 
+                    Enlightenment Gallery. It is about why people collect things, 
+                    how they can arrange them and what these things can tell us 
+                    about the world. Suitable for families with children 7+.</font></p>
+                  <p align="justify"><font color="#FFFFFF" size="2" face="Arial, Helvetica, sans-serif"><em>Carry 
+                    on collecting </em>is a cross-Museum trail, starting in the 
+                    Enlightenment Gallery, which introduces you to famous collectors 
+                    from the past and from other cultures, and compares different 
+                    ways of looking at objects: in the18th century they contributed 
+                    to universal knowledge, whilst today we are more interested 
+                    in objects in their cultural context. </font></p>
+                  <p align="justify"><font color="#FFFFFF" size="2" face="Arial, Helvetica, sans-serif"><em>Accessing 
+                    Enlightenment </em>is a study guide for students at A level 
+                    and above, studying museology, consumer studies or 18th century 
+                    cultural history. It links the experience of being a museum 
+                    visitor now and in the 18th century: what sort of person visited 
+                    museums, what was their educational background, how easy was 
+                    it for them to get in and what did they learn while they were 
+                    here? The study guide costs &pound;8.99 and is a new type 
+                    of learning resource produced by the Department for Education 
+                    and Information; comments from users are warmly welcomed. 
+                    </font></p>
+                  <p align="justify"><font color="#FFFFFF" size="2" face="Arial, Helvetica, sans-serif">A 
+                    range of books about the Enlightenment, the architecture of 
+                    the British Museum, the history of the British Museum and 
+                    the cultures that produced the objects on display in the exhibition 
+                    are available in the Information Centre in the Round Reading 
+                    Room of the British Museum.</font></p>
+                  <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                    <tr> 
+                      <td width="96%">
+                        <div align="right"><a href="#Top" class="mainCopy"><em><strong><font size="2" face="Arial, Helvetica, sans-serif"><em></em></font></strong><font color="#FFFFFF" size="1">Top</font></em></a> 
+                        </div>
+                      </td>
+                      <td width="4%"><a href="#Top" class="mainCopy"><em><strong><font size="2" face="Arial, Helvetica, sans-serif"><em><span class="normblack"><a name="four" id="four"> 
+                        </a></span></em></font></strong></em></a></td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+            </table>
+            <strong><font size="2" face="Arial, Helvetica, sans-serif"><em></em></font></strong> 
+            <p><strong><font size="2" face="Arial, Helvetica, sans-serif"><em></em></font></strong></p>
+            <table width="417" height="1158" border="0" cellpadding="1" cellspacing="0">
+              <tr> 
+                <td width="415">
+                  <table width="415" border="0" cellpadding="0" cellspacing="9">
+                    <tr> 
+                      <td width="407">
+                        <p><strong><font color="#FFCC66" size="3">Events</font></strong></p>
+                        <table width="389" height="22" border="0" cellpadding="0" cellspacing="0" class="new2">
+                          <tr> 
+                            <td height="20" class="new"> 
+                              <p class="smalle"><strong><font size="3" color="#FFFF80">Study 
+                                Days</font></strong></p>
+                              <p class="smalle"><font color="#808080"><strong><font size="2">Enlightened 
+                                Architects: Smirke, Nash, Soane and their competitors</font></strong></font></p>
+                              <p class="smalle"><font color="#C0C0C0">7 May<br>
+                                10.00-16.30<br>
+                                BP Lecture Theatre<br>
+                                &pound;28, BM Friends &pound;25, concessions &pound;18</font></p>
+                              <p class="smalle"><font size="3" color="#FFFF80"><b><font size="2" color="#808080">Linnaeus, 
+                                Banks and Mrs Delany</font></b></font> </p>
+                              <p class="smalle"><font color="#C0C0C0">21 May<br>
+                                14.00-16.00<br>
+                                H Williams<br>
+                                Clore Education Centre, Sackler Room <br>
+                                &pound;15, concessions &pound;12</font></p>
+                              <p class="smalle"><font size="2" color="#FFFF80"><b><font size="3">Performance 
+                                and Workshop</font></b></font></p>
+                              <p class="smalle"><b><font size="-1" color="#808080">Te 
+                                Ara Puoro: pathways of sound</font><font size="-1"><br>
+                                </font></b><font color="#C0C0C0">Musicologist 
+                                Richard Nunns gives a performance of traditional 
+                                Maori instruments. Richard will also lead a workshop 
+                                for 15 adults.</font></p>
+                              <p class="smalle"><font color="#C0C0C0">11 June<br>
+                                12.00-1300 &amp; 16.00-1700<br>
+                                Room 1 <br>
+                                Admission free</font></p>
+                              <p class="smalle"><font size="-1"><b><font color="#808080">Making 
+                                Maori Workshop</font></b></font><br>
+                                <font color="#C0C0C0">11 June<br>
+                                14.00-15.30 <br>
+                                R Nunns<br>
+                                Tickets available from Box Office</font></p>
+                        </td>
+                          </tr>
+                        </table>
+                        <p class="main"><img src="images/grayline.gif" width="100%" height="1"><br>
+                          <br>
+                          <strong><font color="#FFFFFF"><font color="#669999" size="3">Gallery 
+                          Talks </font></font></strong></p>
+                        <p class="smalle"><font color="#008080" size="2">William 
+                          Stukely and the quest for ancient Britain <br>
+                          </font><font color="#FFFFFF" size="2">19 May <br>
+                          Room 1<br>
+                          P.Melville <br>
+                          13.15 </font></p>
+                        <p class="smalle"><font color="#FFFFFF"> <font color="#808080" size="2">The 
+                          Enlightenment Gallery: Gods and Myths</font><font size="2"><br>
+                          21 May <font color="#669999"><font color="#FFFFFF"><br>
+                          Room 1</font></font></font> <font size="2"><br>
+                          A Xavier</font></font><font color="#FFFFFF" size="2"><br>
+                          13.15 </font></p>
+                        <p class="smalle"><font color="#808080" size="2">Souvenirs 
+                          of the Grand Tour </font><font color="#FFFFFF" size="2"><br>
+                          26 May<br>
+                          Room 1<br>
+                          H Williams <br>
+                          13.15</font></p>
+                        <p class="smalle"><font color="#808080" size="2">Science 
+                          and the Enlightenment</font><font color="#FFFFFF" size="2"><br>
+                          15 June <br>
+                          Room 1<br>
+                          J Wess<br>
+                          13.15 </font></p>
+                        <p class="smalle"><font color="#CCCCCC"><strong><font size="-1">eyeOpener 
+                          tours every day at 12.30 <br>
+                          Hands On every day 11.00 - 16.00</font></strong></font></p>
+                        <p class="new"><img src="images/grayline.gif" width="100%" height="1"></p>
+                        <p class="new">&nbsp;</p>
+                        <table width="100%" border="0" cellpadding="1" cellspacing="0" bgcolor="#000000">
+                          <tr> 
+                            <td>
+                              <table width="103%" border="0" cellspacing="0" cellpadding="0">
+                                <tr> 
+                                  <td width="114" height="2" align="left"><font color="#FFFFFF" size="2" face="Arial, Helvetica, sans-serif"><span class="smalle"><strong><span class="new"><a href="javascript:;" onMouseOver="MM_swapImage('Image11','','images/book1.gif',1);MM_displayStatusMsg('Buy book at www.britishmuseum.co.uk');return document.MM_returnValue" onMouseOut="MM_swapImgRestore()"><img src="images/book.gif" alt="Buy book at www.britishmuseum.co.uk" name="Image11" width="103" height="150" border="0" usemap="#MapMapMapMapMapMap" id="Image1"><br>
+                                    </a></span></strong></span><span class="new"></span></font></td>
+                                  <td width="291" align="left" valign="bottom"><font color="#FFFFFF" size="2" face="Arial, Helvetica, sans-serif"><span class="new"><strong><a href="http://www.britishmuseum.co.uk/product.asp?product=709" target="_blank" onMouseOver="MM_swapImage('Image1','','images/book1.gif',1);MM_displayStatusMsg('Buy book at www.britishmuseum.co.uk');return document.MM_returnValue" onMouseOut="MM_swapImgRestore()">Buy 
+                                    the book<font size="1"> </font>&pound;15.00 
+                                    </a><br>
+                                    <br>
+                                    </strong></span></font></td>
+                                </tr>
+                              </table>
+                              <font color="#FFFFFF" size="2" face="Arial, Helvetica, sans-serif"><span class="smalle"><strong><span class="new"> 
+                              <map name="MapMapMapMapMapMap"> <area shape="rect" coords="8,7,100,113" href="http://www.britishmuseum.co.uk/product.asp?product=709" target="_blank"> 
+                                <area shape="rect" coords="11,111,104,131" href="http://www.britishmuseum.co.uk/product.asp?product=709" target="_blank"> 
+                              </map> </span></strong></span></font></td>
+                          </tr>
+                        </table>
+                      </td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+            </table>
+            <p><br>
+            </p>
+            <table width="100%" border="0" cellspacing="0" cellpadding="0">
+              <tr> 
+                <td><div align="right"><a href="#Top" class="mainCopy"><em>Top</em></a> 
+                  </div></td>
+              </tr>
+            </table>
+            <p><strong></strong></p>
+            <p><strong><font color="#FFFFFF"><strong><span class="new"> 
+              <map name="MapMapMapMap">
+                <area shape="rect" coords="6,7,98,113" href="http://www.britishmuseum.co.uk/product.asp?product=709" target="_blank">
+                <area shape="rect" coords="12,125,105,145" href="http://www.britishmuseum.co.uk/product.asp?product=709" target="_blank">
+              </map>
+              </span></strong></font></strong></p>
+            <p><strong><span class="smalle"><font color="#FFFFFF"><a href="http://www.britishmuseum.co.uk/product.asp?product=709" target="_blank" onMouseOver="MM_swapImage('Image1','','images/book1.gif',1);MM_displayStatusMsg('Buy book at www.britishmuseum.co.uk');return document.MM_returnValue" onMouseOut="MM_swapImgRestore()"> 
+              </a></font></span></strong><strong></strong><br>
+            </p></td>
+        </tr>
+      </table></td>
+    <td align="right" valign="top" width="58%"> <div align="center"> 
+        <p> 
+          <object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=6,0,29,0" width="550" height="410">
+            <param name="movie" value="images/main.swf">
+            <param name="quality" value="high">
+            <embed src="images/main.swf" quality="high" pluginspage="http://www.macromedia.com/go/getflashplayer" type="application/x-shockwave-flash" width="550" height="410"></embed></object>
+          <br>
+          <span class="new"><font color="#FFFFFF" face="Arial, Helvetica, sans-serif"><strong><a href="index.html">Enlightenment 
+          Home</a> | <a href="theageof.html">The Age of Enlightenment</a> | <a href="thekl.html">The 
+          King's Library</a> | <br>
+          <a href="theex_short.html">The exhibition - A short guide </a>|<a href="three.html#one" class="unnamed1"> 
+          Tours</a> | <a href="en_tours.htm">Take an online tour</a> |<br>
+          <a href="three.html#two" class="unnamed1">Your chance to be 'hands-on'</a> 
+          |<a href="three.html#three" class="unnamed1"> More information</a> | 
+          <a href="three.html#four" class="unnamed1">Events</a></strong></font></span></p>
+      </div></td>
+  </tr>
+</table>
+<br>
+<div class=home align=center><font 
+      size=2><a href="/index.html"><font 
+      color=#CCCCCC size="1" face="Arial, Helvetica, sans-serif"><span class=home>home</span></font></a><font color="#CCCCCC" size="1" face="Arial, Helvetica, sans-serif"><span class=home> 
+  | <a href="/visit/index.html">visit</a> | <a href="/whatson/index.html">what's 
+  on</a> | <a 
+      href="/join/index.html">join</a> | <a 
+      href="http://www.britishmuseum.co.uk/">shop</a> | <a 
+      href="/education/index.html">learning</a> | <a href="/compass">COMPASS</a> 
+  <br>
+  </span></font></font> <font color="#FFFFFF"><strong><span class="new"> </span></strong></font><font color="#CCCCCC" 
+      size=1 face="Arial, Helvetica, sans-serif"><span class=home><a 
+      href="/world/world.html">world cultures</a> | <a 
+      href="/sitemap/sitemap.html">sitemap</a> | <a href="/visit/contact.html">contact 
+  us</a> | <a 
+      href="/corporate/copyright.html">copyright</a><br>
+  </span></font> <font color="#FFFFFF"><strong><span class="new"> 
+  <map name="MapMapMap">
+    <area shape="rect" coords="7,10,100,113" href="http://www.britishmuseum.co.uk/product.asp?product=709" target="_blank">
+    <area shape="rect" coords="12,125,105,145" href="http://www.britishmuseum.co.uk/product.asp?product=709" target="_blank">
+  </map>
+  </span></strong></font> <font color="#CCCCCC" 
+      size=1 face="Arial, Helvetica, sans-serif"><span class=home> 
+  </span></font></div>
+<div align=center><font color="#FFFFFF" size="1" face="Arial, Helvetica, sans-serif">&copy;</font><font color="#171717" size="1" face="Arial, Helvetica, sans-serif"> 
+  <font color="#FFFFFF"> The British Museum, 2003</font><br>
+  </font></div>
+<font color="#FFFFFF">
+<map name="Map"> 
+  <area shape="rect" coords="12,8,92,111" href="http://www.britishmuseum.co.uk/product.asp?product=709">
+  <area shape="rect" coords="11,125,91,145" href="http://www.britishmuseum.co.uk/product.asp?product=709">
+</map>
+</font> 
+</body>
+</html>

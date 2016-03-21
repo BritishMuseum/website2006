@@ -1,0 +1,45 @@
+BODY {
+	SCROLLBAR-FACE-COLOR: #666666; SCROLLBAR-HIGHLIGHT-COLOR: #999999; SCROLLBAR-SHADOW-COLOR: #000000; SCROLLBAR-ARROW-COLOR: black; SCROLLBAR-BASE-COLOR: black; scrollbar-3d-light-color: #999999; scrollbar-dark-shadow-color: #1B1B1B
+}
+TD {
+	FONT: 11px Verdana, Arial, Helvetica, sans-serif; COLOR: #000000; TEXT-DECORATION: none
+}
+INPUT {
+	FONT-SIZE: 8pt; FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif
+}
+SELECT {
+	FONT-SIZE: 10px; FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif
+}
+.NormalText {
+	FONT: 10px Verdana, Arial, Verdana, Helvetica, sans-serif; COLOR: #000000; TEXT-DECORATION: none
+}
+.BoldText {
+	FONT: bolder 9px Verdana, Arial, Helvetica, sans-serif; COLOR: #000000
+}
+.TitleText {
+	FONT: 10px Verdana, Arial, Verdana, Helvetica, sans-serif; COLOR: #ffffff
+}
+.BoxTitleText {
+	FONT: 10px Verdana, Arial, Helvetica, sans-serif; COLOR: #000000
+}
+.GrayText {
+	FONT: 7pt Verdana, Arial, Helvetica, sans-serif; COLOR: #b5b5b5; TEXT-DECORATION: none
+}
+.navigMouseOver {
+	BORDER-RIGHT: #e6f7c9 solid; BORDER-TOP: #e6f7c9 solid; BORDER-LEFT: #e6f7c9 1px solid; CURSOR: hand; COLOR: #e6f7c9; BORDER-BOTTOM: #e6f7c9 1px solid; BACKGROUND-COLOR: #e6f7c9; layer-background-color: #E6F7C9
+}
+.navigMouseOut {
+	BORDER-RIGHT: #c5c6c6 solid; BORDER-TOP: #c5c6c6 solid; BORDER-LEFT: #c5c6c6 1px solid; CURSOR: hand; COLOR: #c5c6c6; BORDER-BOTTOM: #c5c6c6 1px solid; BACKGROUND-COLOR: #c5c6c6; layer-background-color: #C5C6C6
+}
+A {
+	CURSOR: hand; COLOR: #000000; FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif; LIST-STYLE-TYPE: disc; TEXT-DECORATION: none
+}
+H1 {
+	FONT: bold 13px Verdana, Arial, Verdana, Helvetica, sans-serif; COLOR: #000000; TEXT-DECORATION: none
+}
+.LargeTitle {
+	FONT-WEIGHT: bold; FONT-SIZE: 14px; BORDER-LEFT-COLOR: #0033cc; PAGE-BREAK-BEFORE: always; BORDER-BOTTOM-COLOR: #0033cc; PAGE-BREAK-AFTER: auto; COLOR: #213018; BORDER-TOP-COLOR: #0033cc; FONT-STYLE: normal; FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif; BORDER-RIGHT-COLOR: #0033cc
+}
+.hyperlink {
+	FONT-WEIGHT: bold; FONT-SIZE: 11px; COLOR: #0099ff; FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif
+}

@@ -1,0 +1,79 @@
+/**
+ ** friendstyle.css -- CSS for BM Friends.
+ **/
+
+.selected_subscription{ 
+   
+ }
+.membership_price{ 
+  font-size: 110%;
+  font-family: "charter bt", "times new roman", times, serif;
+  font-weight: 500;
+ }
+
+H1,H2,H3{
+     font-family:"trebuchet ms", "bliss", "verdana", "arial", "helvetica", "sans", "swiss";
+     padding:0.3ex;
+     color: white;
+     background-color: #33aa07;
+ }
+
+/* Class to indicate fields that "must" be filled in. */
+.mustfill
+{ 
+  font-family: "courier new", fixed;  /*"arial", "helvetica", "sans-serif", "sans", "swiss";*/
+  font-size:1.5em;
+  color: #7f0000;
+  font-weight:900;
+}
+
+.optional
+{
+  font-family: "courier new", fixed; /*"arial", "helvetica", "sans-serif", "sans", "swiss"; */
+  font-size:1.5em;
+  font-weight:900;
+  
+}
+.errmsg { 
+  color: #7f0000;
+  font-weight:500;
+  font-size:1.1em;
+ }
+
+DIV.header{ 
+  position: fixed; 
+  top:0; 
+  bottom:80%; 
+  left:20%; 
+  right:0;
+  background: gray;
+}
+
+DIV.sidebar { 
+  position: fixed; 
+  top: 0; 
+  left:0; 
+  right:80%; 
+  background: silver; 
+}
+
+DIV.main { 
+  position: absolute;
+  top: 20%;
+  bottom: 0;
+  left: 20%;
+  right: 0;
+  overflow: scroll;
+  background: #ff00ff;
+}
+
+.membership_description{ 
+  font-size: 110%;
+  font-family: "charter bt", "times new roman", times, serif;
+  font-weight: 500;
+ }
+
+.label { 
+  font-size: 110%;
+  font-weight: 300;
+ }

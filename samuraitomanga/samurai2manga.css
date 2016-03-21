@@ -1,0 +1,80 @@
+body {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	font-style: normal;
+	background-color: #000000;
+	padding: 0px;
+	margin: 0px;
+	color: #FFFFFF;
+}
+
+
+img
+	{
+	border-style: none;
+	border-width: 0px;
+	}
+	
+#title {
+	position: absolute;
+	left: 473px;
+}
+
+#armour
+	{
+	position:absolute;
+	top: 93px;
+	left: 0px;
+	z-index: 3;
+
+	}
+	
+#aibo
+	{
+	position:absolute;
+	top: 93px;
+	left: 0px;
+	z-index: 2;
+	visibility: hidden;
+	}
+	
+#container
+	{
+	position:absolute;
+	top: 93px;
+	left: 382px;
+	height: 115px;
+	width: 400px;
+	text-align: right;
+
+	}
+	
+#room
+	{
+	font-size: 18px;
+	}
+	
+#col1, #col2
+	{
+	position: absolute;
+	top: 208px;
+	width: 191px;
+	height: 323px;
+	}
+	
+#col1
+	{
+	left: 382px;
+	}
+	
+#col2
+	{
+	left: 588px;
+	}
+	
+#asahi_logo
+	{
+	position: absolute;
+	top: 531px;
+	left: 588px;
+	}

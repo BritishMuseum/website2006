@@ -1,0 +1,224 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+
+<HTML>
+<HEAD>
+<TITLE>Museum Plans</TITLE>
+<SCRIPT LANGUAGE="JavaScript">
+<!--
+
+function printPage() {
+  if if (window.print) parent.frames["mainFrame"].print();
+    window.print()
+  else
+    alert("Sorry, your browser doesn't support this feature.");
+}
+
+// -->
+</SCRIPT>
+<META http-equiv=Content-Type content="text/html; charset=iso-8859-1">
+<META 
+content="multiple scrolling content script, text scroller, scroller script, multiple scroller javascript, dhtml scroller" 
+name=keywords>
+<META 
+content="Simply the Best DHTML scripts and javascripts: multiple scrolling content script." 
+name=description>
+<META 
+content="multiple scrolling content script, scroller dhtml script, text scroller" 
+name=target>
+<META content="copyright 1997-2003 SimplytheBest.net" name=copyright>
+<META content="30 days" name=revisit-after>
+<META content=all name=robots>
+<LINK 
+href="scripts.css" 
+type=text/css rel=stylesheet>
+<STYLE type=text/css>BODY {
+	MARGIN: 0px; WIDTH: 100%; HEIGHT: 100%
+}
+#links {
+	LEFT: 120px; POSITION: absolute; TOP: 280px
+}
+#up {
+	LEFT: 158px; CURSOR: pointer; POSITION: absolute; TOP: 20px}
+#down {
+	LEFT: 158px; CURSOR: pointer; POSITION: absolute; TOP: 571px}
+#cont {
+	BORDER-RIGHT: #ffffff 1px solid; BORDER-TOP: #FFFFFF 1px solid; LEFT: -1px; OVERFLOW: hidden; BORDER-LEFT: #oooooo 1px solid; WIDTH: 159px; BORDER-BOTTOM: #FFFFFF 1px solid; POSITION: relative; TOP: 10px; HEIGHT: 643px}
+.txt {
+	PADDING-RIGHT: 5px;
+	PADDING-LEFT: 5px;
+	FONT-SIZE: 11px;
+	LEFT: 3px;
+	VISIBILITY: visible;
+	PADDING-BOTTOM: 5px;
+	WIDTH: 159px;
+	PADDING-TOP: 5px;
+	FONT-FAMILY: verdana,arial,helvetica,sans-serif;
+	POSITION: absolute;
+	TOP: 7px;
+	TEXT-ALIGN: left;
+	height: 472px;
+}
+.med {
+	font-size: 11px;
+	font-family: Arial, Helvetica, sans-serif;
+}
+</STYLE>
+<SCRIPT type=text/javascript>
+/*
+Script made by Martial Boissonneault © 2001-2003 http://getElementById.com/
+This script may be used and changed freely as long as this msg is intact
+Visit http://getElementById.com/ for more free scripts and tutorials.
+Script featured at SimplytheBest.net http://simplythebest.net/scripts/
+*/
+
+timerID = null;
+var active = 0;
+
+function ChangePage(num){
+    	if(document.getElementById){
+    		obj[active].style.visibility = "hidden";
+    		active = num;
+    		obj[active].style.top = 0;
+    		obj[active].style.visibility = "visible";
+    	}
+}
+    
+function ScrollUp(speed){
+    	if(document.getElementById){
+    		if(parseInt(obj[active].style.top) < 0){
+    			obj[active].style.top = parseInt(obj[active].style.top) + speed + "px";
+		}
+    		timerID = setTimeout("ScrollUp("+speed+")",30);
+    	}
+}
+
+function ScrollDown(speed){
+    	if(document.getElementById){                        
+    		if(parseInt(obj[active].style.top) > document.getElementById('cont').offsetHeight - obj[active].offsetHeight){ 
+    			obj[active].style.top = parseInt(obj[active].style.top) - speed + "px";
+		}
+    		timerID = setTimeout("ScrollDown("+speed+")",30);
+    	}
+}
+
+function ScrollStop(){
+    	if(document.getElementById){
+    		clearTimeout(timerID);
+    	}
+}
+
+function ScrollPageInit() {
+    	if(document.getElementById){
+    		obj = document.getElementById("cont").getElementsByTagName("div");
+    		obj['page1'].style.visibility = "visible";
+    		obj['page1'].style.top = 0;	
+    	}	
+    	if(document.addEventListener){
+    		for(i=0;i<document.getElementsByTagName('a').length;i++){
+    			document.getElementsByTagName('a')[i].style.position = "relative";
+		}
+    	}
+}
+</SCRIPT>
+<META content="MSHTML 6.00.2800.1226" name=GENERATOR>
+<script language="JavaScript" type="text/JavaScript">
+<!--
+function MM_reloadPage(init) {  //reloads the window if Nav4 resized
+  if (init==true) with (navigator) {if ((appName=="Netscape")&&(parseInt(appVersion)==4)) {
+    document.MM_pgW=innerWidth; document.MM_pgH=innerHeight; onresize=MM_reloadPage; }}
+  else if (innerWidth!=document.MM_pgW || innerHeight!=document.MM_pgH) location.reload();
+}
+MM_reloadPage(true);
+
+function MM_goToURL() { //v3.0
+  var i, args=MM_goToURL.arguments; document.MM_returnValue = false;
+  for (i=0; i<(args.length-1); i+=2) eval(args[i]+".location='"+args[i+1]+"'");
+}
+//-->
+</script>
+</HEAD>
+<BODY text=#000000 vLink=#0000a0 aLink=#0000a0 link=#0000a0 bgColor=#ffffff 
+leftMargin=0 topMargin=0 onload=ScrollPageInit();return;MM_goToURL('parent.frames[\'leftFrame\']','left3.htm');return document.MM_returnValue document.MM_returnValue marginwidth="0" 
+marginheight="0">
+<!-- multiple scrolling content script, javascript scroller, dhtml scroller, text scroller, DHTML scripts -->
+<body bgcolor="#FAFAF5">
+<A 
+name=top></A> 
+<div class=txt id=page4><br>
+  <br>
+</div>
+<div class=txt id=page3><br>
+</div>
+<table class=body cellspacing=0 cellpadding=0 width="100%" border=0>
+  <tbody>
+    <tr> 
+      <td> <table width="99%" border=0 cellpadding=0 cellspacing=0 bgcolor="#FAFAF5" class=body>
+          <tbody>
+            <tr> 
+              <td class=body valign=top> <p class=author> 
+                  <!-- Scroller start -->
+                  <img 
+            style="DISPLAY: none" 
+            src="/up_over.gif"> <img style="DISPLAY: none" 
+            src="bottomarrow.gif"> 
+                <div id=cont> 
+                  <div class=txt id=page1> 
+                    <table width="100%" height="42" border="0" cellpadding="2" cellspacing="2" bgcolor="#000000">
+                      <tr> 
+                        <td height="20"><font face="Arial, Helvetica, sans-serif"><font color="#000000"><strong><font size="2"><font color="#FFFFFF">Lower 
+                          Floor Rooms<br>
+                          <span class="authorlink"><font face="Arial, Helvetica, sans-serif"><font color="#000000"><strong><font color="#CCCCCC">25, 
+                          77&#8211;80, 82-85, 88-89</font></strong></font></font></span> 
+                          </font></font></strong></font></font></td>
+                      </tr>
+                      <tr> 
+                        <td bgcolor="#FCFCF8" class =><a href="lower_print.htm" target="_blank"><img src="print.gif" width="100" height="22" border="0"></a> 
+                          <a href="df"></a> </td>
+                      </tr>
+                    </table>
+                    <font face="Arial, Helvetica, sans-serif"><strong><br>
+                    </strong></font> <span class="med"><font face="Arial, Helvetica, sans-serif"><strong><font color="#9D0027"> 
+                    World cultures</font></strong></font></span> <font face="Arial, Helvetica, sans-serif"><br>
+                    <strong>25</strong> <em>The Sainsbury African galleries</em></font> 
+                    <font face="Arial, Helvetica, sans-serif"> </font> <br>
+                    <br>
+                    <font face="Arial, Helvetica, sans-serif"> </font> <font face="Arial, Helvetica, sans-serif"><strong><font color="#006666">Greece 
+                    &amp; Rome</font></strong><br>
+                    <strong>77 </strong>Greek &amp; Roman architecture<br>
+                    <strong>78&#8211;85</strong> <em>The Wolfson Galleries</em><br>
+                    <strong>78</strong> Classical inscriptions<br>
+                    <strong>79&#8211;80</strong> Early Greek sculpture<br>
+                    <strong>82 </strong>Ephesus<br>
+                    <strong>83</strong> Roman sculpture<br>
+                    <strong>84</strong> Townley sculptures<br>
+                    <strong>85</strong> Portrait sculpture</font><br>
+                    <br>
+                    <font face="Arial, Helvetica, sans-serif"><strong><font face="Arial, Helvetica, sans-serif"><img src="images/ane.gif" width="6" height="6"></font><font color="#333399">&nbsp;Ancient 
+                    Near East</font></strong><br>
+                    <strong>88</strong> Archaeology and the New Testament<br>
+                    <strong>89</strong> Assyrian art</font> <font face="Arial, Helvetica, sans-serif"> 
+                    <p>&nbsp;</p>
+                    <p>&nbsp; </p>
+                    </font> 
+                    <p><font face="Arial, Helvetica, sans-serif"><br>
+                      </font><br>
+                  </div>
+                </div>
+                <!-- Scroller end -->
+                <p align=left class="med"><br>
+                </p>
+                <p align=left class="med">&nbsp; </p>
+                <p align=left>&nbsp;</p>
+                <p align=left>&nbsp;</p>
+                <p>&nbsp;</p></td>
+            </tr>
+          </tbody>
+        </table>
+        <table cellspacing=0 cellpadding=0 width="100%" border=0>
+          <tbody>
+          </tbody>
+        </table></td>
+    </tr>
+  </tbody>
+</table>
+</BODY></HTML>

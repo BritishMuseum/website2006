@@ -1,0 +1,117 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"> 
+
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<title>Samurai to Manga: Japan across the centuries</title>
+
+<link href="samurai2manga.css" rel="stylesheet" type="text/css" media="screen">
+<link href="samurai2mangaprint.css" rel="stylesheet" type="text/css" media="print">
+
+<SCRIPT LANGUAGE="JavaScript">
+
+<!-- This script and many more are available free online at -->
+<!-- The JavaScript Source!! http://javascript.internet.com -->
+
+<!-- Begin
+/************************************************************************
+Script made by Martial Boissonneault © 2001 http://getElementById.com/
+This script may be used and changed freely as long as this msg is intact
+Visit http://getElementById.com/ for more free scripts and tutorials.
+*************************************************************************/
+var ie5=(document.getElementById && document.all);
+var ns6=(document.getElementById && !document.all);
+
+nPlus = 1   //the % of fading for each step
+speed = 30  //the speed
+
+// You don't have to edit below this line
+nOpac = 100
+function FadeImg(){
+    if(document.getElementById){
+        document.getElementById('aibo').style.visibility="visible";
+        imgs = document.getElementById('armour');
+	opacity = nOpac+nPlus;
+	nOpac = opacity;
+	
+	setTimeout('FadeImg()',speed);
+    if(opacity>100 || opacity<0){
+		
+        nPlus=-nPlus;
+		pausecomp(3000)
+    }
+    if(ie5){
+        imgs.style.filter="alpha(opacity=0)";
+	imgs.filters.alpha.opacity = opacity;
+    }
+    if(ns6){
+        imgs.style.MozOpacity = 0 + '%';
+	imgs.style.MozOpacity = opacity + '%';
+    }
+  }
+}
+
+   /*
+    * This function will not return until (at least)
+    * the specified number of milliseconds have passed.
+    * It uses a modal dialog.
+    */
+     function pausecomp(numberMillis) {
+        var dialogScript = 
+           'window.setTimeout(' +
+           ' function () { window.close(); }, ' + numberMillis + ');';
+        var result = 
+// For IE5.
+         window.showModalDialog(
+           'javascript:document.writeln(' +
+            '"<script>' + dialogScript + '<' + '/script>")');
+
+/* For NN6, but it requires a trusted script.
+         openDialog(
+           'javascript:document.writeln(' +
+            '"<script>' + dialogScript + '<' + '/script>"',
+           'pauseDialog', 'modal=1,width=10,height=10');
+ */
+     }
+
+
+onload=FadeImg;
+//  End -->
+</script>
+</head>
+
+<body>
+<a href="../" title="Link to British Museum Homepage"><img src="images/BMlogo.gif" alt="The British Museum" /></a>
+
+<img src="images/samurai_to_manga.gif" alt="Samurai to Manga: Japan across the centuries" id="title" />
+<img src="images/samurai_armour.gif" alt="Composite suit of Japanese armour, 16th-19th century. Sony Aibo dog &copy; Song." id="armour" />
+<img src="images/aibo.gif" alt="" id="aibo" />
+<div id="container">
+<span id="room">Room3</span><br />
+<em>The Asahi Shimbun Displays</em><br />
+15 December 2005 - 8 February 2006<br />
+Admission free
+</div>
+<div id="col1">
+<p>
+Once a faithful dog brought the paper to you. Today, if it doesn't read the latest news headlines in Spanish, it's just not Japanese. 
+</p>
+<p>
+Revolutionary stuff? Not when you consider that Japan has been making robots for more than 300 years. And a millennium earlier, precision-crafting the lightest, strongest, most lethal weapon in the world - the samurai sword. It's the same precision which goes into drawing contemporary Manga, although Manga's roots actually date back to the seventeenth century.
+</p>
+</div>
+<div id="col2">
+<p>
+At almost every level, in fact, Japan is set apart by reinvention and continuity - perhaps because it has never been invaded. At least that's one way of looking at things - which is precisely what the Asahi Shimbun Displays are all about. One fascinating take on a small selection of British Museum objects.
+</p>
+<p>
+The renovated Japanese Galleries will reopen in September 2006 showcasing one of the most dynamic collections of historical and contemporary Japanese objects in the world. 
+</p>
+</div>
+<img src="images/asahi_shimbun_logo.gif" alt="Sponsored by The Asahi Shimbun: Japan's leading national newspaper" id="asahi_logo" />
+<script  type="text/javascript">
+</script>
+<script type="text/javascript">
+
+
+</script></body></html>

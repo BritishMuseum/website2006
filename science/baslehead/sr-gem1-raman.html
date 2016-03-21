@@ -1,0 +1,195 @@
+ 
+<html>
+  
+<head>
+<!-- #BeginEditable "doctitle" --> 
+<title>The Basle Head Reliquary</title>
+
+
+
+<!--===============ADDED KEYWORDS PROPERTIES TO ALLOW SEARCH ENGINES TO FIND US===-->
+<Meta name="keywords" content="British Museum, Science, Basle head, reliquary, holy, gems">
+<!--===============ADDED STYLE PROPERTIES TO COVER EACH PAGE EXCEPT WHEN OVERWRITTEN IN TEXT===-->
+
+<Style type="text/css">
+   P {font-family:arial, helvetica, sans-serif; }H3 {text-align: left;font-family:arial, helvetica, sans-serif;}
+   
+   A:link {color:blue}
+   A:active {color:red}
+   A:visited {color:blue}
+</style>
+<SCRIPT Language="JavaScript">
+ <!--
+ // Copyright 1999, 2000 by Ray Stott - ver 2.0
+ // OK to use on noncommercial sites as long as copyright is included
+ // Commercial Sites, please see http://www.crays.com/jsc/jsCom.htm 
+ // Script is available at http://www.crays.com/jsc          
+
+ var popWin = null    // use this when referring to pop-up window
+ var winCount = 0
+ var winName = "popWin"
+ function openPopWin(winURL, winWidth, winHeight, winFeatures, winLeft, winTop){
+   var d_winLeft = 20  // default, pixels from screen left to window left
+   var d_winTop = 20   // default, pixels from screen top to window top
+   winName = "popWin" + winCount++ //unique name for each pop-up window
+   closePopWin()           // close any previously opened pop-up window
+   if (openPopWin.arguments.length >= 4)  // any additional features? 
+     winFeatures = "," + winFeatures
+   else 
+     winFeatures = "" 
+   if (openPopWin.arguments.length == 6)  // location specified
+     winFeatures += getLocation(winWidth, winHeight, winLeft, winTop)
+   else
+     winFeatures += getLocation(winWidth, winHeight, d_winLeft, d_winTop)
+   popWin = window.open(winURL, winName, "width=" + winWidth 
+            + ",height=" + winHeight + winFeatures)
+   }
+ function closePopWin(){    // close pop-up window if it is open 
+   if (navigator.appName != "Microsoft Internet Explorer" 
+       || parseInt(navigator.appVersion) >=4) //do not close if early IE
+     if(popWin != null) if(!popWin.closed) popWin.close() 
+   }
+ function getLocation(winWidth, winHeight, winLeft, winTop){
+   return ""
+   }
+ //-->
+ </SCRIPT>
+ 
+<SCRIPT Language="JavaScript1.2">
+<!--
+// for Netscape 4+ and IE 4+
+ <!--
+ function getLocation(winWidth, winHeight, winLeft, winTop){
+   var winLocation = ""
+   if (winLeft < 0)
+     winLeft = screen.width - winWidth + winLeft
+   if (winTop < 0)
+     winTop = screen.height - winHeight + winTop
+   if (winTop == "cen")
+     winTop = (screen.height - winHeight)/2 - 20
+   if (winLeft == "cen")
+     winLeft = (screen.width - winWidth)/2
+   if (winLeft>0 & winTop>0)
+     winLocation =  ",screenX=" + winLeft + ",left=" + winLeft   
+                 + ",screenY=" + winTop + ",top=" + winTop
+   else
+     winLocation = ""
+   return winLocation
+   }
+ //-->
+
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v3.0
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document); return x;
+}
+
+function MM_nbGroup(event, grpName) { //v3.0
+  var i,img,nbArr,args=MM_nbGroup.arguments;
+  if (event == "init" && args.length > 2) {
+    if ((img = MM_findObj(args[2])) != null && !img.MM_init) {
+      img.MM_init = true; img.MM_up = args[3]; img.MM_dn = img.src;
+      if ((nbArr = document[grpName]) == null) nbArr = document[grpName] = new Array();
+      nbArr[nbArr.length] = img;
+      for (i=4; i < args.length-1; i+=2) if ((img = MM_findObj(args[i])) != null) {
+        if (!img.MM_up) img.MM_up = img.src;
+        img.src = img.MM_dn = args[i+1];
+        nbArr[nbArr.length] = img;
+    } }
+  } else if (event == "over") {
+    document.MM_nbOver = nbArr = new Array();
+    for (i=1; i < args.length-1; i+=3) if ((img = MM_findObj(args[i])) != null) {
+      if (!img.MM_up) img.MM_up = img.src;
+      img.src = (img.MM_dn && args[i+2]) ? args[i+2] : args[i+1];
+      nbArr[nbArr.length] = img;
+    }
+  } else if (event == "out" ) {
+    for (i=0; i < document.MM_nbOver.length; i++) {
+      img = document.MM_nbOver[i]; img.src = (img.MM_dn) ? img.MM_dn : img.MM_up; }
+  } else if (event == "down") {
+    if ((nbArr = document[grpName]) != null)
+      for (i=0; i < nbArr.length; i++) { img=nbArr[i]; img.src = img.MM_up; img.MM_dn = 0; }
+    document[grpName] = nbArr = new Array();
+    for (i=2; i < args.length-1; i+=2) if ((img = MM_findObj(args[i])) != null) {
+      if (!img.MM_up) img.MM_up = img.src;
+      img.src = img.MM_dn = args[i+1];
+      nbArr[nbArr.length] = img;
+  } }
+}
+//-->
+</SCRIPT>
+<!-- #EndEditable --> 
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+</head>
+<body bgcolor="#FFFFFF" onLoad="MM_preloadImages('../buttons/referenceo.gif','../images/baslehead/gem1r.gif')">
+<table width="720" border="0">
+  <tr> 
+   <!--==================added /template to allow access to template images===================-->
+    <td colspan="3" height="86"><a href="../text/mosaics/sr-mosaics-p1-t.html"><img src="../template/templates/images/logo.gif" width="162" height="80" border="0" alt="Link to Scientific Research Text Pages"></a></td>
+  </tr>
+  <tr> 
+  <!--==================added /templates to allow access to template images===================-->
+    <td rowspan="3" width="71"><img src="../template/templates/images/spacer.gif" width="70" height="4"></td>
+    <!--==================added /templates to allow access to template images===================-->
+    <td width="639" colspan="2" height="34"><img src="../template/templates/images/dept.gif" width="310" height="30"></td>
+  </tr>
+  <tr> 
+    <td width="639" height="21" valign="top"> <!-- change table width from 315 to 630 to cover space from removed table --> 
+      <table border="0" align="left" width="515">
+        <tr> 
+          <td width="511"> 
+            <p><b><img src="../images/baslehead/xgem1.gif" width="300" height="232" align="right" name="spectra" alt="image of Raman spectrum for gem 1">Gem 
+              1: White lumpy gemstone</b><b><font face="Arial, Helvetica, sans-serif"> 
+              </font></b></p>
+            <p><font face="Arial, Helvetica, sans-serif" size="-1">This gemstone 
+              shows a range of very pale pastel colours including pink, yellow, 
+              green and blue. </font><font face="Arial, Helvetica, sans-serif" size="-1">Analysis 
+              using the Raman microprobe gave the spectrum on the right. Using 
+              this it is possible to search a database of reference spectra to 
+              look for a match. In this case the Raman spectrum of the gem matches 
+              that of <i>pearl</i>, consistent with its visual appearance.</font></p>
+            <font face="Arial, Helvetica, sans-serif" size="-1"><b></b></font> 
+            <table border="0" align="left" width="167">
+              <tr>
+                <td height="36"><font face="Arial, Helvetica, sans-serif" size="-1"><b><a href="#" onClick="MM_nbGroup('down','group1','reference','../buttons/referenceo.gif',1)" onMouseOut="MM_nbGroup('out')" onMouseOver="MM_nbGroup('over','reference','../buttons/referenceo.gif','../buttons/referenceo.gif','spectra','../images/baslehead/xgem1r.gif','',1)"><img src="../buttons/referencew.gif" border="0" name="reference" onLoad="" align="right"></a></b></font></td>
+              </tr>
+            </table>
+            <p align="right"><a href="../glossary/sr-glossary-gems.html"><font size="-1">Analyse 
+              another gem </font></a></p>
+            <p>&nbsp;</p>
+            <p><font face="Arial, Helvetica, sans-serif" size="-1"><b></b></font></p>
+            <p>&nbsp;</p>
+            <p>&nbsp;</p>
+            <p><b></b></p>
+            <h3></h3>
+      </td>
+        </tr>
+      </table>
+      <p>&nbsp;</p>
+      <p align="right">&nbsp;</p>
+      </td>
+    <!-- <td width="315" height="21" align="center" valign="middle"><font size="2" face="Arial, Helvetica, sans-serif">-->
+    <!--#BeginEditable "image" --><!--{image}<!-- #EndEditable --><!--</font></td> -->
+  <!-- #EndEditable --></tr>
+  <tr> 
+  <!--==================added /templates to allow access to template images===================-->
+    <td width="639" colspan="2"><map name="homebar" align = "top"> <area coords="0,18,50,37" href="http://www.thebritishmuseum.ac.uk" alt="British Museum Home" shape=rect title="British Museum Home"> 
+        <area coords="324,18,432,37" href="../techniques/sr-tech-intro.html" alt="Research Techniques" shape=rect title="Research Techniques"> 
+        <area coords="446,19,551,37" href="../dept/sr-dept-p1b.html" alt="The history of the department" shape=rect title="The history of the department"> 
+        <area coords="572,18,634,40" href="../whatsnew/sr-news-p1.html" alt="News From Scientific Research" shape=rect title="News From Scientific Research"> 
+      </map> </td>
+  </tr>
+</table>
+<script  type="text/javascript">
+</script>
+<script type="text/javascript">
+
+
+</script></body></html>

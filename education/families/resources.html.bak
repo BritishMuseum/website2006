@@ -1,0 +1,211 @@
+<!doctype html public "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<title>The British Museum | Education | Families</title>
+<link rel="stylesheet" type="text/css" href="../edwebsite.css">
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<script language="JavaScript" type="text/javascript">
+
+function MM_preloadImages() {
+  if (document.images) {
+    var imgFiles = MM_preloadImages.arguments;
+    var preloadArray = new Array();
+    for (var i=0; i<imgFiles.length; i++) {
+      preloadArray[i] = new Image;
+      preloadArray[i].src = imgFiles[i];
+    }
+  }
+}
+
+function MM_swapImage() {
+  var i,j=0,objStr,obj,swapArray=new Array,oldArray=document.MM_swapImgData;
+  for (i=0; i < (MM_swapImage.arguments.length-2); i+=3) {
+    objStr = MM_swapImage.arguments[(navigator.appName == 'Netscape')?i:i+1];
+    if ((objStr.indexOf('document.layers[')==0 && document.layers==null) ||
+        (objStr.indexOf('document.all[')   ==0 && document.all   ==null))
+      objStr = 'document'+objStr.substring(objStr.lastIndexOf('.'),objStr.length);
+    obj = eval(objStr);
+    if (obj != null) {
+      swapArray[j++] = obj;
+      swapArray[j++] = (oldArray==null || oldArray[j-1]!=obj)?obj.src:oldArray[j];
+      obj.src = MM_swapImage.arguments[i+2];
+  } }
+  document.MM_swapImgData = swapArray;
+}
+
+MM_preloadImages('../images/sidenav/family2.gif','../images/sidenav/info2.gif','../images/sidenav/events2.gif','../images/sidenav/course2.gif','../images/sidenav/further2.gif','../images/sidenav/weblinks2.gif');
+
+</script>
+
+</head>
+<body bgcolor="#ffffff">
+<!--top nav logo and images-->
+<table bgcolor="#000066" align="center" border="0" cellpadding="0" cellspacing="0" width="768">
+  <tr>
+    <td class="topnav" width="148"><img src="../images/shim.gif" width="8" height="64" alt="*" border="0"><a href="http://www.thebritishmuseum.ac.uk"><img src="../images/topnav/bmlogo.gif" width="114" height="64" alt="link to the British Museum home page" border="0"></a><a name="top"></a></td>
+    <td class="topnav" width="620" align="right">
+    <a href="compass/ixbin/goto?id=OBJ2670" target="_blank"><img src="../images/topnav/toplink1.gif" width="58" height="58" alt="link to COMPASS" border="0"></a>
+    <a href="compass/ixbin/goto?id=OBJ3060" target="_blank"><img src="../images/topnav/toplink2.gif" width="58" height="58"  alt="link to COMPASS" border="0"></a>
+    <a href="compass/ixbin/goto?id=OBJ3502" target="_blank"><img src="../images/topnav/toplink3.gif" width="58" height="58" alt="link to COMPASS" border="0"></a>
+    <a href="compass/ixbin/goto?id=OBJ1418" target="_blank"><img src="../images/topnav/toplink4.gif" width="58" height="58" alt="link to COMPASS" border="0"></a>
+    <a href="compass/ixbin/goto?id=OBJ3920" target="_blank"><img src="../images/topnav/toplink5.gif" width="58"  height="58" alt="link to COMPASS" border="0"></a>
+    <a href="compass/ixbin/goto?id=OBJ67" target="_blank"><img src="../images/topnav/toplink6.gif" width="58" height="58" alt="link to COMPASS" border="0"></a>
+    <a href="compass/ixbin/goto?id=OBJ1172" target="_blank"><img src="../images/topnav/toplink7.gif" width="58" height="58" alt="link to COMPASS" border="0"></a>
+    <img src="../images/shim.gif" width="8" height="8" alt="*" border="0"></td>
+   </tr>
+</table>
+<!--end of top nav logo and images-->
+<!--beginning of dept title and drop down menu-->
+<table bgcolor="#999933" align="center" border="0" cellpadding="0" cellspacing="0" width="768">
+  <tr>
+    <td class="topnav" width="768" valign="top"><img src="../images/shim.gif" alt="*" width="34" height="8"><a href="../index.html"><img src="../images/topnav/edudept.gif" height="22" alt="link to the education department home page" width="320" border="0"></a>
+    </td>
+  </tr>
+ </table>
+<!--end of all top nav-->
+<table align="center" border="0" cellpadding="0" cellspacing="0" width="768">
+  <tr>
+ 	<td rowspan="3" width="35" valign="top"><img src="../images/shim.gif" width="34" height="1" alt="*" border="0"></td>
+    <td colspan="5" valign="top"><img src="../images/shim.gif" width="34" height="8" alt="*" border="0"></td>
+  </tr>
+  <tr>
+    <td colspan="5"><div class="breadcrumb"><a href="../index.html">Education Department</a> > <a href="home.html">Families</a> > <b>Resources</b></div></td>
+  </tr>
+   <tr>
+    <td colspan="5"><img src="../images/shim.gif" width="34" height="8" alt="*" border="0"></td>
+  </tr>
+  <tr>
+    <td bgcolor="#f3f3ec" width="35">&nbsp;</td>
+<!--beginning of news column-->
+    <td valign=top bgcolor="#f3f3ec" width="148"><img src="../images/shim.gif" width="4" height="4" alt="*" border="0"><br>
+    <h3>News</h3>
+	
+<div class="news"><b><a href="enlightenment/">Eighteenth century to eBay</a></b><br>
+Suitable for families with children 7+
+<p>
+This family trail round the Enlightenment Gallery is about why people collect things, how they can arrange them and what these things can tell us about the world. 
+</p>
+</div>
+<a href="enlightenment/">
+<img src="../images/news/big foot.jpg" width="120" height="89" alt="Link to exhibition information" border="0">
+</a>
+<div class="caption">Colossal marble foot Roman, 1st-2nd century AD.  Found near Naples, Italy</div>
+<br>
+	 </td>
+<!--end of news column-->
+    <td width="10">&nbsp;</td>
+<!--beginning of central content area-->
+    <td valign=top width="388">
+	
+<h3>Visiting the Museum</h3>
+No matter when you visit the Museum there is always something to do. For all tours, trails, backpacks and other activities please ask in the Reading Room when you come to the Museum.
+<p></p>
+<b class="c999933">Hamlyn Trails</b><br>
+Free trails for different parts of the Museum and for different age groups.<br>
+<p></p>
+<b>Currently available:</b><br>
+<!-- 
+<a href="pdfs/bm101shiva.pdf"><img src="images/trail_shiva.gif" width="160" height="108" alt="Link to 'Dancing with Shiva' pdf document" border="0" hspace="10" vspace="5"></a>
+<a href="pdfs/bm101greeks.pdf"><img src="images/trail_time.gif" width="160" height="110" alt="Link to 'Travelling in Time' pdf document" border="0" vspace="5"></a><br>
+<b><a href="pdfs/bm101shiva.pdf">Dancing with Shiva</a></b>: a counting trails (under 5s)<br>
+<b><a href="pdfs/bm101greeks.pdf">Travelling in Time</a></b>: Ancient Greece through the ages (age 6+)
+-->
+<p>
+<img src="images/trail_britain.gif" width="160" height="108" alt="Exploring Britain" border="0" hspace="10" vspace="5">
+<img src="images/trail_dragons.gif" width="160" height="108" alt="Hunting for dragons" border="0" vspace="5"><br>
+<b>Exploring Britain</b>: take a journey into the past (age 6+).<br>
+<b>Hunting for dragons</b>: a trail about fantastic creatures; available in May (age 6+).
+</p>
+<p>
+<img src="images/trail_shiva.gif" width="160" height="108" alt="Dancing with Shiva" border="0" hspace="10" vspace="5">
+<img src="images/trail_time.gif" width="160" height="110" alt="Travelling in Time" border="0" vspace="5"><br>
+<b>Dancing with Shiva</b>: a counting trails (under 5s)<br>
+<b>Travelling in Time</b>: ancient Greece through the ages (age 6+)
+</p>
+
+<img src="images/trail_rainbow.gif" width="160" height="110" alt="Chasing rainbows with Mama Wata" border="0" hspace="10"  vspace="5">
+<img src="images/trail_nile.gif" width="160" height="110" alt="" border="0" vspace="5"><br>
+<b>Chasing rainbows with Mama Wata</b>: a trail about colour and shapes for young children (under 5s)<br>
+<b>Sailing on the Nile</b>: a voyage through ancient Egypt (age 6+).
+
+<p>Other trails are also available.</p>
+
+<b class="c999933">Ford Activity Backpacks</b><br>
+Ford Activity Backpacks contain lots of games and puzzles for the galleries. Currently available:<br><img src="images/horse_armour.jpg" width="160" height="160" alt="" border="0" align="middle"><b>Africa </b>
+<img src="images/mummy.jpg" width="160" height="160" alt="" border="0" align="middle"><b>Ancient Egypt</b>
+
+
+
+<p></p>
+
+
+<h3>Online</h3>
+<b>Family online tours</b><br>
+Follow one of our online family Tours, with activities and games to print out.
+<p></p>
+
+<a href="compass/ixbin/hixclient.exe?_IXDB_=compass&_IXFIRST_=1&_IXMAXHITS_=1&_IXSPFX_=graphical/edu/gt/lin/&$+with+all_unique_id_index+is+$=ENC11234&_IXtour=ENC11234&submit-button=summary"><img src="images/ps321126.jpg" width="100" height="100" alt="Link to online Jewellery Tour" border="0" align="left" vspace="10" hspace="10"></a><br><b><a href="compass/ixbin/hixclient.exe?_IXDB_=compass&_IXFIRST_=1&_IXMAXHITS_=1&_IXSPFX_=graphical/edu/gt/lin/&$+with+all_unique_id_index+is+$=ENC11234&_IXtour=ENC11234&submit-button=summary">Unusual jewellery</a></b><br>
+Follow the stories of some unusual pieces of jewellery, from ancient Mesopotamia to modern America.
+<br clear="all">
+<p></p>
+
+<a href="compass/ixbin/hixclient.exe?_IXDB_=compass&_IXFIRST_=1&_IXMAXHITS_=1&_IXSPFX_=graphical/edu/gt/int/top_&$+with+all_unique_id_index+is+$=ENC113260&_IXtour=ENC113260&submit-button=summary"><img src="images/tgcover1.jpg" width="100" height="100" alt="Link to online Toys and games Tour" border="0" align="left" vspace="10" hspace="10"></a><br><a href="compass/ixbin/hixclient.exe?_IXDB_=compass&_IXFIRST_=1&_IXMAXHITS_=1&_IXSPFX_=graphical/edu/gt/int/top_&$+with+all_unique_id_index+is+$=ENC113260&_IXtour=ENC113260&submit-button=summary"><b>Toys and games</b></a><br>
+This tour introduces you to some of the toys and games in the Museum, including kites, dolls and puppets from around the world.
+<br clear="all">
+<p></p>
+
+<a href="compass/ixbin/hixclient.exe?_IXDB_=compass&_IXFIRST_=1&_IXMAXHITS_=1&_IXSPFX_=graphical/edu/gt/lin/&$+with+all_unique_id_index+is+$=ENC10532&_IXtour=ENC10532&submit-button=summary"><img src="images/k150549.jpg" width="100" height="100" alt="Link to online Queens Tour" border="0" align="left" vspace="10" hspace="10"></a><br><a href="compass/ixbin/hixclient.exe?_IXDB_=compass&_IXFIRST_=1&_IXMAXHITS_=1&_IXSPFX_=graphical/edu/gt/lin/&$+with+all_unique_id_index+is+$=ENC10532&_IXtour=ENC10532&submit-button=summary"><b>A Queen's Tour</b></a><br>
+Celebrate Queen Elizabeth II's recent Golden Jubilee by meeting some queens from the past.
+<br clear="all">
+<p></p>
+Go to <a href="childrenscompass">children's COMPASS</a> for a full list of online Tours for children.
+
+			
+<p><img src="../images/shim.gif" width="1" height="30" alt="*"></p></td>
+<!--end of central content area-->
+    <td width="10">&nbsp;</td>
+<!--beginning of side nav-->
+    <td valign="top" width="176">
+  	<a href="home.html" onMouseOver="MM_swapImage('document.home','document.home','../images/sidenav/zfamilies2.gif','MM_swapImage1')" onMouseOut="MM_swapImage('document.home','document.home','../images/sidenav/zfamilies1.gif','MM_swapImage2')">
+    <img src="../images/sidenav/zfamilies1.gif" width="120" height="18" name="home" border="0" alt="link to Families home page"></a><br>
+   	<img src="../images/sidenav/info2.gif" width="120" height="34" name="resources" border="0" alt="*" vspace="4"><br>
+    <a href="events.html"onmouseover="MM_swapImage('document.events','document.events','../images/sidenav/events2.gif','MM_swapImage1')" onMouseOut="MM_swapImage('document.events','document.events','../images/sidenav/events1.gif','MM_swapImage2')">
+    <img src="../images/sidenav/events1.gif" width="120" height="18" name="events" border="0" alt="links to events" vspace="4"></a><br>
+ 	
+    <img src="../images/sidenav/courses3.gif" width="120" height="18" name="courses" border="0" alt="links to courses" vspace="4"><br>
+    <img src="../images/sidenav/further3.gif" width="120" height="18" name="further" border="0" alt="links further reading list" vspace="4"><br>
+    <img src="../images/sidenav/weblinks3.gif" width="120" height="18" name="web" border="0" alt="links to websites" vspace="4"><br>
+    <div align="center"><a href="compass/ixbin/hixclient.exe?_IXDB_=compass&_IXFIRST_=1&_IXMAXHITS_=1&_IXSPFX_=graphical/edu/gt/lin/&$+with+all_unique_id_index+is+$=ENC10061&_IXtour=ENC10061&submit-button=summary" target="newwindow"><img src="images/ps255111.jpg" width="160" height="262" alt="Link to online Animal Mummies tour" border="0"></a><br></div>
+     <div class="caption">Mummified calf, from Thebes, Egypt, Roman Period, after <nobr>30 BC</nobr></div>
+</td>
+</tr>
+<!--end of side nav-->
+<!--back and top buttons-->
+<tr>
+	<td colspan="6"><a href="javascript:history.back()"><img src="../images/back.gif" width="54" height=22 border="0" alt="link to last visited page" vspace="15"></a> 
+	<a href="#top"><img src="../images/top.gif" width="54"  height="22" border="0" alt="link to top of page" vspace="15"></a></td>
+</tr>
+<!--end of back and top buttons-->
+<!--beginning of base links-->
+<tr>
+    <td colspan="6" align="center">
+		<div class="copyright">
+		<a href="index.html">home</a> |
+		<a  href="visit/index.html">visit</a> |
+		<a href="whatson/index.html">what's on</a> |
+		<a href="join/index.html">join</a> |
+		<a href="http://www.britishmuseum.co.uk/">shop</a> |
+		<a href="education/index.html">learning</a> |
+		<a href="compass">COMPASS</a> |
+		<a href="world/world.html">world cultures</a> |
+		<a href="sitemap/sitemap.html">sitemap</a> |
+		<a href="visit/contact.html">contact us</a> |
+		<a href="corporate/copyright.html">copyright</a>
+		</div>
+		<div class="copyright"><p>&copy; The British Museum, 2002</p></div>
+	</td>
+</tr>
+<!--end of base links-->
+</table>
+</body>
+</html>

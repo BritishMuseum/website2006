@@ -1,0 +1,12 @@
+
+#nav, #speechBubble, #newsletter, #navFooter, #home, #site, #background
+{
+	display:none;
+}
+
+#heading,#content
+{
+	position:relative;
+	top:0px;
+	left:0px;
+}

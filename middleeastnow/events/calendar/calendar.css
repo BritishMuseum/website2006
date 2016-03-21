@@ -1,0 +1,28 @@
+a:link{
+	color: #0181C8;
+	text-decoration: none;
+}
+a:visited{
+	color: #0181C8;
+	text-decoration: none;
+}
+a:hover{
+	color: #0181C8;
+	text-decoration: underline;
+}
+a:active{
+	color: #56C8EA;
+	text-decoration: underline;
+}
+DIV {
+	color: #333333;
+	font-size: 80%;
+}
+DIV h3{
+	color: #0181C8;
+	text-align: center;
+}
+a {
+	font-weight: bold;
+	font-size: 130%;
+}

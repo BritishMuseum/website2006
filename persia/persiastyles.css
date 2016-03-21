@@ -1,0 +1,121 @@
+.menubar {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	font-weight: bold;
+	color: #e6e6e6;
+}
+.menubar a:link {
+	text-decoration: none;
+	color: #e6e6e6;
+}
+.menubar a:visited {
+	color: #e6e6e6;
+	text-decoration: none;
+}
+.bodysmall {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	line-height: 13px;
+	color: #e6e6e6;
+}
+.bodysmall a:link{
+	text-decoration: underline;
+	color: #e6e6e6;
+}
+.menubar a:hover {
+	color: #666666;
+}
+.bodytitle {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	line-height: 13px;
+	color: #e6e6e6;
+}
+.bodysmall a:visited {
+	color: #e6e6e6;
+}
+.bodysmall a:hover {
+	color: #666666;
+}
+.menuselect {
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: bold;
+	color: #666666;
+	text-decoration: none;
+	font-size: 11px;
+}
+.menuselect a:link {
+	color: #666666;
+	text-decoration: none;
+}
+.menuselect a:visited {
+	color: #666666;
+	text-decoration: none;
+}
+.bodybox {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	color: #666666;
+	line-height: 12px;
+	padding: 5px;
+}
+.bodyboxb {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	line-height: 13px;
+	color: #666666;
+}
+.pictitles {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	line-height: 12px;
+	color: #666666;
+}
+.bodybox a:link {
+	color: #666666;
+}
+.bodybox a:visited {
+	color: #666666;
+}
+.bodybox a:hover {
+	color: #cccccc;
+	text-decoration: none;
+}
+.pictitles a:link {
+	color: #666666;
+	text-decoration: underline;
+}
+.pictitles a:visited {
+
+	color: #666666;
+	text-decoration: underline;
+}
+.textonly {
+
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	font-weight: bold;
+	color: #e6e6e6;
+}
+.textonly a:link {
+
+	text-decoration: none;
+	color: #e6e6e6;
+}
+.textonly a:visited {
+
+	color: #e6e6e6;
+	text-decoration: none;
+}
+.textonly a:hover {
+
+	color: #666666;
+}
+.supersmall {
+	font-size: 3px;
+}
+.disclaimertext {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	color: #999999;
+}

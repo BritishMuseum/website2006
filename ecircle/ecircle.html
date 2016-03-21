@@ -1,0 +1,96 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<title>Subscribe to Mercury Newsletter</title>
+</head>
+<style>
+body
+	{
+	margin: 0px;
+	padding: 0px;
+	font-family: Arial, Helvetica, sans-serif;
+	color: #000000;
+	background-color: #FFFFFF;
+	font-size: 0.8em;
+	}
+	
+	
+#container
+	{
+	position: relative;
+	left: 135px;
+	width: 503px;
+	}
+h1
+	{
+	font-size: 1.0em;
+	color: #9A0135;
+	font-weight: bold;
+	}
+
+a
+	{
+	color: #000000;
+	}
+	
+.required
+	{
+	color: #FF0000;
+	}
+label
+	{
+	font-weight: bold;
+	}
+input.text
+	{
+	border-style: solid;
+	border-width: 1px;
+	border-color: #9A0135;
+	}
+
+</style>
+<body>
+<img src="images/museum_logo.gif" alt="The British Museum" /><img src="images/mercury_header.gif" alt="MERCURY Monthly Newsletter" />
+<div id="container">
+<h1>Subscribe</h1>
+<a href="#" style="float:right; position: relative; top: -36px; margin-bottom: -36px;">View a sample of Mercury Newsletter</a>
+<p>Keep up to date by subscribing to our free monthly mercury newsletter</p>
+<form>
+<label for="email">Email address:</label><span class="required">*</span><br />
+<input type="text" id="email" name="email" size="40" maxlength="60" class="text"></input><br />
+<label for="firstname">First name:</label><span class="required">*</span><br />
+<input type="text" id="firstname" name="firstname" size="20" maxlength="30"class="text"></input><br />
+<label for="lastname">Last name:</label><span class="required">*</span><br />
+<input type="text" id="lastname" name="lastname" size="20" maxlength="30" class="text"></input><br />
+<br />
+<label type="interests">Are you interested in the following?</label><br />
+<input type="checkbox" name="exhibitions">exhibitions</input><br />
+<input type="checkbox" name="films">films</input><br />
+<input type="checkbox" name="workshops">workshops</input><br />
+<input type="checkbox" name="lectures">lectures</input>
+<br /><br />
+
+<label for="mobile">Would you like to receive mobile alerts? </label>
+<br />
+<input type="radio" name="mobile" value="no" checked>No</input>
+<input type="radio" name="mobile" value="yes">Yes</input>
+
+<br /><br />
+<label for="operator">Mobile operator:</label>
+<br />
+<select name="operator" id="operator">
+<option value="orange">Orange</option>
+<option value="o2">O2</option>
+<option value="vodafone">Vodafone</option>
+<option value="3">3</option>
+</select>
+<br /><br />
+<input type="submit" value="Send"> <input type="reset">
+</form>
+
+
+</div>
+</body>
+</html>

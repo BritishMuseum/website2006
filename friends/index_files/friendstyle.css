@@ -1,0 +1,81 @@
+body {
+	margin-left: 0px;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+	background-image: url(images/backpattern.gif);
+	background-repeat: repeat;
+}
+.boxfilla {
+	background-color: #11100A;
+}
+.boxfill {
+	background-color: #9dc996;
+}
+.sidetextblack {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 70%;
+	color: #000000;
+	margin: 4px 6px;
+}
+.white {
+	color: #FFFFFF;
+}
+.maintextblack {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 80%;
+	color: #000000;
+	margin: 10px;
+}
+.bullettextblack {
+
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 80%;
+	color: #000000;
+	margin: 10px 10px 10px -13px;
+}
+a:link {
+	color: #000000;
+}
+a:visited {
+	color: #000000;
+}
+a:hover {
+
+	color: #999999;
+}
+.whiteheading {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 130%;
+	color: #FFFFFF;
+	margin: 10px;
+}
+.white a:link {
+	color: #FFFFFF;
+	text-decoration: underline;
+}
+.white a:visited {
+	color: #FFFFFF;
+	text-decoration: underline;
+}
+.white a:hover {
+	color: #999999;
+}
+.white_a a:link {
+	color: #ffffff;
+	text-decoration: underline;
+	font-size: 100%;
+}
+.white_a a:visited {
+	color: #ffffff;
+	text-decoration: underline;
+	font-size: 100%;
+}
+.white_a a:hover {
+	color: #999999;
+	text-decoration: underline;
+	font-size: 100%;
+}
+.titlefill {
+	background-color: #009953;
+}

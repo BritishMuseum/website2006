@@ -1,0 +1,281 @@
+
+body,html,table
+{
+	font-size:100%;
+}
+
+body, html
+{
+	background-color:#0A0C0E;
+	margin:0px;
+	padding:0px;
+}
+
+h1
+{
+	margin:0px;
+}
+
+p,h2,h3
+{
+	font-family:arial,helvetica,sans-serif;
+	color:#000000;
+	font-size:0.8em;
+	margin:0px 10px 0.8em 20px;
+}
+
+h2
+{
+	font-size:1em;
+	font-weight:bold;
+}
+
+h3
+{
+	font-weight:bold;
+	margin-bottom:0.4em;
+}
+
+table
+{
+	margin-bottom:10px;
+}
+
+#wideText table
+{
+	margin:0px 10px 10px 20px;
+}
+
+th,td
+{
+	text-align:left;
+	vertical-align:top;
+	font-family:arial,helvetica,sans-serif;
+	color:#000000;
+	font-size:0.8em;
+	border:0px none;
+	margin:0px;
+	padding:1px 2px 1px 2px;
+}
+
+th
+{
+	text-align:right;
+	padding:1px 4px 1px 2px;
+}
+
+#treasureChestInfo th
+{
+	white-space:nowrap;
+}
+
+#wideText th
+{
+	text-align:left;
+}
+
+table.treasureChest td
+{
+	text-align:center;
+}
+
+a:link
+{
+	color:#683717;
+}
+
+a:visited
+{
+	color:#6D584A;
+}
+
+a:hover, a:active
+{
+	color:#B59156;
+}
+
+a img
+{
+	border:0px none;
+}
+
+input
+{
+	font-family:arial,helvetica,sans-serif;
+	font-size:12px;
+}
+
+.inputText
+{
+	background-color:#ffffff;
+	color:#000000;
+}
+
+.inputButton
+{
+	background-color:#E3DAC5;
+	color:#000000;
+}
+
+img.box
+{
+	border:1px solid #8B5531;
+}
+
+
+#background
+{
+	width:770px;
+	height:740px;
+	background:#ffffff url("/buriedtreasure/_graphic/background.jpg");
+}
+
+#heading
+{
+	position:absolute;
+	top:221px;
+	left:191px;
+	width:544px;
+}
+
+#content
+{
+	position:absolute;
+	top:253px;
+	left:198px;
+	width:563px;
+	height:430px;
+	overflow:auto;
+}
+
+#text
+{
+	width:375px;
+	padding-top:16px;
+}
+
+#treasureChestPic
+{
+	width:300px;
+	padding-top:16px;
+}
+
+#treasureChestInfo
+{
+	position:absolute;
+	width:227px;
+	top:15px;
+	left:300px;
+}
+
+#treasureChestInfo p
+{
+	margin-left:2px;
+	margin-right:0px;
+}
+
+#wideText
+{
+	width:540px;
+	padding-top:16px;
+}
+
+#pics
+{
+	position:absolute;
+	width:152px;
+	top:16px;
+	left:380px;
+}
+
+#pics p
+{
+	margin-left:0px;
+	margin-right:0px;
+}
+
+#home
+{
+	position:absolute;
+	top:50px;
+	left:30px;
+	width:136px;
+}
+
+#site
+{
+	position:absolute;
+	top:0px;
+	left:577px;
+	width:193px;
+}
+
+#nav
+{
+	position:absolute;
+	top:162px;
+	left:33px;
+	width:704px;
+}
+
+#newsletter
+{
+	position:absolute;
+	top:91px;
+	left:550px;
+	width:220px;
+}
+
+#compassTable
+{
+	margin-left:20px;
+}
+#compassTable td
+{
+	vertical-align:middle;
+	padding-bottom:10px;
+}
+#newsletter p
+{
+	font-size:0.7em;
+}
+
+#newsletter input
+{
+	vertical-align:middle;
+}
+
+#navFooter
+{
+	position:absolute;
+	top:686px;
+	left:422px;
+	width:303px;
+}
+
+#navFooter p
+{
+	margin:0px;
+}
+
+#speechBubble
+{
+	position:absolute;
+	top:347px;
+	left:2px;
+	width:181px;
+	background-image:url("/buriedtreasure/_graphic/speechbubble.gif");
+	background-repeat:no-repeat;
+	padding-top:37px;
+	height:127px;
+	he\ight:90px;
+	visibility:hidden;
+}
+
+#speechBubble p
+{
+	font-family:georgia,'times new roman',times,serif;
+	color:#60422E;
+	font-size:11px;
+	margin:0px 8px 0px 12px;
+}

@@ -1,0 +1,39 @@
+.mainheading {
+	font-family: "Times New Roman", Times, serif;
+	font-size: 250%;
+	color: #7c2230;
+}
+.menu {
+
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 90%;
+	color: #7c2230;
+}
+.body {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: x-small;
+	color: #7c2230;
+}
+.smallscript {
+
+
+
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: xx-small;
+	color: #7c2230;
+}
+a:link {
+	color: #7c2230;
+	text-decoration: none;
+}
+a:visited {
+
+	color: #7c2230;
+	text-decoration: none;
+}
+a:hover {
+
+
+	color: #B13043;
+	text-decoration: underline;
+}

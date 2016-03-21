@@ -1,0 +1,67 @@
+/**
+ ** friendsub.css -- CSS for BM Friends.
+ **/
+ 
+.selected_subscription { 
+
+}
+
+.membership_price{ 
+  font-size: 110%;
+  font-family: "charter bt", "times new roman", times, serif;
+  font-weight: 500;
+ }
+
+H1,H2,H3, H4, H5, H6{
+     font-family:"trebuchet ms", "bliss", "verdana", "arial", "helvetica", "sans", "swiss";
+     padding:0.3ex;
+     color: white;
+     background-color: #009953;
+     margin-left:0;
+ }
+
+H1 { font-size: 1.4em; }
+H2 { font-size: 1.2em; }
+H3 { font-size: 1.1em; }
+H4 { font-size: 1.0em; }
+H5{ font-size: 0.9em; }
+H6{ font-size: 0.8em; }
+/* Class to indicate fields that "must" be filled in. */
+.mustfill
+{ 
+
+  font-family: "courier new", fixed;  /*"arial", "helvetica", "sans-serif", "sans", "swiss";*/
+  font-size:1.5em;
+  color: #7f0000;
+  font-weight:900;
+}
+
+.optional
+{
+  font-family: "courier new", fixed; /*"arial", "helvetica", "sans-serif", "sans", "swiss"; */
+  font-size:1.5em;
+  font-weight:900;
+}
+
+.errmsg { 
+  color: #7f0000;
+  font-weight:500;
+  font-size:1.1em;
+ }
+
+.membership_description{ 
+  font-size: 110%;
+  font-family: "charter bt", "times new roman", times, serif;
+ }
+
+
+.label { 
+  font-size: 0.8em;
+  font-weight: bolder;
+ }
+
+.data_protection {
+  font-size: 0.8em;
+}
+
+

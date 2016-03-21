@@ -1,0 +1,138 @@
+body,td,th {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 10px;
+}
+body {
+	background-color: #FFFFFF;
+	margin-left: 0px;
+	margin-top: 0px;
+}
+a.:link {
+	color: #004080;
+	text-decoration: underline;
+}
+a.:visited {
+	color: #004080;
+	text-decoration: underline;
+}
+a.:hover {
+	color: #C7C7C7;
+	text-decoration: underline;
+}
+a.:active {
+	color: #004080;
+	text-decoration: underline;
+}
+.text1 {
+	font-family: arial;
+	font-size: 12px;
+	font-weight: normal;
+	color: #000000;
+}
+.text2 {
+	font-family: arial;
+	font-size: 10px;
+	font-weight: bold;
+	color: #333333;
+}
+.text3 {
+	font-family: arial;
+	font-size: 10px;
+	font-weight: bold;
+	color: #FFFFFF;
+}
+.text4 {
+	font-family: arial;
+	font-size: 14px;
+	font-weight: bold;
+	color: #000000;
+}
+.text5 {
+	font-family: arial;
+	font-size: 12px;
+	font-weight: normal;
+	color: #000000;
+}
+.text6 {
+	font-family: arial;
+	font-size: 10px;
+	font-weight: normal;
+	color: #FFFFFF;
+}
+.text4Copy {font-family: Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	font-weight: normal;
+	color: #567067;
+}
+.text51 {font-family: arial;
+	font-size: 10px;
+	font-weight: normal;
+	color: #FFFF66;
+}
+.style10 {color: #FFFFFF;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	font-style: normal;
+	font-weight: normal;
+}
+.brder {
+	border: none;
+}
+.bordertop {
+	background-image:url(newsletter/powerandtaboo/images/top_tile.gif);
+}
+.borderright {
+	background-image:url(newsletter/powerandtaboo/images/right_tile.gif);
+	background-repeat: repeat-y;
+}
+.borderleft {
+	background-image:url(newsletter/powerandtaboo/images/left_tile.gif);
+	background-repeat: repeat-y;
+}
+.borderbottom {
+	background-image:url(newsletter/powerandtaboo/images/bottom_tile.gif);
+}
+.text21 {	font-family: Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	font-weight: bold;
+	color: #003333;
+}
+.text41 {	font-family: arial;
+	font-size: 10px;
+	font-weight: bold;
+	color: #FF0066;
+}
+.text42 {	font-family: arial;
+	font-size: 10px;
+	font-weight: bold;
+	color: #CC6666;
+}
+.text43 {	font-family: arial;
+	font-size: 10px;
+	font-weight: bold;
+	color: #FF4910;
+}
+.style27 {	color: #000000;
+	font-weight: bold;
+	font-family: arial;
+	font-size: 12px;
+}
+.text44 {color: #000000;
+	font-weight: bold;
+	font-family: arial;
+	font-size: 12px;
+}
+.text45 {
+	font-family: arial;
+	font-size: 14px;
+	font-weight: normal;
+	color: #6699CC;
+}
+
+.style30 {
+	font-size: 14px;
+	color: #6699CC;
+	font-weight: bold;
+}
+.style32 {font-family: arial; font-size: 12px; font-weight: normal; color: #000000; font-style: italic; }
+

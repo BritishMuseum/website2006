@@ -1,0 +1,130 @@
+/* CSS Document */
+img {
+   behavior:  url("pngbehavior.htc");
+}
+body {
+	margin-left: 0px;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+	
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 9pt;
+	color: #000000;
+	background-image: url(images/background_pink.jpg);
+	
+}
+A:link {
+	font-size: 9pt;
+	color: #FF0066;
+	font-weight: bold;
+}
+A:visited {
+	font-size: 9pt;
+	color: #FF0066;
+	font-weight: bold;
+}
+A:hover {
+	font-size: 9pt;
+	color: #777777;
+	font-weight: bold;
+}
+A:active {
+	font-size: 9pt;
+	color: #FF0066;
+	font-weight: bold;
+}
+
+A.links:link {
+	font-size: 8pt;
+	font-weight: bold;
+	color: #FFFFFF;
+	text-decoration: none;
+}
+A.links:visited {
+	font-size: 8pt;
+	font-weight: bold;
+	color: #FFFFFF;
+	text-decoration: none;
+}
+A.links:hover {
+	font-size: 8pt;
+	font-weight: bold;
+	color: #cc9900;
+	text-decoration: none;
+}
+A.links:active {
+	font-size: 8pt;
+	font-weight: bold;
+	color: #FFFFFF;
+	text-decoration: none;
+}
+
+
+table {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 9pt;
+	color: #000000;
+	background-repeat: no-repeat;
+}
+td {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 9pt;
+	color: #000000;
+	background-repeat: no-repeat;
+	font-weight: normal;
+}
+	
+.tableBorder {
+	border: 1px solid #000000;
+}
+
+.smallBody {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: .8em;
+	color: #000000;
+}
+.bigtitle {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	font-weight: bold;
+}
+hr {
+	 color: #777777;
+     background-color: #FF99FF;
+     height: 2px;
+}
+.picturecaption {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 8px;
+	color: #000000;
+	font-weight: bold;
+}
+h1 {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 14pt;
+	color: #777777;
+}
+.mainhead {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 14pt;
+	font-weight: bold;
+	color: #777777;
+	
+}
+.subheadPink {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 9pt;
+	font-weight: bold;
+	color: #FF0066;
+}
+.subheadNoBold {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 9pt;
+	color: #FF0066;
+}
+.subheadPinkLarge {
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: bold;
+	font-size: 12pt;
+	color: #FF0066;

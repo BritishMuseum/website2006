@@ -1,0 +1,66 @@
+<Warning_Info>
+Note: This file be created and maintained by Javascript Menu Builder 1.0.
+It may cause the project file can't be opened correctly if you modify it by yourself!
+</Warning_Info>
+<Product_Name>
+Javascript Menu Builder
+</Product_Name>
+<Product_Version>
+1.0
+</Product_Version>
+<Applet_Parameters>
+bapmenu#$@2#$@FFFFFF#$@400040#$@400040#$@1#$@FFFFFF#$@400040#$@1#$@arial#$@9#$@0#$@0#$@0#$@0#$@0#$@0#$@0#$@0#$@0#$@0#$@70#$@14#$@arrow_down.gif#$@arrow_right.gif#$@1#$@500#$@#$@#$@#$@
+</Applet_Parameters>
+<Item_Parameters>
+Home#$@/index.html#$@Home page#$@0#$@20#$@100#$@#$@0#$@
+Excavations#$@/excavations.html#$@Excavations#$@4#$@20#$@100#$@#$@0#$@
+Sheri Khan Tarakai#$@/skt.html#$@Sheri Khan Tarakai#$@5#$@20#$@100#$@#$@1#$@
+Excavation#$@/skt/excavation.html#$@SKT: excavation#$@0#$@20#$@100#$@#$@2#$@
+Features#$@/skt/features.html#$@SKT: Features#$@0#$@20#$@100#$@#$@2#$@
+Dates#$@/skt/dates.html#$@SKT: Dates#$@0#$@20#$@100#$@#$@2#$@
+Artefacts#$@/skt/artefacts.html#$@SKT: Artefacts#$@6#$@20#$@100#$@#$@2#$@
+Ceramics#$@/skt/ceramics.html#$@SKT: Ceramics#$@0#$@20#$@100#$@#$@3#$@
+Figurines#$@/skt/figurines.html#$@SKT: Figurines#$@0#$@20#$@100#$@#$@3#$@
+Lithics#$@/skt/lithics.html#$@SKT: Lithics#$@0#$@20#$@100#$@#$@3#$@
+Bone Tools#$@/skt/bonetools.html#$@SKT: Bone Tools#$@0#$@20#$@100#$@#$@3#$@
+Beads#$@/skt/beads.html#$@SKT: Beads#$@0#$@20#$@100#$@#$@3#$@
+Misc#$@/skt/misc.html#$@SKT: Miscellaneous#$@0#$@20#$@100#$@#$@3#$@
+Bioarchaeology#$@/skt/bioarch.html#$@SKT: Bioarchaeology#$@0#$@20#$@100#$@#$@2#$@
+Lewan#$@/lwn.html#$@Lewan#$@5#$@20#$@100#$@#$@1#$@
+Excavation#$@/lwn/excavation.html#$@LWN: Excavation#$@0#$@20#$@100#$@#$@2#$@
+Features#$@/lwn/features.html#$@LWN: Features#$@0#$@20#$@100#$@#$@2#$@
+Dates#$@/lwn/dates.html#$@LWN: Dates#$@0#$@20#$@100#$@#$@2#$@
+Artefacts#$@/lwn/artefacts.html#$@LWN: Artefacts#$@7#$@20#$@100#$@#$@2#$@
+Ceramics#$@/lwn/ceramics.html#$@LWN: Ceramics#$@0#$@20#$@100#$@#$@3#$@
+Figurines#$@/lwn/figurines.html#$@LWN: Figurines#$@0#$@20#$@100#$@#$@3#$@
+Lithics#$@/lwn/lithics.html#$@LWN: Lithics#$@0#$@20#$@100#$@#$@3#$@
+Metals#$@/lwn/metals.html#$@LWN: Metals#$@0#$@20#$@100#$@#$@3#$@
+Seals#$@/lwn/seals.html#$@LWN: Seals#$@0#$@20#$@100#$@#$@3#$@
+Beads#$@/lwn/beads.html#$@LWN: Beads#$@0#$@20#$@100#$@#$@3#$@
+Misc#$@/lwn/misc.html#$@LWN: Miscellaneous#$@0#$@20#$@100#$@#$@3#$@
+Bioarchaeology#$@/lwn/bioarch.html#$@LWN: Bioarchaeology#$@0#$@20#$@100#$@#$@2#$@
+Akra#$@/aka.html#$@Akra#$@0#$@20#$@100#$@#$@1#$@
+Rescue Excavations#$@/misc.html#$@Rescue excavations#$@4#$@20#$@100#$@#$@1#$@
+Lak Largai#$@/lkl.html#$@Lak Largai#$@3#$@20#$@100#$@#$@2#$@
+Excavation#$@/lkl/excavation.html#$@LKL: Excavation#$@0#$@20#$@100#$@#$@3#$@
+Dates#$@/lkl/dates.html#$@LKL: Dates#$@0#$@20#$@100#$@#$@3#$@
+Artefacts#$@/lkl/artefacts.html#$@LKL: Artefacts#$@4#$@20#$@100#$@#$@3#$@
+Ceramics#$@/lkl/ceramics.html#$@LKL: Ceramics#$@0#$@20#$@100#$@#$@4#$@
+Lithics#$@/lkl/lithics.html#$@LKL: Lithics#$@0#$@20#$@100#$@#$@4#$@
+Figurines#$@/lkl/figurines.html#$@LKL: Figurines#$@0#$@20#$@100#$@#$@4#$@
+Bone Tools#$@/lkl/bonetools.html#$@LKL: Bone Tools#$@0#$@20#$@100#$@#$@4#$@
+Tarakai Ghundai#$@/trg.html#$@Tarakai Ghundai#$@3#$@20#$@100#$@#$@2#$@
+Excavation#$@/trg/excavation.html#$@TRG: Excavation#$@0#$@20#$@100#$@#$@3#$@
+Dates#$@/trg/dates.html#$@TRG: Dates#$@0#$@20#$@100#$@#$@3#$@
+Ceramics#$@/trg/ceramics.html#$@TRG: Ceramics#$@0#$@20#$@100#$@#$@3#$@
+Islam Chowki#$@/isc.html#$@Islam Chowki#$@3#$@20#$@100#$@#$@2#$@
+Excavation#$@/isc/excavation.html#$@ISC: Excavation#$@0#$@20#$@100#$@#$@3#$@
+Dates#$@/isc/dates.html#$@ISC: Dates#$@0#$@20#$@100#$@#$@3#$@
+Ceramics#$@/isc/ceramics.html#$@ISC: Ceramics#$@0#$@20#$@100#$@#$@3#$@
+Tar Kala Dheri#$@/tkd.html#$@Ter Kala Dheri#$@3#$@20#$@100#$@#$@2#$@
+Excavation#$@/tkd/excavation.html#$@TKD: Excavation#$@0#$@20#$@100#$@#$@3#$@
+Dates#$@/tkd/dates.html#$@TKD: Dates#$@0#$@20#$@100#$@#$@3#$@
+Artefacts#$@/tkd/artefacts.html#$@TKD: Artefacts#$@2#$@20#$@100#$@#$@3#$@
+Ceramics#$@/tkd/ceramics.html#$@TKD: Ceramics#$@0#$@20#$@100#$@#$@4#$@
+Figurines#$@/tkd/figurines.html#$@TKD: Figurines#$@0#$@20#$@100#$@#$@4#$@
+</Item_Parameters>

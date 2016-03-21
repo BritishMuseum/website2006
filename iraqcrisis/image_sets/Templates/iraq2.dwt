@@ -1,0 +1,85 @@
+<html>
+<head>
+<!-- #BeginEditable "doctitle" -->
+<title>The British Museum: Iraq Crisis</title>
+<!-- #EndEditable --> 
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<style type="text/css">
+<!--
+.unnamed1 {  }
+-->
+</style>
+</head>
+<body bgcolor="#FFFFFF" link="#666633" leftmargin="0" topmargin="0" marginwidth="0" marginheight="0" text="#666633" vlink="#666633" alink="#666633">
+<table width="100%" border="0" cellspacing="0" cellpadding="0" bgcolor="#7E1F99">
+  <tr bgcolor="#5E755F"> 
+    <td valign="top" width="139" bgcolor="#5E755F"><a href="/index.html"><img src="../temImages/bmLogo.gif" width="139" height="120" border="0" alt="The British Museum"></a></td>
+    <td width="465" bgcolor="#5E755F"><img src="../temImages/iraqBan.jpg" width="525" height="120" alt="Iraq Crisis"></td>
+    <td width="483" bgcolor="#5E755F">&nbsp;</td>
+  </tr>
+</table>
+<table width="90%" border="0" cellspacing="0" cellpadding="0">
+  <tr> 
+    <td rowspan="2" width="46" height="514"><font face="Arial, Helvetica, sans-serif" size="2"><img src="../../templates/spacer.gif" width="35" height="31"></font></td>
+    <td colspan="3" valign="top" align="left" height="399"> 
+      <table width="100%" border="0" cellspacing="2" cellpadding="5">
+        <tr valign="top"> 
+          <td colspan="2" height="399"> 
+            <p>&nbsp;</p>
+            <!-- #BeginEditable "main%20content" -->
+            <p>{main content</p>
+            <p>}</p>
+            <!-- #EndEditable -->
+<p>&nbsp;</p>
+            <div align="left"> 
+              <p><span style='font-size:10.0pt;font-family:Arial'><o:p></o:p></span><span style='font-size:10.0pt;font-family:Arial'><o:p></o:p></span></p>
+              </div>
+          </td>
+          <td width="180" bgcolor="#FFFFFF" height="399"> 
+            <p>&nbsp;</p>
+            <table width="100%" border="0">
+              <tr> 
+                <td><!-- #BeginEditable "menu1" -->{menu1}<!-- #EndEditable --></td>
+              </tr>
+              <tr> 
+                <td><!-- #BeginEditable "menu2" -->{menu2}<!-- #EndEditable --></td>
+              </tr>
+              <tr> 
+                <td><!-- #BeginEditable "menu3" -->{menu3}<!-- #EndEditable --></td>
+              </tr>
+              <tr> 
+                <td><!-- #BeginEditable "menu4" -->{menu4}<!-- #EndEditable --></td>
+              </tr>
+              <tr> 
+                <td><!-- #BeginEditable "menu5" -->{menu5}<!-- #EndEditable --></td>
+              </tr>
+              <tr> 
+                <td><!-- #BeginEditable "menu6" -->{menu6}<!-- #EndEditable --></td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+  <tr> 
+    <td width="52" height="3"> 
+      <div align="left"><font face="Arial, Helvetica, sans-serif" size="2"><a href="javascript:history.back()"><img src="../temImages/back.gif" width="51" height="21" border="0" alt="back"></a><br>
+        <br>
+        </font></div>
+    </td>
+    <td colspan="2" height="3" width="795"> 
+      <div align="center"><font face="Arial, Helvetica, sans-serif" size="2"><span style='font-size:10.0pt;font-family:Arial'><a href="/index.html"><font color="#000066" size="1">home</font></a><font color="#000066" size="1"> 
+        | <a href="/visit/index.html">visit</a> | <a href="/whatson/index.html">what's 
+        on</a> | <a href="/join/index.html">join</a> | <a href="http://www.britishmuseum.co.uk" target="_blank">shop</a> 
+        | <a href="/education/index.html">learning</a> | <a href="/compass" target="_blank">COMPASS</a> 
+        |<br>
+        <a href="/world/world.html">world cultures</a> | <a href="/sitemap/sitemap.html">sitemap</a> 
+        | <a href="/visit/contact.html">contact us</a> | <a href="/corporate/copyright.html">copyright</a><br>
+        </font><font face="Arial, Helvetica, sans-serif" size="1" color="#000000">&copy; 
+        The British Museum, 2003</font></span></font></div>
+    </td>
+  </tr>
+</table>
+</body>
+</html>

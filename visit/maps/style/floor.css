@@ -1,0 +1,219 @@
+li
+	{
+	list-style-position: inside;
+	}
+	
+body
+	{
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 9pt;
+	width: 900px; /*mainfloor only*/
+	}
+
+h1
+	{
+	font-size: 12pt;
+	font-weight: bold;
+	}
+
+#header
+	{	
+	width: 100%;
+	text-align: center;
+	}
+
+#map
+	{
+	float: left;
+	padding-right: 50px;
+	}
+	
+#enlightenment, #temp, #middle, #special, #world, #asia, #money, #britain, #egypt, #neareast, #livingdying, #americas, #greecerome, #africa, #improvement,
+	{
+	height: 15px;
+	width: 15px;
+	float: left;
+	}
+/*britain only in upperfloor */
+
+#greecerome
+	{
+	background-color: #00938f;
+	}
+	
+#enlightenment
+	{
+	background-color: #6a2c91;
+	}
+
+#temp
+	{
+	background-color: #46c3d3;
+	}
+
+#middle
+	{
+	background-color: #5261ac;
+	}
+	
+#neareast
+	{
+	background-color: #5261ac;
+	}
+
+#egypt
+	{
+	background-color: #FF0000;
+	}
+
+#special
+	{
+	background-color: #0066FF;
+	}
+	
+#world
+	{
+	background-color: #660000;
+	}
+
+#americas
+	{
+	background-color: #0076c0;
+	}	
+
+#asia
+	{
+	background-color: #F5821F;
+	}
+	
+#money
+	{
+	background-color: #6a2c91;
+	}
+
+#livingdying
+	{
+	background-color: #6a2c91;
+	}
+
+#britain
+	{
+	background-color: #7DC242;
+	}
+#africa
+	{
+	background-color: #b32215;
+	}
+#improvement
+	{
+	background-color: #999999;
+	}	
+	
+
+#info
+	{
+	list-style-image: url(file:///S|/Web/bm%20site%20html/visit/maps/images/icons/icons_01.gif);
+	}
+	
+#toilets
+	{
+	list-style-image: url(file:///S|/Web/bm%20site%20html/visit/maps/images/icons/icons_02.gif);
+	}
+	
+#accessible
+	{
+	list-style-image: url(file:///S|/Web/bm%20site%20html/visit/maps/images/icons/icons_03.gif);
+	}
+	
+#babycare
+	{
+	list-style-image: url(file:///S|/Web/bm%20site%20html/visit/maps/images/icons/icons_04.gif);
+	}
+	
+#cloakroom
+	{
+	list-style-image: url(file:///S|/Web/bm%20site%20html/visit/maps/images/icons/icons_05.gif);
+	}
+	
+#lostproperty
+	{
+	list-style-image: url(file:///S|/Web/bm%20site%20html/visit/maps/images/icons/icons_06.gif);
+	}
+	
+#restaurant
+	{
+	list-style-image: url(file:///S|/Web/bm%20site%20html/visit/maps/images/icons/icons_07.gif);
+	}
+	
+#cafe
+	{
+	list-style-image: url(file:///S|/Web/bm%20site%20html/visit/maps/images/icons/icons_08.gif);
+	}
+	
+#shop
+	{
+	list-style-image: url(file:///S|/Web/bm%20site%20html/visit/maps/images/icons/icons_09.gif);
+	}
+#audio
+	{
+	list-style-image: url(file:///S|/Web/bm%20site%20html/visit/maps/images/icons/icons_10.gif);
+	}
+	
+#telephone
+	{
+	list-style-image: url(file:///S|/Web/bm%20site%20html/visit/maps/images/icons/icons_11.gif);
+	}
+	
+#lift
+	{
+	list-style-image: url(file:///S|/Web/bm%20site%20html/visit/maps/images/icons/icons_12.gif);
+	}
+
+img
+	{
+	border-style: none;
+	border-width: 0px;
+	}
+	
+a:hover.map
+	{
+	background-color: #000000;
+	}
+
+.box
+	{
+	position: absolute;
+	top: 35px;
+	left: 40px;
+	border-style: solid;
+	border-width: 1px;
+	border-color: #000000;
+	background-color: #FFFFFF;
+	height: 100px;
+	width: 250px;
+	padding: 5px;
+	visibility: hidden;
+	}
+	
+
+.containers
+	{
+	width: 250px;
+	padding-top: 10px;
+	}
+
+.containers h1
+	{
+	margin-bottom: 0px;
+	}
+	
+a:link
+	{
+	color: #000000;
+	}
+
+a:visited
+	{
+	color: #666666;
+	}
+	

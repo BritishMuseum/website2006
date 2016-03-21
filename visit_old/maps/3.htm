@@ -1,0 +1,168 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<title>Museum Plans - Middle Floor</title>
+<link href="style/floor.css" rel="stylesheet" type="text/css" media="screen">
+<link href="style/print.css" rel="stylesheet" type="text/css" media="print">
+<style>
+#colleft, #colright
+	{
+	position: absolute;
+	top: 640px;
+	}
+	
+#colleft
+	{
+	position: absolute;
+	left: 10px;
+	}
+#colright
+	{
+	position: absolute;
+	left: 360px;	
+	}
+	</style>
+<script src="javascript/findDOM.js"></script>
+<script>
+
+function toggleVisibility(objectID)
+	{
+
+	var dom = findDOM(objectID,1);
+	state = dom.visibility;
+	
+	if (state == 'hidden' || state == 'hide')
+		dom.visibility = 'visible';
+	else
+		{
+		if (state == 'visible' || state == 'show')
+			dom.visibility = 'hidden';
+	else dom.visibility = 'visible';
+
+
+		}
+
+
+	}
+
+</script>
+</head>
+
+<body>
+<div id="header">
+<h1 style="float: left;">Upper floor</h1><a href="upperfloor.html">Upper floor</a> | <a href="mainfloor.html">Main floor</a> | <a href="lowerfloor.html">Lower floor</a> | <a href="greatcourt.html">Great court</a>
+</div>
+<img src="images/to_06.gif" alt="Map of the British Museum, Upper floor." usemap="#mi_06_imagemaps_Map" id="map"/>
+<map name="mi_06_imagemaps_Map">
+  <area shape="poly" onMouseOver="toggleVisibility('temporarypopup')" onMouseOut="toggleVisibility('temporarypopup')" alt="" coords="445,145,402,120,370,101,336,79,358,58,448,108,489,132,469,156" href="#">
+  <area shape="poly" onMouseOver="toggleVisibility('closedpopup')" onMouseOut="toggleVisibility('closedpopup')" alt="" coords="444,88,401,63,369,44,335,22,357,1,510,87,491,114,473,104" href="#">
+  <area shape="poly" onMouseOver="toggleVisibility('ancientpopup')" onMouseOut="toggleVisibility('ancientpopup')" alt="" coords="300,131,407,194,421,175,429,182,416,200,509,255,445,325,444,327,445,326,444,326,442,329,417,314,417,312,413,318,457,263,282,153" href="#">
+  <area shape="poly" onMouseOver="toggleVisibility('britainpopup')" onMouseOut="toggleVisibility('britainpopup')" alt="" coords="234,371,202,405,230,424,234,419,255,435,252,439,296,474,272,503,268,501,249,524,281,547,303,516,390,578,392,575,406,585,461,506,439,491,430,499,354,449,443,338,417,321,325,431,314,424,308,429,259,395,264,389" href="#">
+  <area shape="poly" onMouseOver="toggleVisibility('moneypopup')" onMouseOut="toggleVisibility('moneypopup')" alt="" coords="154,350, 141,363, 199,404, 212,389" href="#">
+  <area shape="poly" onMouseOver="toggleVisibility('ancientpopup')" onMouseOut="toggleVisibility('ancientpopup')" alt="" coords="143,318,125,333,109,320,110,315,130,297,125,294,99,318,105,321,124,335,115,344,140,362,318,180,315,178,319,182,318,180,319,179,319,181,318,180,318,180,319,180,306,173,301,171,299,168,147,318" href="#">
+  <area shape="poly" onMouseOver="toggleVisibility('temppopup')" onMouseOut="toggleVisibility('temppopup')" alt="" coords="128,312, 121,319, 129,326, 137,318" href="#" onClick="window.open('moneyandmedals/index.html', 'myWin', 'status, width=800, height=580, screenX=0,screenY=0,left=0,top=0, scrollbars=1'); return false">
+</map>
+<div id="ancientpopup" class="box">
+<div id="ancient"></div><h1>Ancient Civilisations</h1>
+51&ndash;59: South Arabia, Iran, Anatolia, Mesopotamia and Levant<br />
+61&ndash;66: Egyptian life and funerary archeology<br />
+69: Greece &amp; Rome daily life<br />
+70&ndash;73: Rome, Italy and Cyprus
+</div>
+
+<div id="moneypopup" class="box">
+<div id="money"></div><h1>Money</h1>
+68: Money
+</div>
+
+<div id="britainpopup" class="box">
+<div id="britain"></div><h1>Britain &amp; Europe</h1>
+36, 37: Prehistory<br />
+41&ndash;42: Medieval<br />
+44: Clocks &amp; watches<br />
+45: The Waddesdon Bequest<br />
+46&ndash;48: 15th&ndash;20th century<br />
+49: Roman Britain<br />
+50: Bronze Age &amp; Celtic
+</div>
+
+<div id="temppopup" class="box">
+<div id="temp"></div><h1>Temporary exhibitions</h1>
+<p>69a: Encounters</p>
+<br />
+</div>
+
+<div id="closedpopup" class="box">
+<div id="temp"></div>
+<h1>Temporary exhibitions</h1>
+92-94 Japan
+</div>
+
+<div id="temporarypopup" class="box">
+<div id="temp"></div>
+<h1>Temporary exhibitions</h1>
+<p>90-91 Paintings & Drawings</p>
+</div>
+
+<div id="key">
+<h1>Key</h1>
+<ul>
+<li id="info">Information Desk &amp; Box Office</li>
+<li id="toilets">Toilets</li>
+<li id="accessible">Accessible toilets</li>
+<li id="babycare">Babycare</li>
+<li id="cloakroom">Cloakroom</li>
+<li id="lostproperty">Lost property</li>
+<li id="restaurant">Restaurant</li>
+<li id="cafe">Caf&eacute;</li>
+<li id="shop">Shop</li>
+<li id="audio">Audio Tour</li>
+<li id="telephone">Telephone</li>
+<li id="lift">Lift</li>
+</ul>
+</div>
+
+<div id="colleft">
+<div class="containers">
+<div id="britain"></div><h1>Britain &amp; Europe</h1>
+36, 37: Prehistory<br />
+41&ndash;42: Medieval<br />
+44: Clocks &amp; watches<br />
+45: The Waddesdon Bequest<br />
+46&ndash;48: 15th&ndash;20th century<br />
+49: Roman Britain<br />
+50: Bronze Age &amp; Celtic
+</div>
+
+<div class="containers">
+<div id="ancient"></div><h1>Ancient Civilisations</h1>
+51&ndash;59: South Arabia, Iran, Anatolia, Mesopotamia and Levant<br />
+61&ndash;66: Egyptian life and funerary archeology<br />
+69: Greece &amp; Rome daily life<br />
+70&ndash;73: Rome, Italy and Cyprus
+</div>
+
+</div>
+
+<div id="colright">
+<div class="containers">
+<div id="money"></div><h1>Money</h1>
+68: Money
+</div>
+
+
+<div class="containers">
+<div class="containers">
+<div id="temp"></div><h1>Temporary exhibitions</h1>
+69a: Encounters<br />
+92-94: Japan<br />
+91-90: Prints & Drawings
+</div>
+</div>
+
+</div>
+
+</body>
+</html>

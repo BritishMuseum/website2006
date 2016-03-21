@@ -1,0 +1,118 @@
+/* CSS Document */
+img {
+   behavior: url("pngbehavior.htc");
+}
+body {
+	margin-left: 0px;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+	
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 9pt;
+	color: #FFFFFF;
+}
+A:link {
+	font-size: 9pt;
+	color: #FFFFFF;
+}
+A:visited {
+	font-size: 9pt;
+	color: #FFFFFF;
+}
+A:hover {
+	font-size: 9pt;
+	color: #FFDE00;
+}
+A:active {
+	font-size: 9pt;
+	color: #FFFFFF;
+}
+
+A.links:link {
+	font-size: 8pt;
+	font-weight: bold;
+	color: #FFFFFF;
+	text-decoration: none;
+}
+A.links:visited {
+	font-size: 8pt;
+	font-weight: bold;
+	color: #FFFFFF;
+	text-decoration: none;
+}
+A.links:hover {
+	font-size: 8pt;
+	font-weight: bold;
+	color: #cc9900;
+	text-decoration: none;
+}
+A.links:active {
+	font-size: 8pt;
+	font-weight: bold;
+	color: #FFFFFF;
+	text-decoration: none;
+}
+
+A.tlinks:link {
+	font-size: 9pt;
+	color: #FFFFFF;
+}
+A.tlinks:visited {
+	font-size: 9pt;
+	color: #FFFFFF;
+}
+A.tlinks:hover {
+	font-size: 9pt;
+	color: #FFA7A7;
+}
+A.tlinks:active {
+	font-size: 9pt;
+	color: #FFFFFF;
+}
+
+A.bclinks:link {
+	font-size: 8pt;
+	color: #FFFF90;
+}
+A.bclinks:visited {
+	font-size: 8pt;
+	color: #FFFF90;
+}
+A.bclinks:hover {
+	font-size: 8pt;
+	color: #cc9900;
+}
+A.bclinks:active {
+	font-size: 8pt;
+	color: #FFFF90;
+}
+
+
+table {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 9pt;
+	color: #FFFFFF;
+	background-repeat: no-repeat;
+}
+td {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 9pt;
+	color: #FFFFFF;
+	background-repeat: no-repeat;
+}
+	
+.tableBorder {
+	border: 1px solid #000000;
+}
+
+.smallBody {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: .8em;
+	color: #FFFFFF;
+}
+.bigtitle {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 18px;
+	font-weight: bold;
+}

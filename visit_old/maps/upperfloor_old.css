@@ -1,0 +1,184 @@
+li
+	{
+	list-style-position: inside;
+	}
+body
+	{
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 9pt;
+	}
+
+h1
+	{
+	font-size: 12pt;
+	font-weight: bold;
+	}
+
+#enlightenment, #temp, #ancient, #special, #world, #asia, #money, #britain
+	{
+	height: 15px;
+	width: 15px;
+	float: left;
+	}
+#enlightenment
+	{
+	background-color: #5C3895;
+	}
+
+#temp
+	{
+	background-color: #0075BE;
+	}
+
+#ancient
+	{
+	background-color: #008B98;
+	}
+
+#special
+	{
+	background-color: #3CC2D2;
+	}
+	
+#world
+	{
+	background-color: #C70451;
+	}
+	
+#asia
+	{
+	background-color: #F5821F;
+	}
+	
+#money
+	{
+	background-color: #5C3995;
+	}
+
+#britain
+	{
+	background-color: #7DC242;
+	}
+
+#info
+	{
+	list-style-image:url(../images/icons/icons_01.gif);
+	}
+	
+#toilets
+	{
+	list-style-image:url(../images/icons/icons_02.gif);
+	}
+	
+#accessible
+	{
+	list-style-image:url(../images/icons/icons_03.gif);
+	}
+	
+#babycare
+	{
+	list-style-image:url(../images/icons/icons_04.gif);
+	}
+	
+#cloakroom
+	{
+	list-style-image:url(../images/icons/icons_05.gif);
+	}
+	
+#lostproperty
+	{
+	list-style-image:url(../images/icons/icons_06.gif);
+	}
+	
+#restaurant
+	{
+	list-style-image:url(../images/icons/icons_07.gif);
+	}
+	
+#cafe
+	{
+	list-style-image:url(../images/icons/icons_08.gif);
+	}
+	
+#shop
+	{
+	list-style-image:url(../images/icons/icons_09.gif);
+	}
+#audio
+	{
+	list-style-image:url(../images/icons/icons_10.gif);
+	}
+	
+#telephone
+	{
+	list-style-image:url(../images/icons/icons_11.gif);
+	}
+	
+#lift
+	{
+	list-style-image:url(../images/icons/icons_12.gif);
+	}
+
+img
+	{
+	border-style: none;
+	border-width: 0px;
+	}
+
+a:hover.map
+	{
+	background-color: #000000;
+	}
+	
+	.box
+	{
+	position: absolute;
+	top: 35px;
+	left: 40px;
+	visibility: hidden;
+	border-style: solid;
+	border-width: 1px;
+	border-color: #000000;
+	background-color: #FFFFFF;
+	height: 100px;
+	width: 250px;
+	padding: 5px;
+	}
+	
+.containers
+	{
+	width: 250px;
+	padding-top: 10px;
+	}
+
+.containers h1
+	{
+	margin-bottom: 0px;
+	}
+	
+a:link
+	{
+	color: #000000;
+	}
+
+a:visited
+	{
+	color: #666666;
+	}
+	
+#colleft, #colright
+	{
+	position: absolute;
+	top: 640px;
+	}
+	
+#colleft
+	{
+	position: absolute;
+	left: 10px;
+	}
+#colright
+	{
+	position: absolute;
+	left: 360px;	
+	}

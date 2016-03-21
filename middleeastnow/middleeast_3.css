@@ -1,0 +1,142 @@
+/* STYLES THAT ARE SPECIFIC ARE SET IN LOCAL.CSS */
+body {
+	font-family: Arial, Helvetica, sans-serif;
+	background-color: #fff;
+	margin-top: 10px;
+	margin-left:0px;
+	text-align: center;
+	color : #000000;
+}
+.clear{
+	clear: both;
+	padding: 0px;
+	margin: 0px;
+}
+a:link {
+	color: #0066CC;
+	text-decoration: none;
+}
+a:visited {
+	color: #0066CC;
+	text-decoration: none;
+}
+a:hover {
+	color: #0066CC; text-decoration: underline;
+}
+a:active {
+	color: #0066CC; text-decoration: underline;
+}
+
+/*  PAGE CONSTRUCT  */
+#container {
+	width: 769px;
+	margin: auto;
+	position : relative;
+	text-align : left;
+	border : 1px solid #000000;
+	background-color: #ffffff;
+	min-height: 400px;
+}
+#content {
+	position: relative;
+	left: 0px;
+	width: 100%;
+	background-image: url(i/nav-bg%20copy.jpg);
+	background-repeat: repeat-x;
+}
+
+/*  TOP BANNER  */
+#title-bm {
+	display: block;
+	position: relative;
+	top: 0px;
+	left: 0px;
+	float: left;
+}
+#title-site {
+	position: relative;
+	top: 0px;
+	float : right;
+	z-index: 950;
+}
+
+/*  TOP BAR  */
+#top-bar{
+	width: 100%;
+	background : url(i/top-bar.jpg) repeat-y;
+	min-height: 26px;
+	height: auto;
+	z-index: 900;
+}
+#breadcrumb {
+	float: left;
+	font-size: 80%;
+	padding: 5px 0px 5px 36px;
+	color: #fff;
+}
+#breadcrumb img{
+	margin: 0px 2px 0px 6px;
+}
+#top-bar-date{
+	float: right;
+	padding: 5px 5px 5px 0px;
+	color: #fff;
+	font-weight: bold;
+	font-size: 70%;
+}
+
+/*  NAVIGATION  AREA */
+#nav-area{
+	position: relative;
+	left: 0px;
+	width: 180;
+	float: left;
+	font-size: 75%;
+	padding-bottom: 100px;
+	background-color: #FFFFFF;
+	background-image: url(i/nav-bg%20copy.jpg);
+	background-repeat: repeat-x;
+}
+.nav1{
+	list-style-image : url(i/tri-blue.gif);
+	font-weight: bold;
+	position: relative;
+	left: -4px;
+}
+.nav1 li{
+	margin-top : 15px;
+}
+.nav-on{
+	list-style-image : url(i/tri-yellow.gif);
+}
+.nav2{
+	list-style-image : url(i/tri-off.gif);
+	font-weight: normal;
+	position: relative;
+	left: -20px;
+}
+.nav2 li{
+	margin-top : 4px;
+}
+
+.corp-logo{
+	position : absolute;
+	bottom: 0px;
+	z-index: 999;
+}
+
+/*  MAIN  AREA */
+#main-area{
+	position: relative;
+	float: right;
+	font-size: 80%;
+	width: 550px;
+	padding: 0px 0px 0px 0px;
+}
+
+/* COPYRIGHT ELEMENTS*/
+#copy{
+	text-align: center;
+	font-size : 75%;
+	margin: 4px;
+}

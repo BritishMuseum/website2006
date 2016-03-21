@@ -1,0 +1,226 @@
+ 
+<html>
+  
+<head>
+<!-- #BeginEditable "doctitle" --> 
+<title>Hengistbury Head</title>
+
+<!--===============ADDED KEYWORDS PROPERTIES TO ALLOW SEARCH ENGINES TO FIND US===-->
+<meta name="keywords" content="British Museum, scanning electron microscope,microstructure, lost-wax casting,radiographs, radiography,south america, central america,Quimbaya,colombia,metalworking,goldsmiths,sinú">
+<!--===============ADDED STYLE PROPERTIES TO COVER EACH PAGE EXCEPT WHEN OVERWRITTEN IN TEXT===-->
+
+<Style type="text/css">
+   P {font-family:arial, helvetica, sans-serif; }H3 {text-align: left;font-family:arial, helvetica, sans-serif;}
+   
+   A:link {color:blue}
+   A:active {color:red}
+   A:visited {color:blue}
+</style>
+<SCRIPT Language="JavaScript">
+ <!--
+ // Copyright 1999, 2000 by Ray Stott - ver 2.0
+ // OK to use on noncommercial sites as long as copyright is included
+ // Commercial Sites, please see http://www.crays.com/jsc/jsCom.htm 
+ // Script is available at http://www.crays.com/jsc          
+
+ var popWin = null    // use this when referring to pop-up window
+ var winCount = 0
+ var winName = "popWin"
+ function openPopWin(winURL, winWidth, winHeight, winFeatures, winLeft, winTop){
+   var d_winLeft = 20  // default, pixels from screen left to window left
+   var d_winTop = 20   // default, pixels from screen top to window top
+   winName = "popWin" + winCount++ //unique name for each pop-up window
+   closePopWin()           // close any previously opened pop-up window
+   if (openPopWin.arguments.length >= 4)  // any additional features? 
+     winFeatures = "," + winFeatures
+   else 
+     winFeatures = "" 
+   if (openPopWin.arguments.length == 6)  // location specified
+     winFeatures += getLocation(winWidth, winHeight, winLeft, winTop)
+   else
+     winFeatures += getLocation(winWidth, winHeight, d_winLeft, d_winTop)
+   popWin = window.open(winURL, winName, "width=" + winWidth 
+            + ",height=" + winHeight + winFeatures)
+   }
+ function closePopWin(){    // close pop-up window if it is open 
+   if (navigator.appName != "Microsoft Internet Explorer" 
+       || parseInt(navigator.appVersion) >=4) //do not close if early IE
+     if(popWin != null) if(!popWin.closed) popWin.close() 
+   }
+ function getLocation(winWidth, winHeight, winLeft, winTop){
+   return ""
+   }
+ //-->
+ </SCRIPT>
+ 
+<SCRIPT Language="JavaScript1.2">
+<!--
+// for Netscape 4+ and IE 4+
+ <!--
+ function getLocation(winWidth, winHeight, winLeft, winTop){
+   var winLocation = ""
+   if (winLeft < 0)
+     winLeft = screen.width - winWidth + winLeft
+   if (winTop < 0)
+     winTop = screen.height - winHeight + winTop
+   if (winTop == "cen")
+     winTop = (screen.height - winHeight)/2 - 20
+   if (winLeft == "cen")
+     winLeft = (screen.width - winWidth)/2
+   if (winLeft>0 & winTop>0)
+     winLocation =  ",screenX=" + winLeft + ",left=" + winLeft   
+                 + ",screenY=" + winTop + ",top=" + winTop
+   else
+     winLocation = ""
+   return winLocation
+   }
+ //-->
+
+function MM_timelineGoto(tmLnName, fNew, numGotos) { //v2.0
+  //Copyright 1997 Macromedia, Inc. All rights reserved.
+  var i,j,tmLn,props,keyFrm,sprite,numKeyFr,firstKeyFr,lastKeyFr,propNum,theObj;
+  if (document.MM_Time == null) MM_initTimelines(); //if *very* 1st time
+  tmLn = document.MM_Time[tmLnName];
+  if (numGotos != null)
+    if (tmLn.gotoCount == null) tmLn.gotoCount = 1;
+    else if (tmLn.gotoCount++ >= numGotos) {tmLn.gotoCount=0; return}
+  jmpFwd = (fNew > tmLn.curFrame);
+  for (i = 0; i < tmLn.length; i++) {
+    sprite = (jmpFwd)? tmLn[i] : tmLn[(tmLn.length-1)-i]; //count bkwds if jumping back
+    if (sprite.charAt(0) == "s") {
+      numKeyFr = sprite.keyFrames.length;
+      firstKeyFr = sprite.keyFrames[0];
+      lastKeyFr = sprite.keyFrames[numKeyFr - 1];
+      if ((jmpFwd && fNew<firstKeyFr) || (!jmpFwd && lastKeyFr<fNew)) continue; //skip if untouchd
+      for (keyFrm=1; keyFrm<numKeyFr && fNew>=sprite.keyFrames[keyFrm]; keyFrm++);
+      for (j=0; j<sprite.values.length; j++) {
+        props = sprite.values[j];
+        if (numKeyFr == props.length) propNum = keyFrm-1 //keyframes only
+        else propNum = Math.min(Math.max(0,fNew-firstKeyFr),props.length-1); //or keep in legal range
+        if (sprite.obj != null) {
+          if (props.prop2 == null) sprite.obj[props.prop] = props[propNum];
+          else        sprite.obj[props.prop2][props.prop] = props[propNum];
+      } }
+    } else if (sprite.charAt(0)=='b' && fNew == sprite.frame) eval(sprite.value);
+  }
+  tmLn.curFrame = fNew;
+  if (tmLn.ID == 0) eval('MM_timelinePlay(tmLnName)');
+}
+
+function MM_timelinePlay(tmLnName, myID) { //v1.2
+  //Copyright 1997 Macromedia, Inc. All rights reserved.
+  var i,j,tmLn,props,keyFrm,sprite,numKeyFr,firstKeyFr,propNum,theObj,firstTime=false;
+  if (document.MM_Time == null) MM_initTimelines(); //if *very* 1st time
+  tmLn = document.MM_Time[tmLnName];
+  if (myID == null) { myID = ++tmLn.ID; firstTime=true;}//if new call, incr ID
+  if (myID == tmLn.ID) { //if Im newest
+    setTimeout('MM_timelinePlay("'+tmLnName+'",'+myID+')',tmLn.delay);
+    fNew = ++tmLn.curFrame;
+    for (i=0; i<tmLn.length; i++) {
+      sprite = tmLn[i];
+      if (sprite.charAt(0) == 's') {
+        if (sprite.obj) {
+          numKeyFr = sprite.keyFrames.length; firstKeyFr = sprite.keyFrames[0];
+          if (fNew >= firstKeyFr && fNew <= sprite.keyFrames[numKeyFr-1]) {//in range
+            keyFrm=1;
+            for (j=0; j<sprite.values.length; j++) {
+              props = sprite.values[j]; 
+              if (numKeyFr != props.length) {
+                if (props.prop2 == null) sprite.obj[props.prop] = props[fNew-firstKeyFr];
+                else        sprite.obj[props.prop2][props.prop] = props[fNew-firstKeyFr];
+              } else {
+                while (keyFrm<numKeyFr && fNew>=sprite.keyFrames[keyFrm]) keyFrm++;
+                if (firstTime || fNew==sprite.keyFrames[keyFrm-1]) {
+                  if (props.prop2 == null) sprite.obj[props.prop] = props[keyFrm-1];
+                  else        sprite.obj[props.prop2][props.prop] = props[keyFrm-1];
+        } } } } }
+      } else if (sprite.charAt(0)=='b' && fNew == sprite.frame) eval(sprite.value);
+      if (fNew > tmLn.lastFrame) tmLn.ID = 0;
+  } }
+}
+
+function MM_initTimelines() {
+    //MM_initTimelines() Copyright 1997 Macromedia, Inc. All rights reserved.
+    var ns = navigator.appName == "Netscape";
+    document.MM_Time = new Array(1);
+    document.MM_Time[0] = new Array(1);
+    document.MM_Time["brittany to hengistbury"] = document.MM_Time[0];
+    document.MM_Time[0].MM_Name = "brittany to hengistbury";
+    document.MM_Time[0].fps = 3;
+    document.MM_Time[0][0] = new String("behavior");
+    document.MM_Time[0][0].frame = 20;
+    document.MM_Time[0][0].value = "MM_timelineGoto('brittany to hengistbury','1')";
+    document.MM_Time[0].lastFrame = 20;
+    for (i=0; i<document.MM_Time.length; i++) {
+        document.MM_Time[i].ID = null;
+        document.MM_Time[i].curFrame = 0;
+        document.MM_Time[i].delay = 1000/document.MM_Time[i].fps;
+    }
+}
+//-->
+</SCRIPT>
+<!-- #EndEditable --> 
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+</head>
+<body bgcolor="#FFFFFF" onLoad="MM_timelinePlay('brittany to hengistbury')">
+<table width="700" border="0">
+  <tr> <!--==================added /template to allow access to template images===================--> 
+    <td colspan="3" height="85"><a href="../text/sagold/sr-sagold-p1-t.html"><img src="../template/templates/images/logo.gif" width="162" height="80" border="0" alt="Link to Scientific Research Text Pages"></a></td>
+  </tr>
+  <tr> <!--==================added /templates to allow access to template images===================--> 
+    <td rowspan="3" width="70"><img src="../template/templates/images/spacer.gif" width="70" height="4"></td>
+    <!--==================added /templates to allow access to template images===================--> 
+    <td width="630" colspan="2" height="34"><img src="../template/templates/images/dept.gif" width="310" height="30"></td>
+  </tr>
+  <tr> 
+    <td width="315" height="21" valign="top"> <!-- change table width from 315 to 630 to cover space from removed table --> 
+      <table width="600" border="0">
+        <tr> <!-- Removedtable elements (3)
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>--> </tr>
+        <tr> <!-- Removedtable elements (1) <td>&nbsp;</td>--> 
+          <td> <!--==========================================================================================--> 
+            <!--===================ENTER DEPARTMENT PAGES FROM HERE ======================================--> 
+            <h3>How did the pots arrive in Hengistbury Head?<img src="../images/english%20channel%20copy.jpg" width="350" height="259" align="right" vspace="30"></h3>
+            <p > <br>
+              <font size="-1">From studying the rock and mineral inclusions in 
+              the fabric of the pottery we are able to identify where these pots 
+              were made. Pot A was made at Hengistbury Head while pot B was made 
+              in northern Brittany. The northern Brittany pottery was then transported 
+              to Hengistbury Head by boat.</font></p>
+            
+            <p>&nbsp;</p>
+            <p>&nbsp;</p>
+            <p align="left">&nbsp;</p>
+            <p align="right">&nbsp;</p>
+            <p align="right"><font face="Arial, Helvetica, sans-serif" size="-1"><a href="../provenance/provenance-p1.htm">Return 
+              to provenancing page</a></font></p>
+          </td>
+        </tr>
+        <!--===================END DEPARTMENT PAGES FROM HERE ======================================--> 
+        <!--==========================================================================================--> 
+      </table>
+      <p><map name="homebar" align = "top"> <area coords="0,18,50,37" href="http://www.thebritishmuseum.ac.uk" alt="British Museum Home" shape=rect title="British Museum Home"> 
+        <area coords="324,18,432,37" href="../techniques/sr-tech-intro.html" alt="Research Techniques" shape=rect title="Research Techniques"> 
+        <area coords="446,19,551,37" href="../dept/sr-dept-p1b.html" alt="The history of the department" shape=rect title="The history of the department"> 
+        <area coords="572,18,634,40" href="../whatsnew/sr-news-p1.html" alt="News From Scientific Research" shape=rect title="News From Scientific Research"> 
+      </map> <img title="homebar" src="../template/templates/images/home_tdn.gif" usemap=#homebar 
+         border="0"></p>
+    </td>
+    <!-- Removedtable elements (1) <td>&nbsp;</td>--> </tr>
+  <tr> <!-- Removedtable elements (3) <td>&nbsp;</td> <td>&nbsp;</td> <td>&nbsp;</td>--> 
+  </tr>
+</table>
+<!-- <td width="315" height="21" align="center" valign="middle"><font size="2" face="Arial, Helvetica, sans-serif">--> 
+<!--#BeginEditable "image" --><!--{image}<!-- #EndEditable --><!--</font></td> --> 
+<tr> <!--==================added /templates to allow access to template images===================--> 
+  <td width="630" colspan="2">&nbsp; </td>
+</tr>
+<!-- #EndEditable --> 
+<script  type="text/javascript">
+</script>
+<script type="text/javascript">
+_uacct = "UA-1005261-1";
+
+</script></body></html>

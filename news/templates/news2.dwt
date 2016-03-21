@@ -1,0 +1,57 @@
+<html>
+<head>
+<!-- #BeginEditable "doctitle" -->
+<title>The British Museum: News</title>
+<!-- #EndEditable --> 
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+</head>
+<body bgcolor="#FFFFFF" link="#666666" leftmargin="0" topmargin="0" marginwidth="0" marginheight="0" text="#000066" vlink="#999999" alink="#330099">
+<table width="100%" border="0" cellspacing="0" cellpadding="0" bgcolor="#7E1F99">
+  <tr bgcolor="#5E755F"> 
+    <td valign="top" width="139" bgcolor="#666666"><a href="/index.html"><img src="../temImages/bmLogo.gif" width="139" height="120" alt="The British Museum" border="0"></a></td>
+    <td width="419" bgcolor="#666666"><img src="../temImages/newsBan.jpg" width="525" height="120"></td>
+    <td width="430" bgcolor="#5E755F">&nbsp;</td>
+  </tr>
+</table>
+<table width="90%" border="0" cellspacing="0" cellpadding="0">
+  <tr> 
+    <td rowspan="2" width="46" height="514"><font face="Arial, Helvetica, sans-serif" size="2"><img src="../temImages/shim.gif" width="1" height="1"></font></td>
+    <td colspan="3" valign="top" align="left" height="511"> 
+      <table width="100%" border="0" cellspacing="2" cellpadding="5">
+        <tr valign="top"> 
+          <td width="180" bgcolor="#DDE1DD" height="528"> <!-- #BeginEditable "green1" --> 
+            <p>{green</p>
+            <p>}</p>
+            <!-- #EndEditable --></td>
+          <td colspan="2" height="528" align="left"> 
+            <div align="left"> <!-- #BeginEditable "content" --> 
+              <p>{content</p>
+              <p>}</p>
+              <!-- #EndEditable --> </div>
+            </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+  <tr> 
+    <td width="52" height="3"> 
+      <div align="left"><font face="Arial, Helvetica, sans-serif" size="2"><a href="javascript:history.back()"><img src="../temImages/back.gif" width="51" height="21" border="0" alt="back"></a><br>
+        <br>
+        </font></div>
+    </td>
+    <td colspan="2" height="3" width="795"> 
+      <div align="center"><font face="Arial, Helvetica, sans-serif" size="2"><span style='font-size:10.0pt;font-family:Arial'><a href="/index.html"><font color="#000066" size="1">home</font></a><font color="#000066" size="1"> 
+        | <a href="/visit/index.html">visit</a> | <a href="/whatson/index.html">what's 
+        on</a> | <a href="/join/index.html">join</a> | <a href="http://www.britishmuseum.co.uk" target="_blank">shop</a> 
+        | <a href="/education/index.html">learning</a> | <a href="/compass" target="_blank">COMPASS</a> 
+        |<br>
+        <a href="/world/world.html">world cultures</a> | <a href="/sitemap/sitemap.html">sitemap</a> 
+        | <a href="/visit/contact.html">contact us</a> | <a href="/corporate/copyright.html">copyright</a><br>
+        </font><font face="Arial, Helvetica, sans-serif" size="1" color="#000000">&copy; 
+        The British Museum, 2003</font></span></font></div>
+    </td>
+  </tr>
+</table>
+</body>
+</html>

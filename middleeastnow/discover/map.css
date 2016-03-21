@@ -1,0 +1,92 @@
+/* info panels */
+
+#main-area a:link{
+	color: #0181C8;
+	text-decoration: none;
+}
+#main-area a:visited{
+	color: #0181C8;
+	text-decoration: none;
+}
+#main-area a:hover{
+	color: #56C8EA;
+	text-decoration: underline;
+}
+#main-area a:active{
+	color: #56C8EA;
+	text-decoration: underline;
+}
+
+#me-map{
+	position: relative;
+	top: 0px;
+	left: 0px;
+}
+.data-headings{
+	font-size: 75%;
+	font-weight: bold;
+	vertical-align: top;
+}
+.data-content{
+	font-size: 75%;
+	vertical-align: top;
+}
+.flag{
+	float: left;
+	margin-right: 10px;
+	border: 1px solid Silver;
+}
+.close{
+	float: right;
+	margin-left: 10px;
+}
+.close-box{
+	padding-top: 6px;
+	font-weight: bold;
+	text-align : center;
+}
+h3{
+	color: #0181C8;
+	margin-bottom: 0px;
+}
+#info{
+	background-color: #fff;
+	border: 1px dashed #0181C8;
+	padding: 5px;
+	width: 260px;
+}
+#info-algeria, #info-libya, #info-morocco, #info-tun {
+	position: absolute;
+	top: 10px;
+	left: 290px;
+	z-index: 320;
+	visibility: hidden;
+}
+#info-pal {
+	position: absolute;
+	top: 150px;
+	left: 290px;
+	z-index: 320;
+	visibility: hidden;
+}
+#info-bah, #info-egypt, #info-iran, #info-iraq, #info-isr, #info-jor, #info-kuw, #info-lebanon, #info-oma, #info-qat, #info-sau, #info-syr, #info-tur, #info-uae, #info-yem {
+	position: absolute;
+	top: 10px;
+	left: 10px;
+	z-index: 320;
+	visibility: hidden;
+}
+#map-algeria, #map-bah, #map-egypt,  #map-iran,  #map-iraq, #map-isr-pal, #map-jor, #map-kuw, #map-lebanon, #map-libya, #map-morocco, #map-oma, #map-qat, #map-sau, #map-syr, #map-tun, #map-tur, #map-uae, #map-yem {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	z-index: 300;
+	visibility: hidden;
+}
+#map-algeria2, #map-bah2, #map-egypt2,  #map-iran2,  #map-iraq2, #map-isr-pal2, #map-jor2, #map-kuw2, #map-lebanon2, #map-libya2, #map-morocco2, #map-oma2, #map-qat2, #map-sau2, #map-syr2, #map-tun2, #map-tur2, #map-uae2, #map-yem2 {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	z-index: 310;
+	visibility: hidden;
+}

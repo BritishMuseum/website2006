@@ -1,0 +1,149 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<title>Museum Plans - Middle Floor</title>
+<link href="style/floor.css" rel="stylesheet" type="text/css" media="screen">
+<link href="style/print.css" rel="stylesheet" type="text/css" media="print">
+
+<script src="javascript/findDOM.js"></script>
+<script>
+
+
+function toggleVisibility(objectID)
+	{
+
+	var dom = findDOM(objectID,1);
+	state = dom.visibility;
+	
+	if (state == 'hidden' || state == 'hide')
+		dom.visibility = 'visible';
+	else
+		{
+		if (state == 'visible' || state == 'show')
+			dom.visibility = 'hidden';
+	else dom.visibility = 'visible';
+
+
+		}
+
+
+	}
+</script>
+</head>
+
+<body>
+<div style="width: 100%; text-align:center;" id="header">
+<h1 style="float: left;">Main floor</h1><a href="upperfloor.html">Upper floor</a> | <a href="mainfloor.html">Main floor</a> | <a href="lowerfloor.html">Lower floor</a> | <a href="greatcourt.html">Great court</a>
+</div>
+<!--<img src="images/mi_06.gif" alt="Map of the British Museum, middle floor." usemap="#mi_06_imagemaps_Map" style="float: left; padding-right: 50px;"/>-->
+<img src="file:///S|/Web/bm%20site%20html/visit/maps/middle_floor_imagemaps.gif" width="639" height="759" border="0" alt="Map of the British Museum, middle floor." usemap="#middle_floor_imagemaps_Map" id="map" style="float: left; padding-right: 50px;">
+<map name="middle_floor_imagemaps_Map">
+  <area shape="poly" onMouseOver="toggleVisibility('temppopup')" onMouseOut="toggleVisibility('temppopup')" alt="Temporary exhibitions" coords="310,474,335,490,319,505,294,488" href="#" onClick="window.open('bengal/tagore.html', 'myWin', 'status, width=800, height=580, screenX=0,screenY=0,left=0,top=0'); return false">
+  <area shape="poly" onMouseOver="toggleVisibility('greatcourtpopup')" onMouseOut="toggleVisibility('greatcourtpopup')" alt="Great court" coords="391,245,248,391,389,490,524,325,474,295,471,299,432,276,435,272" href="greatcourt.html">
+  <area shape="poly" onMouseOver="toggleVisibility('asiapopup')" onMouseOut="toggleVisibility('asiapopup')" alt="Asia" coords="526,236, 570,262, 547,295, 559,301, 582,268, 619,291, 639,265, 598,241, 616,217, 619,218, 638,192, 506,116, 552,53, 491,21, 480,34, 420,1, 410,13, 454,40, 405,97, 606,212, 588,237, 542,212" href="#">
+  <area shape="poly" onMouseOver="toggleVisibility('worldpopup')" onMouseOut="toggleVisibility('worldpopup')" alt="World Cultures" coords="567,338, 481,285, 470,296, 435,275, 476,230, 512,249, 495,269, 581,320" href="#">
+  <area shape="poly" onMouseOver="toggleVisibility('ancientpopup')" onMouseOut="toggleVisibility('ancientpopup')" alt="Ancient Civilisations" coords="236,200,246,206,173,270,161,263,136,284,182,315,171,326,173,327,131,369,185,406,182,410,209,428,224,412,235,420,255,399,245,392,389,244,354,224,363,215,321,189,300,208,255,182" href="#">
+  <area shape="poly" onMouseOver="toggleVisibility('specialpopup')" onMouseOut="toggleVisibility('specialpopup')" alt="Special Exhibitions (room 35)" coords="396,297, 396,314, 401,313, 408,315, 414,317, 421,320, 428,324, 432,329, 436,333, 437,338, 456,334, 454,327, 453,320, 451,314, 448,309, 444,305, 439,300, 432,296, 425,295, 416,295, 410,295, 401,296" href="palmer/" target="_blank">
+  <area shape="poly" onMouseOver="toggleVisibility('enlightenmentpopup')" onMouseOut="toggleVisibility('enlightenmentpopup')" alt="Enlightenment" coords="522,329,553,345,505,405,504,407,509,411,489,436,485,433,430,502,401,481,455,414,455,411,472,388,476,389" href="#">
+  <area shape="poly" onMouseOver="toggleVisibility('specialpopup')" onMouseOut="toggleVisibility('specialpopup')" alt="Temporary Exhibitions" coords="206,427,199,422,194,427,171,410,174,406,139,381,106,411,143,437,153,427,159,432,155,436,180,453" href="powerandtaboo/" target="_blank">
+</map>
+<div id="ancientpopup" class="box">
+<div id="ancient"></div><h1>Ancient Civilisations</h1>
+4: Egyptian sculpture<br />
+6&ndash;10: Assyrian sculpture<br />
+11&ndash;23: Greece and Lycia
+</div>
+
+<div id="asiapopup" class="box">
+<div id="asia"></div><h1>Asia</h1>
+33: China, South &amp; Southeast Asia<br />
+34: Islam<br />
+67: Korea
+</div>
+
+<div id="worldpopup" class="box">
+<div id="world"></div><h1>World cultures</h1>
+24: Living and dying<br />
+26: North America<br />
+27: Mexico
+</div>
+
+<div id="enlightenmentpopup" class="box">
+<div id="enlightenment"></div><h1>Enlightenment</h1>
+1: Enlightenment: Discovering the world in the 18th century.
+</div>
+
+<div id="greatcourtpopup" class="box">
+<h1>Great court</h1>
+Click on map for larger version of great court
+</div>
+
+<div id="specialpopup" class="box">
+<div id="temp"></div><h1>Temporary Exhibitions</h1>
+<p>5: Power and Taboo:<br /> 
+Sacred objects from the Pacific</p>
+</div>
+
+<div id="temppopup" class="box">
+<div id="temp"></div><h1>Temporary Exhibitions</h1>
+<p>3: The art of peace: Paintings by the poet Tagore</p>
+</div>
+
+<div id="key">
+<h1>Key</h1>
+<ul>
+<li id="info">Information Desk &amp; Box Office</li>
+<li id="toilets">Toilets</li>
+<li id="accessible">Accessible toilets</li>
+<li id="babycare">Babycare</li>
+<li id="cloakroom">Cloakroom</li>
+<li id="lostproperty">Lost property</li>
+<li id="restaurant">Restaurant</li>
+<li id="cafe">Caf&eacute;</li>
+<li id="shop">Shop</li>
+<li id="audio">Audio Tour</li>
+<li id="telephone">Telephone</li>
+<li id="lift">Lift</li>
+</ul>
+</div>
+
+<div style="position: absolute; left: 10px; top: 761px; width: 262px;">
+<div class="containers">
+<div id="enlightenment"></div><h1>Enlightenment</h1>
+1: Enlightenment: Discovering the world in the 18th century.
+</div>
+<div class="containers">
+<div id="temp"></div><h1>Temporary exhibitions</h1>
+3: The art of peace: <br />Paintings by the poet Tagore <br />
+5: Power and Taboo:<br />
+Sacred objects from the Pacific</p>
+</div>
+
+<div class="containers">
+  <div id="ancient"></div>
+  <h1>Ancient Civilisations</h1>
+4: Egyptian sculpture<br />
+6&ndash;10: Assyrian sculpture<br />
+11&ndash;23: Greece and Lycia</div>
+</div>
+
+<div style="position: absolute; left: 290px; top: 822px; width: 206px;">
+  <div class="containers">
+    <div id="world"></div>
+    <h1>World cultures</h1>
+24: Living and dying<br />
+26: North America<br />
+27: Mexico</div>
+
+<div class="containers">
+<div id="asia"></div><h1>Asia</h1>
+33: China, South &amp; Southeast Asia<br />
+34: Islam<br />
+67: Korea
+</div>
+</div>
+
+</body>
+</html>

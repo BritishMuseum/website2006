@@ -1,0 +1,96 @@
+body { 
+scrollbar-3d-light-color:#999999;
+scrollbar-arrow-color:#4B4B4B;
+scrollbar-base-color:black;
+scrollbar-dark-shadow-color:#333333;
+scrollbar-face-color:#666666;
+scrollbar-highlight-color:#999999;
+scrollbar-shadow-color:black}
+
+
+.titles {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 18px;
+	color: #A0985C;
+	font-weight: bold;
+
+
+}
+
+td {
+
+font-size: x-small;
+		font-family: Arial, Helvetica, sans-serif;
+
+}
+
+.links {
+	font-family: Arial, Helvetica, sans-serif;
+	
+	color: #9D764F;
+	font-weight: normal;
+
+}
+
+
+.links A:hover {
+	font-filamily: Arial, Helvetica, sans-serif;
+	color:  #916C48;
+	
+}
+.links A:links {
+	font-famy: Arial, Helvetica, sans-serif;
+	color:  #916C48
+	
+}
+
+.speciallink {
+	font-family: Arial, Helvetica, sans-serif;
+font-size: xx-small;
+color: #000000;
+}
+
+.speciallink A:link {
+font-size: xx-small;
+color:#D9D8C4;
+text-decoration: none;
+}
+
+.speciallink A:visited {
+font-size: xx-small;
+color: #B8B392;
+text-decoration: none;
+}
+
+.speciallink A:hover {
+font-size: xx-small;
+color: #ffffff;
+
+}
+.titlesmed {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 16px;
+	color: #6D2323;
+	font-weight: bolder;
+
+}
+.quote {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	font-style: italic;
+	font-weight: bold;
+
+}
+.name {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 10px;
+}
+tiny {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: xx-small;
+	color: #FFFFFF;
+}
+.tiny {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 0.8em;
+}

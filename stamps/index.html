@@ -1,0 +1,804 @@
+<HTML>
+<HEAD>
+<TITLE>Anniversary Stamp Trail</TITLE>
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">
+<style type="text/css">
+<!--
+.main {  font-family: Arial, Helvetica, sans-serif; font-size: x-small; color: #FFFFFF}
+.mainCopy { font-family: Arial, Helvetica, sans-serif; font-size: xx-small; color: #FFFFFF }
+.main {  font-family: Arial, Helvetica, sans-serif; font-size: x-small; color: #FFFFFF}
+.mainCopy { font-family: Arial, Helvetica, sans-serif; font-size: xx-small; color: #FFFFFF }
+-->
+</style>
+<script language="JavaScript">
+<!--
+
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v4.0
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && document.getElementById) x=document.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+//-->
+</script>
+
+<script language="JavaScript">
+<!--
+<!--
+function MM_reloadPage(init) {  //reloads the window if Nav4 resized
+  if (init==true) with (navigator) {if ((appName=="Netscape")&&(parseInt(appVersion)==4)) {
+    document.MM_pgW=innerWidth; document.MM_pgH=innerHeight; onresize=MM_reloadPage; }}
+  else if (innerWidth!=document.MM_pgW || innerHeight!=document.MM_pgH) location.reload();
+}
+MM_reloadPage(true);
+// -->
+
+function MM_dragLayer(objName,x,hL,hT,hW,hH,toFront,dropBack,cU,cD,cL,cR,targL,targT,tol,dropJS,et,dragJS) { //v3.0
+  //Copyright 1998 Macromedia, Inc. All rights reserved.
+  var i,j,aLayer,retVal,curDrag=null,NS=(navigator.appName=='Netscape'), curLeft, curTop;
+  if (!document.all && !document.layers) return false;
+  retVal = true; if(!NS && event) event.returnValue = true;
+  if (MM_dragLayer.arguments.length > 1) {
+    curDrag = MM_findObj(objName); if (!curDrag) return false;
+    if (!document.allLayers) { document.allLayers = new Array();
+      with (document) if (NS) { for (i=0; i<layers.length; i++) allLayers[i]=layers[i];
+        for (i=0; i<allLayers.length; i++) if (allLayers[i].document && allLayers[i].document.layers)
+          with (allLayers[i].document) for (j=0; j<layers.length; j++) allLayers[allLayers.length]=layers[j];
+      } else for (i=0;i<all.length;i++) if (all[i].style&&all[i].style.position) allLayers[allLayers.length]=all[i];}
+    curDrag.MM_dragOk=true; curDrag.MM_targL=targL; curDrag.MM_targT=targT;
+    curDrag.MM_tol=Math.pow(tol,2); curDrag.MM_hLeft=hL; curDrag.MM_hTop=hT;
+    curDrag.MM_hWidth=hW; curDrag.MM_hHeight=hH; curDrag.MM_toFront=toFront;
+    curDrag.MM_dropBack=dropBack; curDrag.MM_dropJS=dropJS;
+    curDrag.MM_everyTime=et; curDrag.MM_dragJS=dragJS;
+    curDrag.MM_oldZ = (NS)?curDrag.zIndex:curDrag.style.zIndex;
+    curLeft= (NS)?curDrag.left:curDrag.style.pixelLeft; curDrag.MM_startL = curLeft;
+    curTop = (NS)?curDrag.top:curDrag.style.pixelTop; curDrag.MM_startT = curTop;
+    curDrag.MM_bL=(cL<0)?null:curLeft-cL; curDrag.MM_bT=(cU<0)?null:curTop -cU;
+    curDrag.MM_bR=(cR<0)?null:curLeft+cR; curDrag.MM_bB=(cD<0)?null:curTop +cD;
+    curDrag.MM_LEFTRIGHT=0; curDrag.MM_UPDOWN=0; curDrag.MM_SNAPPED=false; //use in your JS!
+    document.onmousedown = MM_dragLayer; document.onmouseup = MM_dragLayer;
+    if (NS) document.captureEvents(Event.MOUSEDOWN|Event.MOUSEUP);
+  } else {
+    var theEvent = ((NS)?objName.type:event.type);
+    if (theEvent == 'mousedown') {
+      var mouseX = (NS)?objName.pageX : event.clientX + document.body.scrollLeft;
+      var mouseY = (NS)?objName.pageY : event.clientY + document.body.scrollTop;
+      var maxDragZ=null; document.MM_maxZ = 0;
+      for (i=0; i<document.allLayers.length; i++) { aLayer = document.allLayers[i];
+        var aLayerZ = (NS)?aLayer.zIndex:aLayer.style.zIndex;
+        if (aLayerZ > document.MM_maxZ) document.MM_maxZ = aLayerZ;
+        var isVisible = (((NS)?aLayer.visibility:aLayer.style.visibility).indexOf('hid') == -1);
+        if (aLayer.MM_dragOk != null && isVisible) with (aLayer) {
+          var parentL=0; var parentT=0;
+          if (!NS) { parentLayer = aLayer.parentElement;
+            while (parentLayer != null && parentLayer.style.position) {
+              parentL += parentLayer.offsetLeft; parentT += parentLayer.offsetTop;
+              parentLayer = parentLayer.parentElement; } }
+          var tmpX=mouseX-(((NS)?pageX:style.pixelLeft+parentL)+MM_hLeft);
+          var tmpY=mouseY-(((NS)?pageY:style.pixelTop +parentT)+MM_hTop);
+          var tmpW = MM_hWidth;  if (tmpW <= 0) tmpW += ((NS)?clip.width :offsetWidth);
+          var tmpH = MM_hHeight; if (tmpH <= 0) tmpH += ((NS)?clip.height:offsetHeight);
+          if ((0 <= tmpX && tmpX < tmpW && 0 <= tmpY && tmpY < tmpH) && (maxDragZ == null
+              || maxDragZ <= aLayerZ)) { curDrag = aLayer; maxDragZ = aLayerZ; } } }
+      if (curDrag) {
+        document.onmousemove = MM_dragLayer; if (NS) document.captureEvents(Event.MOUSEMOVE);
+        curLeft = (NS)?curDrag.left:curDrag.style.pixelLeft;
+        curTop = (NS)?curDrag.top:curDrag.style.pixelTop;
+        MM_oldX = mouseX - curLeft; MM_oldY = mouseY - curTop;
+        document.MM_curDrag = curDrag;  curDrag.MM_SNAPPED=false;
+        if(curDrag.MM_toFront) {
+          eval('curDrag.'+((NS)?'':'style.')+'zIndex=document.MM_maxZ+1');
+          if (!curDrag.MM_dropBack) document.MM_maxZ++; }
+        retVal = false; if(!NS) event.returnValue = false;
+    } } else if (theEvent == 'mousemove') {
+      if (document.MM_curDrag) with (document.MM_curDrag) {
+        var mouseX = (NS)?objName.pageX : event.clientX + document.body.scrollLeft;
+        var mouseY = (NS)?objName.pageY : event.clientY + document.body.scrollTop;
+        newLeft = mouseX-MM_oldX; newTop  = mouseY-MM_oldY;
+        if (MM_bL!=null) newLeft = Math.max(newLeft,MM_bL);
+        if (MM_bR!=null) newLeft = Math.min(newLeft,MM_bR);
+        if (MM_bT!=null) newTop  = Math.max(newTop ,MM_bT);
+        if (MM_bB!=null) newTop  = Math.min(newTop ,MM_bB);
+        MM_LEFTRIGHT = newLeft-MM_startL; MM_UPDOWN = newTop-MM_startT;
+        if (NS) {left = newLeft; top = newTop;}
+        else {style.pixelLeft = newLeft; style.pixelTop = newTop;}
+        if (MM_dragJS) eval(MM_dragJS);
+        retVal = false; if(!NS) event.returnValue = false;
+    } } else if (theEvent == 'mouseup') {
+      document.onmousemove = null;
+      if (NS) document.releaseEvents(Event.MOUSEMOVE);
+      if (NS) document.captureEvents(Event.MOUSEDOWN); //for mac NS
+      if (document.MM_curDrag) with (document.MM_curDrag) {
+        if (typeof MM_targL =='number' && typeof MM_targT == 'number' &&
+            (Math.pow(MM_targL-((NS)?left:style.pixelLeft),2)+
+             Math.pow(MM_targT-((NS)?top:style.pixelTop),2))<=MM_tol) {
+          if (NS) {left = MM_targL; top = MM_targT;}
+          else {style.pixelLeft = MM_targL; style.pixelTop = MM_targT;}
+          MM_SNAPPED = true; MM_LEFTRIGHT = MM_startL-MM_targL; MM_UPDOWN = MM_startT-MM_targT; }
+        if (MM_everyTime || MM_SNAPPED) eval(MM_dropJS);
+        if(MM_dropBack) {if (NS) zIndex = MM_oldZ; else style.zIndex = MM_oldZ;}
+        retVal = false; if(!NS) event.returnValue = false; }
+      document.MM_curDrag = null;
+    }
+    if (NS) document.routeEvent(objName);
+  } return retVal;
+}
+
+function MM_showHideLayers() { //v3.0
+  var i,p,v,obj,args=MM_showHideLayers.arguments;
+  for (i=0; i<(args.length-2); i+=3) if ((obj=MM_findObj(args[i]))!=null) { v=args[i+2];
+    if (obj.style) { obj=obj.style; v=(v=='show')?'visible':(v='hide')?'hidden':v; }
+    obj.visibility=v; }
+}
+//-->
+</script>
+</HEAD>
+<BODY BGCOLOR=#FFFFFF LEFTMARGIN=0 TOPMARGIN=0 MARGINWIDTH=0 MARGINHEIGHT=0 onLoad="MM_preloadImages('images/1a.jpg','images/2a.jpg','images/3a.jpg','images/4a.jpg','images/5a.jpg','images/6a.jpg')" background="images/bg.jpg" text="#CCCCCC" link="#CCCCCC" vlink="#A6A6A6" alink="#CCCCCC">
+<table width="100%" border="0" height="100%" cellpadding="0" cellspacing="0">
+	<tr>
+		<td height="89" valign="top">
+			<table width=100% border=0 cellpadding=0 cellspacing=0>
+				<tr>
+					<td colspan=2 background="images/site_03.gif" height="85">
+			<a href="http://www.thebritishmuseum.ac.uk"><img src="images/logo.jpg" width=150 height=107 alt="" border="0"></a>
+						<div id="Layer4" style="position:absolute; width:200px; height:115px; z-index:2; left: 85px; top: 4px; visibility: hidden">
+											
+							<table width=380 border=0 cellpadding=0 cellspacing=0 height="593">
+	 										
+								<tr>
+		 										
+									<td height="12">
+			<a href="#"><img src="images/top_01.gif" width=348 height=21 alt="" onMouseDown="MM_dragLayer('Layer4','',0,0,0,0,true,false,-1,-1,-1,-1,false,false,0,'',false,'')" border="0"></a></td>
+									<td height="12">
+			<a href="#"><img src="images/top_02.gif" width=32 height=21 alt="" onMouseDown="MM_showHideLayers('Layer4','','hide')" border="0"></a></td>
+								</tr>
+	 										
+								<tr background="images/coffin.gif" bgcolor="#333333" >
+		 										
+									<td background="images/coffin.gif" colspan=2 height="635">
+										<p><font face="Arial, Helvetica, sans-serif" size="2" color="#FFFFFF"><br>
+				</font></p>
+										<table width="100%" border="0" height="100%" cellpadding="3">
+															
+											<tr>
+																
+												<td width="9" height="577" rowspan="2">
+																	
+													<p><font face="Arial, Helvetica, sans-serif" size="2" color="#FFFFFF"><span class="mainCopy"><br>
+												</span></font></p>
+												</td>
+												<td width="353" height="492">
+													<p><font face="Arial, Helvetica, sans-serif" size="2" color="#FFFFFF"><span class="mainCopy"><br>
+														<br>
+														<br>
+														<br>
+														<br>
+														</span><span class="main"><br>
+														<br>
+														<br>
+														Painted sycamore fig wooden <br>
+														coffin of Denytenamun, Incense-<br>
+														bearer of the temple  of Amun, <br>
+														early 22nd dynasty, from <br>
+														Thebes.<br>
+														<br>
+														The Egyptians believed that for <br>
+														a soul to  have an afterlife, its body <br>
+														must survive in a recognisable form. At first bodies wereburied in the sand which preserved them naturally, but as more elaborate methods of burial were used there was a need to prevent decay. There are few records of how mummification was done; what is known is based mainly on accounts by Classical  authors, and studies of the mummies themselves. The oldest known mummy dates from about 3500 BC.<br>
+														<br>
+														The coffin was the most important item of burial equipment. Besides protecting the corpse, it provided magical assistance for the soul of the deceased and promoted the continuation of life. From the New Kingdom, the most popular form was the mummy-shaped type. This could serve as a reserve body should the mummy perish, or as an image of the dead person, with god-like qualities. It was also regarded as a cocoon or &#145;egg&#146;, in which  the deceased lay ready to be reborn into the afterlife.</span></font></p>
+												</td>
+											</tr>
+											<tr>
+												<td width="353" height="55" valign="top">
+													<table width="100%">
+														
+														<tr>
+															
+															<td width="64%" align="right" height="3">&nbsp;</td>
+															<td width="17%" height="3"><img src="images/spacer.gif" width="1" height="1"><a href="4.html"><img src="images/print.gif" width="58" height="21" border="0"></a></td>
+															<td width="19%" height="3"><font face="Arial, Helvetica, sans-serif" size="2" color="#FFFFFF"><a href="#"><img src="images/close.gif" width=58 height=21 onMouseDown="MM_showHideLayers('Layer4','','hide')" border="0"></a></font></td>
+														</tr>
+													
+													</table>
+												</td>
+											</tr>
+														
+										</table>
+									</td>
+								</tr>
+	 										
+								<tr>
+		 										
+									<td colspan=2>&nbsp;
+			</td>
+								</tr>
+ 										
+							</table>
+						</div>
+						<div id="Layer2" style="position:absolute; width:200px; height:115px; z-index:5; left: 85px; top: 4px; visibility: hidden">
+											
+							<table width=380 border=0 cellpadding=0 cellspacing=0 height="593">
+	 										
+								<tr>
+		 										
+									<td height="12">
+			<a href="#"><img src="images/top_01.gif" width=348 height=21 alt="" onMouseDown="MM_dragLayer('Layer2','',0,0,0,0,true,false,-1,-1,-1,-1,false,false,0,'',false,'')" border="0"></a></td>
+									<td height="12">
+			<a href="#"><img src="images/top_02.gif" width=32 height=21 alt="" onMouseDown="MM_showHideLayers('Layer2','','hide')" border="0"></a></td>
+								</tr>
+	 										
+								<tr background="images/sutton.gif" bgcolor="#333333" >
+		 										
+									<td  background="images/sutton.gif" colspan=2 height="636">
+										<p><font face="Arial, Helvetica, sans-serif" size="2" color="#FFFFFF"><br>
+				</font></p>
+										<table width="100%" border="0" height="500" cellpadding="3">
+											<tr>
+												<td width="11" height="546">&nbsp;</td>
+												<td width="354" height="546"><font face="Arial, Helvetica, sans-serif" size="2" color="#FFFFFF"><span class="mainCopy"><br>
+														<br>
+														<br>
+													<br>
+													<br>
+													<br>
+														</span><span class="main"><br>
+														<br>
+														One of the most outstanding<br>
+														 archaeological finds in the British <br>
+														Museum was found beneath a low <br>
+														grassy mound at Sutton Hoo in Suffolk.<br>
+														 Excavated in 1939 at the request of the <br>
+														landowner, Mrs Edith Pretty, the mound covered a deeply buried oak ship, thirty metres long. At its centre was an undisturbed burial chamber in which lay an extraordinary collection of objects including this unique helmet with its dramatic facemask. It was the grave of an early Anglo-<br>
+														Saxon king who had been ceremonially buried with his<br>
+														 most treasured possessions: a magnificent gold buckle,<br>
+														 gold sword and belt fittings, purse-lid and clasps all inlaid with intricately cut garnets, a lyre, drinking horns and a sceptre, silver from Byzantium and Celtic hanging-bowls.<br>
+														<br>
+														No body was found in the grave but later excavations established that the grave contained a body which survived only as chemical traces. The burial is dated by coins in the purse to around AD 625, suggesting that it could be the grave of Redwald, king of the East Angles (died before AD 627/8), and overlord of the Anglo-Saxon kingdoms from AD 616.<br>
+														<br>
+														After a Coroner&#146;s Inquest to decide ownership, Mrs Pretty generously gave the entire assemblage to the nation.</span></font></td>
+											</tr>
+															
+											<tr>
+																
+												<td width="11" height="49">
+																	
+													<p><font face="Arial, Helvetica, sans-serif" size="2" color="#FFFFFF"><span class="mainCopy"><br>
+												</span></font></p>
+												</td>
+												<td width="354" height="49" valign="bottom">
+													<table width="100%">
+														
+														<tr>
+															
+															<td width="64%" align="right"><a href="2.html"><img src="images/print.gif" width="58" height="21" border="0"></a></td>
+															<td width="17%"><a href="compass/ixbin/goto?id=OBJ3920"><img src="images/moreinfo.gif" width="81" height="21" border="0"></a></td>
+															<td width="19%"><font face="Arial, Helvetica, sans-serif" size="2" color="#FFFFFF"><a href="#"><img src="images/close.gif" width=58 height=21 onMouseDown="MM_showHideLayers('Layer2','','hide','Layer1','','inherit')" border="0"></a></font></td>
+														</tr>
+													
+													</table>
+												</td>
+											</tr>
+														
+										</table>
+									</td>
+								</tr>
+	 										
+								<tr>
+		 										
+									<td colspan=2>&nbsp;
+										</td>
+								</tr>
+ 										
+							</table>
+						</div>
+						<div id="Layer1" style="position:absolute; width:200px; height:115px; z-index:6; left: 85px; top: 4px; visibility: hidden">
+											
+							<table width=380 border=0 cellpadding=0 cellspacing=0 height="593">
+	 										
+								<tr>
+		 										
+									<td height="12">
+			<a href="#"><img src="images/top_01.gif" width=348 height=21 alt="" onMouseDown="MM_dragLayer('Layer1','',0,0,0,0,true,false,-1,-1,-1,-1,false,false,0,'',false,'')" border="0"></a></td>
+									<td height="12">
+			<a href="#"><img src="images/top_02.gif" width=32 height=21 alt="" onMouseDown="MM_showHideLayers('Layer1','','hide')" border="0"></a></td>
+								</tr>
+	 										
+								<tr background="images/alex.gif" bgcolor="#333333" >
+		 										
+									<td background="images/alex.gif" colspan=2 height="511"><br>
+										<table width="100%" border="0" height="50" cellpadding="3">
+											<tr>
+												<td width="9" height="382">&nbsp;</td>
+												<td width="353" height="382"><font face="Arial, Helvetica, sans-serif" size="2" color="#FFFFFF"><span class="main"><br>
+														
+														<br>
+														<br>
+														<br>
+													<br>
+													<br>
+														Alexander the Great     (356-323 BC) <br>
+														was the son of Philip II of Macedon <br>
+														and Olympias. Philip united his native<br>
+														 Macedonia before conquering the rest<br>
+														 of mainland Greece.  Alexander was<br>
+														 educated by eminent Greek teachers <br>
+														including Aristotle. After Philip&#146;s <br>
+													assassination in 336 BC Alexander<br>
+													 began expanding his territory, extending <br>
+													the boundary of the Greek  world to  Egypt in<br>
+													 the south and India in the east. He died in Babylon.<br>
+														<br>
+														Alexander is said to have carefully controlled the numerous<br>
+														representations of his portrait set up throughout his empire,<br>
+														allowing only a few sculptors and painters to produce his<br>
+														image. His posthumous portraits such as this follow similar general characteristics, although they vary in style. They show a more youthful, though perhaps more god-like character. He is clean-shaven, has longer hair, a more dynamic tilt of the head and an upward gaze. For a ruler to be shown without a beard was an innovation. Alexander was deified in his own lifetime, and after his death he was worshipped as a god in images such as this.</span></font></td>
+											</tr>
+															
+											<tr>
+																
+												<td width="9" height="59">
+																	
+													<p><font face="Arial, Helvetica, sans-serif" size="2" color="#FFFFFF"><span class="mainCopy"><br>
+												</span></font></p>
+												</td>
+												<td width="353" height="59" align="right">
+													<table width="100%">
+														<tr>
+															<td width="64%" align="right"><a href="1.html"><img src="images/print.gif" width="58" height="21" border="0"></a></td>
+															<td width="17%"><a href="compass/ixbin/goto?id=OBJ3302%20"><img src="images/moreinfo.gif" width="81" height="21" border="0"></a></td>
+															<td width="19%"><font face="Arial, Helvetica, sans-serif" size="2" color="#FFFFFF"><a href="#"><img src="images/close.gif" width=58 height=21 onMouseDown="MM_showHideLayers('Layer1','','hide')" border="0"></a></font></td>
+														</tr>
+													</table>
+												</td>
+											</tr>
+														
+										</table>
+									</td>
+								</tr>
+	 										
+								<tr>
+		 										
+									<td colspan=2>&nbsp;
+			</td>
+								</tr>
+ 										
+							</table>
+						</div>
+						<div id="Layer5" style="position:absolute; width:200px; height:563px; z-index:1; left: 85px; top: 4px; visibility: hidden">
+											
+							<table width=380 border=0 cellpadding=0 cellspacing=0 height="593">
+	 										
+								<tr>
+		 										
+									<td height="12">
+			<a href="#"><img src="images/top_01.gif" width=348 height=21 alt="" onMouseDown="MM_dragLayer('Layer5','',0,0,0,0,true,false,-1,-1,-1,-1,false,false,0,'',false,'')" border="0"></a></td>
+									<td height="12">
+			<a href="#"><img src="images/top_02.gif" width=32 height=21 alt="" onMouseDown="MM_showHideLayers('Layer5','','hide')" border="0"></a></td>
+								</tr>
+	 										
+								<tr background="images/mask.gif" bgcolor="#333333" >
+		 										
+									<td background="images/mask.gif" colspan=2 height="525">
+										<p><font face="Arial, Helvetica, sans-serif" size="2" color="#FFFFFF"><br>
+				</font></p>
+										<p><font face="Arial, Helvetica, sans-serif" size="2" color="#FFFFFF"><br>
+				</font></p>
+										<table width="100%" border="0" height="400" cellpadding="3">
+															
+											<tr>
+																
+												<td width="4%" height="378" rowspan="2">
+																	
+													<p><font face="Arial, Helvetica, sans-serif" size="2" color="#FFFFFF"><span class="mainCopy"><br>
+												</span></font></p>
+												</td>
+												<td width="96%" height="188">
+																	
+													<p><font face="Arial, Helvetica, sans-serif" size="2" color="#FFFFFF"><span class="main"><br>
+														<br>
+														<br>
+														<br>
+														<br>
+														Across both cheeks of this mask, a<br>
+														 stylized butterfly is picked out in <br>
+														mosaic of a darker tone. The butterfly <br>
+														is an emblem of   Xiuhtecuhtli,  a Fire<br>
+														  god from central Mexico,  whose name <br>
+														also means Turquoise Lord.<br>
+														<br>
+														Turquoise mosaics were probably made by <br>
+														Mixtec craftsmen for the Aztecs prior to the Spanish Conquest.Turquoise was highly-valued for its range of bluish-green hues that came to symbolise fertility and the sources of life. It was obtained by Aztec traders from mines in what is now the southwest United States, far beyond the limits of the Aztec empire. <br>
+														<br>
+														We do not know exactly when these mosaics were made. Some are known to have been included in the treasure given by Motecuhzoma to the Spanish conqueror Hernan Cortez. The Museum&#146;s group of nine was acquired in the nineteenth century in the territory of the old Habsburg Empire (Austria and Bohemia), which means they could be rare survivals of the treasures sent from Mexico at the beginning of the sixteenth century.</span></font></p>
+												</td>
+											</tr>
+											<tr>
+												<td width="96%" height="53">
+													<table width="100%">
+														
+														<tr>
+															
+															<td width="64%" align="right" height="17">&nbsp;</td>
+															<td width="17%" height="17"><a href="5.html"><img src="images/print.gif" width="58" height="21" border="0"></a></td>
+															<td width="19%" height="17"><font face="Arial, Helvetica, sans-serif" size="2" color="#FFFFFF"><a href="#"><img src="images/close.gif" width=58 height=21 onMouseDown="MM_showHideLayers('Layer5','','hide')" border="0"></a></font></td>
+														</tr>
+													
+													</table>
+												</td>
+											</tr>
+														
+										</table>
+									</td>
+								</tr>
+	 										
+								<tr>
+		 										
+									<td colspan=2>&nbsp;
+			</td>
+								</tr>
+ 										
+							</table>
+						</div>
+						<div id="Layer3" style="position:absolute; width:200px; height:115px; z-index:4; left: 85px; top: 4px; visibility: hidden">
+											
+										
+							<table width=380 border=0 cellpadding=0 cellspacing=0 height="593">
+	 										
+											
+								<tr>
+		 										
+												
+									<td height="12">
+			<a href="#"><img src="images/top_01.gif" width=348 height=21 alt="" onMouseDown="MM_dragLayer('Layer3','',0,0,0,0,true,false,-1,-1,-1,-1,false,false,0,'',false,'')" border="0"></a></td>
+									<td height="12">
+			<a href="#"><img src="images/top_02.gif" width=32 height=21 alt="" onMouseDown="MM_showHideLayers('Layer3','','hide')" border="0"></a></td>
+								</tr>
+	 										
+											
+								<tr background="images/sculpture.gif" bgcolor="#333333" >
+		 										
+												
+									<td background="images/sculpture.gif" colspan=2 height="569">
+										<p><font face="Arial, Helvetica, sans-serif" size="2" color="#FFFFFF"><br>
+				</font></p>
+										<table width="100%" border="0" height="100" cellpadding="3">
+											<tr>
+												<td width="4%" height="465">&nbsp;</td>
+												<td width="96%" height="465"><font face="Arial, Helvetica, sans-serif" size="2" color="#FFFFFF"><span class="main"><br>
+														<br>
+														<br>
+													<br>
+													<br>
+														<br>
+														This bronze sculpture of the<br>
+														 benign and graceful goddess <br>
+														Parvati depicts her as a beautiful<br>
+														 young woman. This ideal depiction <br>
+														of womanhood makes her an <br>
+														appropriate image for the consort of the<br>
+														 important male  deity, Shiva. Bronze <br>
+														sculptures of this type are known in India as <br>
+														utsavamurti, &#145;festival images&#146;, as their function is to be taken out of the temple at festival-time and paraded through the streets. This was an  opportunity for all members of the public to have that beneficial &#145;sacred view&#146; (darshan) of the deity.<br>
+														<br>
+														In Indian thought the main female goddess is usually connected to ideas concerned with fertility and abundance. Such goddesses, however, have many forms, some of them powerful. Parvati, in contrast, is calming and is often shown attending to her husband Shiva. In both paintings and<br>
+														sculpture, the two are frequently depicted in their Himalayan home of Mount Kailash with their two offspring &#150; elephant-headed Ganesha and the warlike youth Karttikeya.<br>
+														<br>
+														This sculpture was made using the lost-wax process, a method of bronzecasting at which Indian craftsmen are supremely competent</span></font><span class="main"><font face="Arial, Helvetica, sans-serif" size="2" color="#FFFFFF" class="mainCopy">.
+</font></span></td>
+											</tr>
+															
+														
+											<tr>
+																
+															
+												<td width="4%" height="41">
+																	
+																
+													<p><font face="Arial, Helvetica, sans-serif" size="2" color="#FFFFFF"><span class="mainCopy"><br>
+												</span></font></p>
+												</td>
+												<td width="96%" height="41">
+													<table width="100%">
+														
+														<tr>
+															
+															<td width="64%" align="right"><a href="3.html"><img src="images/print.gif" width="58" height="21" border="0"></a></td>
+															<td width="17%"><img src="images/spacer.gif" width="1" height="1"></td>
+															<td width="19%"><font face="Arial, Helvetica, sans-serif" size="2" color="#FFFFFF"><a href="#"><img src="images/close.gif" width=58 height=21 onMouseDown="MM_showHideLayers('Layer3','','hide')" border="0"></a></font></td>
+														</tr>
+													
+													</table>
+												</td>
+											</tr>
+														
+													
+										</table>
+									</td>
+								</tr>
+	 										
+											
+								<tr>
+		 										
+												
+									<td colspan=2>&nbsp;
+			</td>
+								</tr>
+ 										
+										
+							</table>
+						</div>
+						<div id="Layer6" style="position:absolute; width:200px; height:115px; z-index:3; left: 85px; top: 4px; visibility: hidden">
+											
+										
+							<table width=380 border=0 cellpadding=0 cellspacing=0 height="593">
+	 										
+											
+								<tr>
+		 										
+												
+									<td height="12">
+			<a href="#"><img src="images/top_01.gif" width=348 height=21 alt="" onMouseDown="MM_dragLayer('Layer6','',0,0,0,0,true,false,-1,-1,-1,-1,false,false,0,'',false,'')" border="0"></a></td>
+									<td height="12">
+			<a href="#"><img src="images/top_02.gif" width=32 height=21 alt="" onMouseDown="MM_showHideLayers('Layer6','','hide')" border="0"></a></td>
+								</tr>
+	 										
+											
+								<tr background="images/hoe.gif" bgcolor="#333333" >
+		 										
+												
+									<td background="images/hoe.gif" colspan=2 height="582">
+										<table width="100%" border="0" height="100%" cellpadding="3">
+															
+														
+											<tr>
+																
+															
+												<td width="9" height="574" rowspan="2">
+																	
+																
+													<p><font face="Arial, Helvetica, sans-serif" size="2" color="#FFFFFF"><span class="mainCopy"><br>
+												</span></font></p>
+												</td>
+												<td width="353" height="536">
+													<p><font face="Arial, Helvetica, sans-serif" size="2" color="#FFFFFF"><span class="mainCopy"><br>
+														<br>
+														</span><span class="main"><br>
+														<br>
+														<br>
+														<br>
+														<br>
+														<br>
+														<br>
+														Easter Island (Rapa Nui) is famous<br>
+														 for its stone statues of human figures, <br>
+														known as moai, probably carved to<br>
+														 commemorate important  ancestors. <br>
+														The statues were made from  around <br>
+														AD 1000 until the second half of the<br>
+														 seventeenth century. A birdman cult later<br>
+														 became more important to the islanders. This<br>
+														statue is unusual, as it is made of basalt rather than the more usual volcanic tuff from the Rano Raraku quarry. It was probably first displayed outside, on a stone platform, before being moved into a stone house at the ritual centre of the birdman cult at Orongo.<br>
+														<br>
+														In October 1868 HMS Topaze, on a surveying voyage, visited<br>
+														Easter Island. A party from the ship found the statue in one of the stone slab houses at Orongo, partly buried in the earth. The four-ton statue was subsequently moved to the ship with the assistance of the islanders. The Admirality presented the statue to Queen Victoria, who subsequently gave it to the British Museum<br>
+														<br>
+														 The crew recorded the name of the statue as Hoa Hakananai&#146;a. At one time this was translated as &#145;Breaking Waves&#146;, but it is now thought to mean &#145;Stolen&#146; or &#145;Hidden Friend&#146;.</span></font></p>
+												</td>
+											</tr>
+											<tr>
+												<td width="353" height="50">
+													<table width="100%">
+														
+														<tr>
+															
+															<td width="64%" align="right" height="2"><a href="6.html"><img src="images/print.gif" width="58" height="21" border="0"></a></td>
+															<td width="17%" height="2"><a href="compass/ixbin/goto?id=OBJ1891"><img src="images/moreinfo.gif" width="81" height="21" border="0"></a></td>
+															<td width="19%" height="2"><font face="Arial, Helvetica, sans-serif" size="2" color="#FFFFFF"><a href="#"><img src="images/close.gif" width=58 height=21 onMouseDown="MM_showHideLayers('Layer6','','hide')" border="0"></a></font></td>
+														</tr>
+													
+													</table>
+												</td>
+											</tr>
+														
+													
+										</table>
+									</td>
+								</tr>
+	 										
+											
+								<tr>
+		 										
+												
+									<td colspan=2>&nbsp;
+			</td>
+								</tr>
+ 										
+										
+							</table>
+						</div>
+					</td>
+					<td background="images/site_03.gif" width="0%" height="85">&nbsp;</td>
+					<td background="images/site_03.gif" width="0%" height="85">&nbsp;
+			</td>
+					<td align="right" background="images/site_03.gif" width="61%" height="85"><img src="images/heads.jpg" width=646 height=107 alt=""></td>
+				</tr>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+			</table>
+		</td>
+	</tr>
+	<tr>
+		<td height="595" valign="top">
+			<table cellpadding="0" cellspacing="0" border="0">
+				<tr>
+					<td width="51%" valign="top">
+						<table width="93%" cellpadding="0" cellspacing="0" border="0" height="100%">
+							<tr>
+								<td height="156" width="8%">&nbsp;</td>
+								<td height="156" width="92%"><img src="images/stamps.gif" width=308 height=134 alt="">
+									<br>
+						</td>
+							</tr>
+							<tr>
+								<td height="306" width="8%" rowspan="2">&nbsp;</td>
+								<td height="153" width="92%" class="main">2003 is the 250th anniversary of the death of the great collector, <a href="visit/sloane.html">Sir Hans Sloane (1660-1753)</a>, whose collections formed the nucleus of the British Museum, and also the anniversary of the  Act of Parliament by which the Museum was founded. To mark the occasion a set of six stamps, the first ever to feature the British Museum, has been produced by the Royal Mail.<br>
+						<br>
+						To demonstrate the cultural diversity of the Museum&#146;s collections a face has been selected from each of the five continents. In addition to these, the helmet from the Anglo-Saxon ship burial at Sutton Hoo, Suffolk, one of the Museum&#146;s greatest treasures from Britain is featured.<br>
+						<br>
+						The Museum&#146;s collections span the whole world from the first emergence of human beings to the present day. By following this trail you can travel from Ancient Egypt to pre-Conquest Mexico, from India to Easter Island and from the Greek world to Anglo- Saxon England. The faces are divine and human, made of contrasting materials: stone, wood, metal and turquoise by ancient craftsmen. They are monumental and life sized, abstract and realistic. Although their origins are diverse, their compelling stares link them across time and place.</td>
+							</tr>
+							<tr>
+								<td height="153" width="92%" class="main"><br>
+									<br>
+									<img src="images/onsale.gif" width="165" height="23"><br>
+									<b><br>
+									First day covers together with a commemorative <br>
+									
+									set of postcards.<br>
+									<br>
+									A special pack combining the stamps and the <br>
+									British Museum 250th anniversary medal<br>
+									 designed for the Royal Mint.<br>
+									<br>
+									<i>The British Museum: 250 years </i>by Marjorie Caygill<br>
+									 has been published to celebrate the anniversary.
+</b>								</td>
+							</tr>
+						</table>
+					</td>
+					<td width="49%" valign="top">
+<br>
+						<table width="100%" cellpadding="0" cellspacing="0" border="0">
+							<tr>
+								<td width="60%">
+									<table width=100% border=0 cellpadding=0 cellspacing=0>
+	
+	
+										<tr>
+											<td rowspan=9 width="20" background="images/1_12.gif">
+			<img src="images/1_12.gif" width=16 height=474 alt=""></td>
+											<td colspan=6 background="images/1_13.gif">
+			<img src="images/1_13.gif" width=410 height=24 alt=""></td>
+										</tr>
+										<tr>
+											<td rowspan=7 width="16" background="images/1_17.gif">
+			<img src="images/1_17.gif" width=12 height=418 alt=""></td>
+											<td colspan=4 background="images/1_18.gif">
+			<img src="images/1_18.gif" width=238 height=16 alt=""></td>
+											<td rowspan=7 width="287" background="images/1_20.gif">
+			<img src="images/test_19.jpg" width=160 height=418 alt=""></td>
+										</tr>
+										<tr>
+											<td width="92" background="images/1_34.gif">
+			<a href="javascript:;" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('one','','images/1a.jpg',1)" onMouseDown="MM_showHideLayers('Layer1','','show')"><img src="images/1.jpg" width=86 height=118 alt="Alexander the Great" name="one" border="0" onMouseDown="MM_showHideLayers('Layer4','','hide','Layer2','','hide','Layer5','','hide','Layer3','','hide','Layer6','','hide')"></a></td>
+											<td width="56" background="images/1_23.gif">
+			<img src="images/1_23.gif" width=26 height=118 alt=""></td>
+											<td width="131" background="images/1_34.gif">
+			<a href="javascript:;" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('two','','images/2a.jpg',1)" onMouseDown="MM_showHideLayers('Layer4','','hide','Layer2','','show','Layer1','','hide','Layer5','','hide','Layer3','','hide','Layer6','','hide')"><img src="images/2.jpg" width=88 height=118 alt="Sutton Hoo Helmet" name="two" border="0"></a></td>
+											<td rowspan=5 width="38" background="images/1_25.gif">
+			<img src="images/1_25.gif" width=38 height=390 alt=""></td>
+										</tr>
+	
+										<tr>
+											<td colspan=3 background="images/1_28.gif">
+			<img src="images/1_28.gif" width=200 height=16 alt=""></td>
+										</tr>
+										<tr>
+											<td width="92" background="images/1_34.gif">
+			<a href="javascript:;" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('three','','images/3a.jpg',1)" onMouseDown="MM_showHideLayers('Layer4','','hide','Layer2','','hide','Layer1','','hide','Layer5','','hide','Layer3','','show','Layer6','','hide')"><img src="images/3.jpg" width=86 height=118 alt="Sculpture of Parvati" name="three" border="0"></a></td>
+											<td width="56" background="images/1_23.gif">
+			<img src="images/1_30.gif" width=26 height=118 alt=""></td>
+											<td width="131" background="images/1_34.gif">
+			<a href="javascript:;" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('four','','images/4a.jpg',1)" onMouseDown="MM_showHideLayers('Layer4','','show','Layer2','','hide','Layer1','','hide','Layer5','','hide','Layer3','','hide','Layer6','','hide')"><img src="images/4.jpg" width=88 height=118 alt="Coffin of Denytenamun" name="four" border="0"></a></td>
+										</tr>
+										<tr>
+											<td colspan=3 background="images/1_32.gif">
+			<img src="images/1_32.gif" width=200 height=20 alt=""></td>
+										</tr>
+										<tr>
+											<td width="92" background="images/1_34.gif">
+			<a href="javascript:;" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('five','','images/5a.jpg',1)" onMouseDown="MM_showHideLayers('Layer4','','hide','Layer2','','hide','Layer1','','hide','Layer5','','show','Layer3','','hide','Layer6','','hide')"><img src="images/5.jpg" width=86 height=118 alt="Mask of Xiuhtecuhtli" name="five" border="0"></a></td>
+											<td width="56" background="images/1_23.gif">
+			<img src="images/1_34.gif" width=26 height=118 alt=""></td>
+											<td width="131" background="images/1_34.gif">
+			<a href="javascript:;" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('six','','images/6a.jpg',1)" onMouseDown="MM_showHideLayers('Layer4','','hide','Layer2','','hide','Layer1','','hide','Layer5','','hide','Layer3','','hide','Layer6','','show')"><img src="images/6.jpg" width=88 height=118 alt="Hoa Hakananai" name="six" border="0"></a></td>
+										</tr>
+										<tr>
+											<td colspan=4 height="2" background="images/1_36.gif">
+			<img src="images/1_36.gif" width=238 height=12 alt=""></td>
+										</tr>
+										<tr>
+											<td colspan=6 height="2" background="images/1_38.gif">
+			<img src="images/clicktoview.gif" width="410" height="32"></td>
+										</tr>
+	
+	
+									</table>
+								</td>
+							</tr>
+				
+				
+						</table>
+						<br>
+						<a href="http://www.royalmail.com/portal/default/all/home;jsessionid=KJFIWW1JEYHMWCRAZRLUOSQKEDGFMQ2K?paf_gear_id=100003&paf_gm=content&paf_dm=full&shopConsigniaPage=./catalog/shopCatalog&id=cat370004" target="_blank"><img src="images/copy.gif" width="235" height="25" border="0"></a></td>
+				</tr>
+			</table>
+			<br>
+			<br>
+			<br>
+				
+			<div class=home align=center><font 
+      size=2><a href="/index.html"><font 
+      color=#CCCCCC size="1" face="Arial, Helvetica, sans-serif"><span class=home>home</span></font></a><font color="#CCCCCC" size="1" face="Arial, Helvetica, sans-serif"><span class=home> 
+        | 
+        <a href="/visit/index.html">visit</a> | <a href="/whatson/index.html">what's 
+        on</a> | <a 
+      href="/join/index.html">join</a> | <a 
+      href="http://www.britishmuseum.co.uk/">shop</a> | <a 
+      href="/education/index.html">learning</a> | <a href="/compass">COMPASS</a> 
+        <br>
+        <a 
+      href="/world/world.html">world cultures</a> | <a 
+      href="/sitemap/sitemap.html">sitemap</a> | <a href="/visit/contact.html">contact 
+        us</a> | <a 
+      href="/corporate/copyright.html">copyright</a></span></font></font></div>
+			<div align=center><font color="#171717" size="1" face="Arial, Helvetica, sans-serif"><br>
+				<font color="#000000">© 
+        The British Museum, 2003</font></font></div>
+		</td>
+	</tr>
+</table>
+<script  type="text/javascript">
+</script>
+<script type="text/javascript">
+
+
+</script></body></HTML>

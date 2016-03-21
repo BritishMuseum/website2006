@@ -1,0 +1,47 @@
+<html>
+<head>
+<title>British Museum SubBox</title>
+<script language="Javascript">
+function sendData(){
+	var args ="?";
+	action_type = (document.subbox.action_type[1].checked) ? "unsubscribe" : "subscribe";
+	    if (action_type == "unsubscribe") {
+	        args = args + "action=remoteBox&errorPage=/public/remotebox_error.jsp&gid=40005330&action_type=unsubscribe"
+        	args = args + "&";
+	        args =args + "uemail=";
+	        args =args + document.subbox.uemail.value;
+	    }  else {
+	        args = args + "action=register&errorPage=/public/remotebox_error.jsp&gid=40005330&iso_lang=en&iso_country=EN&agb=1&mps=4jcmf60aq60rfmudtzq7c&action_type=subscribe"
+	        args = args + "&";
+	        args =args + "uemail=";
+	        args =args + document.subbox.uemail.value;
+	    }
+        mywin =window.open("http://britishmuseum.ecircle-uk.com/public/remotebox_welcome.jsp"+args,"mywin","tolbar=no,scrollbars=no,menubar=no,width=400,height=250");
+        mywin.focus();
+        return false;
+}
+</script>
+</head>
+<body>
+<form name="subbox" action="#" method="post" onSubmit="return sendData();">
+<table>
+   <tr>
+   	<td><input type="text" name="uemail" value="" size="30"></td>
+   </tr>
+   <tr>
+   	<td align="center"><input type="radio" name="action_type" value="subscribe">subscribe&nbsp&nbsp;
+   	    <input type="radio" name="action_type" value="unsubscribe">unsubscribe
+   	</td>
+   </tr>
+   <tr>
+   	<td align="center"><input type="submit" value="Send"></td>
+   </tr>
+</table>
+</form><script  type="text/javascript">
+</script>
+<script type="text/javascript">
+
+
+</script>
+</body>
+</html>

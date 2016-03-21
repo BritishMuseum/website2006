@@ -1,0 +1,11 @@
+body,table,tr,td{
+	background-color: white;
+	font-family: arial,helvetica,sans-serif;
+}
+.quote {
+      padding-left: 10%;
+      padding-right: 10%;
+      text-align: justify;
+      font-family: verdana,arial,helvetica,sans-serif;
+      font-size: 1.02em;
+}

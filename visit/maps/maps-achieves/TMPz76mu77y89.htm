@@ -1,0 +1,179 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<title>Museum Plans - Middle Floor</title>
+<link href="style/floor.css" rel="stylesheet" type="text/css" media="screen">
+<link href="style/print.css" rel="stylesheet" type="text/css" media="print">
+<style>
+#colleft, #colright
+	{
+	position: absolute;
+	top: 640px;
+	}
+	
+#colleft
+	{
+	position: absolute;
+	left: 10px;
+	}
+#colright
+	{
+	position: absolute;
+	left: 360px;	
+	}
+	</style>
+<script src="javascript/findDOM.js"></script>
+<script>
+
+function toggleVisibility(objectID)
+	{
+
+	var dom = findDOM(objectID,1);
+	state = dom.visibility;
+	
+	if (state == 'hidden' || state == 'hide')
+		dom.visibility = 'visible';
+	else
+		{
+		if (state == 'visible' || state == 'show')
+			dom.visibility = 'hidden';
+	else dom.visibility = 'visible';
+
+
+		}
+
+
+	}
+
+</script>
+</head>
+
+<body>
+<div id="header">
+<h1 style="float: left;">Upper floor</h1><a href="upperfloor.html">Upper floor</a> | <a href="mainfloor.html">Main floor</a> | <a href="lowerfloor.html">Lower floor</a> | <a href="greatcourt.html">Great court</a>
+</div>
+
+<img src="images/to_06.gif" alt="Map of the British Museum, upper floor." name="map" usemap="#mi_06_imagemaps_Map" id="map"/> 
+<map name="mi_06_imagemaps_Map">
+  <area shape="poly" onMouseOver="toggleVisibility('closedpopup')" onMouseOut="toggleVisibility('closedpopup')" alt="" coords="471,155,337,80,371,45,337,23,359,2,512,88,482,127,490,132" href="#">
+  <area shape="poly" onMouseOver="toggleVisibility('closedpopup')" onMouseOut="toggleVisibility('closedpopup')" alt="" coords="456,266,465,270,473,261,486,269,480,276,484,279,435,343,438,345,420,371,415,368,363,436,334,419,387,351,383,349,404,322,409,324" href="#">
+  <area shape="poly" onMouseOver="toggleVisibility('britainpopup')" onMouseOut="toggleVisibility('britainpopup')" alt="" coords="232,371,200,405,228,424,232,419,253,435,250,439,294,474,270,503,266,501,247,524,279,547,301,516,388,578,390,575,404,585,459,506,437,491,428,499,353,450,362,438,334,420,323,431,312,424,306,429,257,395,262,389" href="#">
+  <area shape="poly" onMouseOver="toggleVisibility('moneypopup')" onMouseOut="toggleVisibility('moneypopup')" alt="" coords="154,350, 141,363, 199,404, 212,389" href="#">
+  <area shape="poly" onMouseOver="toggleVisibility('temppopup')" onMouseOut="toggleVisibility('temppopup')" alt="" coords="128,312, 121,319, 129,326, 137,318" href="#" onClick="window.open('moneyandmedals/index.html', 'myWin', 'status, width=800, height=580, screenX=0,screenY=0,left=0,top=0, scrollbars=1'); return false">
+<area shape="poly" coords="128,296,122,294" href="#">
+<area shape="poly" coords="95,317" href="#"><area shape="poly" coords="103,325" href="#"><area shape="poly" coords="120,335" href="#"><area shape="poly" coords="115,346" href="#"><area shape="poly" coords="139,363" href="#"><area shape="poly" coords="313,181" href="#"><area shape="poly" coords="297,172" href="#"><area shape="poly" coords="127,333" href="#"><area shape="poly" coords="114,316" href="#"><area shape="poly" coords="132,300" href="#">
+<area shape="poly" coords="114,346" href="#">
+<area shape="poly" onMouseOver="toggleVisibility('ancientpopup')" onMouseOut="toggleVisibility('ancientpopup')" alt="" coords="128,296,119,293,96,319,101,325,119,337,113,344,137,360,311,179,294,169,128,331,110,319" href="#">
+<area shape="poly" onMouseOver="toggleVisibility('neareastpopup')" onMouseOut="toggleVisibility('neareastpopup')" alt="" coords="305,155,295,165,460,265,463,254" href="#">
+<area shape="poly" onMouseOver="toggleVisibility('egyptpopup')" onMouseOut="toggleVisibility('egyptpopup')" alt="" coords="299,133,290,144,494,268,503,253" href="#">
+</map>
+<div id="ancientpopup" class="box"> 
+  <div id="ancient"></div>
+  <h1>Greece and Rome</h1>
+  69: Greece &amp; Rome daily life<br />
+  70&ndash;73: Rome, Italy and Cyprus </div>
+
+<div id="moneypopup" class="box"> 
+  <div id="money"></div>
+  <h1>Themed Galleries</h1>
+  68: Money </div>
+
+<div id="egyptpopup" class="box"> 
+  <div id="egypt"></div>
+  <h1>Egypt</h1>
+  66: Egyptian life and funerary archeology </div>
+
+<div id="neareastpopup" class="box"> 
+  <div id="neareast"></div>
+  <h1>Ancient Near East</h1>
+  51-59: South Arabia, Iran, Anatolia, Mesopotamia and Levant </div>
+
+<div id="britainpopup" class="box"> 
+  <div id="britain"></div>
+  <h1>Britain &amp; Europe</h1>
+  36, 37: Prehistory<br />
+  41&ndash;42: Medieval<br />
+  44: Clocks &amp; watches<br />
+  45: The Waddesdon Bequest<br />
+  46&ndash;48: 15th&ndash;20th century<br />
+  49: Roman Britain<br />
+  50: Bronze Age &amp; Celtic </div>
+
+<div id="temppopup" class="box"> 
+  <div id="temp"></div>
+  <h1>Temporary exhibitions</h1>
+  <p>Click on map to load up exhibition mini-site in new window</p>
+  69a: Money &amp; medals<br />
+</div>
+
+<div id="closedpopup" class="box"> 
+  <h1>Closed</h1>
+  These galleries are closed for refurbishment </div>
+
+<div id="key"> 
+  <h1>Key</h1>
+  <ul>
+    <li id="info">Information Desk &amp; Box Office</li>
+    <li id="toilets">Toilets</li>
+    <li id="accessible">Accessible toilets</li>
+    <li id="babycare">Babycare</li>
+    <li id="cloakroom">Cloakroom</li>
+    <li id="lostproperty">Lost property</li>
+    <li id="restaurant">Restaurant</li>
+    <li id="cafe">Caf&eacute;</li>
+    <li id="shop">Shop</li>
+    <li id="audio">Audio Tour</li>
+    <li id="telephone">Telephone</li>
+    <li id="lift">Lift</li>
+  </ul>
+</div>
+
+<div id="colleft">
+<div class="containers">
+<div id="britain"></div><h1>Britain &amp; Europe</h1>
+36, 37: Prehistory<br />
+41&ndash;42: Medieval<br />
+44: Clocks &amp; watches<br />
+45: The Waddesdon Bequest<br />
+46&ndash;48: 15th&ndash;20th century<br />
+49: Roman Britain<br />
+50: Bronze Age &amp; Celtic
+</div>
+
+<div class="containers">
+<div id="ancient"></div>
+<h1>Greece and Rome </h1>
+ <br />
+69: Greece &amp; Rome daily life<br />
+70&ndash;73: Rome, Italy and Cyprus
+</div>
+
+<div class="containers">
+<div id="egypt"></div>
+<h1>Egypt </h1>
+ 61&ndash;66: Egyptian life and funerary archeology<br />
+</div>
+
+</div>
+
+<div id="colright">
+<div class="containers">
+<div id="money"></div>
+<h1>Themed Galleries </h1>
+68: Money
+</div>
+
+
+<div class="containers">
+<div class="containers">
+<div id="neareast"></div>
+<h1>Ancient and Near East </h1>
+51-59: South Arabia, Iran, Anatolia, Mesopotamia and Levant <br />
+</div>
+</div>
+
+</div>
+
+</html>

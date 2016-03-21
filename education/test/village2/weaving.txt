@@ -1,0 +1,15 @@
+&weavIntro=<font face="Arial,Helvetica,sans-serif" size="14">This timber building has only one room. It is mainly used for weaving, but some of the family sleep here.</font>
+
+&weav1=<font face="Arial,Helvetica,sans-serif" size="14">This is a <font color="#660000"><u><a href="javascript:openGlos('glossary/loom.html','glos')">loom</a></u></font>, which is used to weave cloth. This type is called a 'warp-weighted' <font color="#660000"><u><a href="javascript:openGlos('glossary/loom.html','glos')">loom</a></u></font>. The '<font color="#660000"><u><a href="javascript:openGlos('glossary/warp.html','glos')">warp</a></u></font>' is the name for the vertical threads or yarns. Another yarn, the '<font color="#660000"><u><a href="javascript:openGlos('glossary/weft.html','glos')">weft</a></u></font>', is interwoven through the <font color="#660000"><u><a href="javascript:openGlos('glossary/warp.html','glos')">warp</a></u></font> to create the cloth.</font>
+
+&weav2=<font face="Arial,Helvetica,sans-serif" size="14">A piece of cloth is being woven on the <font color="#660000"><u><a href="javascript:openGlos('glossary/loom.html','glos')">loom</a></u></font>.  It is made from woollen thread. There are different ways of weaving which produce different types of cloth.</font>
+
+&weav3=<font face="Arial,Helvetica,sans-serif" size="14">This woman is weaving cloth for her family. Her daughter helps her work so that she can learn all about weaving; there is no school for children to go to in the 6th century.</font>
+
+&weav4=<font face="Arial,Helvetica,sans-serif" size="14">Before cloth can be woven, the wool is washed and <font color="#660000"><u><a href="javascript:openGlos('glossary/card.html','glos')">carded</a></u></font> and then spun into thread. This woman is using a spindle to spin the wool.</font>
+
+&weav5=<font face="Arial,Helvetica,sans-serif" size="14">This woman is using a 'thread-picker' to separate the <font color="#660000"><u><a href="javascript:openGlos('glossary/warp.html','glos')">warp</a></u></font> threads, so that she can push the <font color="#660000"><u><a href="javascript:openGlos('glossary/weft.html','glos')">weft</a></u></font> thread through more easily. The thread-picker is made from bone from one of the village pigs. </font>
+
+&weav6=<font face="Arial,Helvetica,sans-serif" size="14">The raw wool is stored here, ready to be spun and then woven into cloth.</font>
+
+&weav7=<font face="Arial,Helvetica,sans-serif" size="14">This family doesn't just weave woollen cloth. These boxes contain linen, which is made from the stems of the flax plant. Linen cloth is also woven on the <font color="#660000"><u><a href="javascript:openGlos('glossary/loom.html','glos')">loom</a></u></font>.</font>

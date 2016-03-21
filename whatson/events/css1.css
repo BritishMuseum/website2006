@@ -1,0 +1,77 @@
+/* CSS Document */
+
+P {
+	FONT-SIZE: 10pt; COLOR: #ffffff; FONT-FAMILY: Arial, Helvetica, sans-serif
+}
+
+a:link { color:#E6E9F0;}
+a:hover { color:#FFC166;}
+
+TD {
+	FONT-SIZE: small; COLOR: #ffffff; FONT-FAMILY: Arial, Helvetica, sans-serif
+}
+H1 {
+	FONT-SIZE: 14pt; COLOR: #4b95b8; FONT-FAMILY: Arial, Helvetica, sans-serif
+}
+
+.admin {
+	padding: 4px;
+	border-top: 1px solid #C46251;
+	border-right: 1px solid #8A2D00;
+	border-bottom: 1px solid #8A2D00;
+	border-left: 1px solid #C46251;
+}
+
+.adminCopy {
+	padding: 4px;
+	border-top: 1px solid #5592A6;
+	border-right: 1px solid #3D6876;
+	border-bottom: 1px solid #3D6876;
+	border-left: 1px solid #5592A6;
+
+}
+td {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 0.8em;
+}
+.med {
+	font-size: 0.7em;
+	color: #27475A;
+}
+.lcolors:visited {color: #CCCCCC;} 
+.lcolors:active {color: #00FF00;} 
+.lcolors:hover {color: ##FF9900;} 
+
+
+
+.med a:link {color: #CCCCCC;}
+.med a:hover {color: #FFCD82}
+
+.botbar {
+	font-size: xx-small;
+	color: #27475A;
+}
+
+.botbar a:link {color: #2D5166;}
+.botbar a:hover {color: #FFC166}
+.botbar a:visited {color: #4184A5}
+
+.topbar {
+
+	color: #27475A;
+}
+
+.topbar a:link {color: #3D7A98;}
+.topbar a:hover {color: #FFC166}
+.topbar a:visited {color: #4184A5}yel {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	color: #FF9900;
+}
+.orangedates {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 18px;
+	font-weight: normal;
+	color: #FF9900;
+	line-height: 18px;
+}

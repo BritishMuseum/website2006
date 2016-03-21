@@ -1,0 +1,872 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3c.org/TR/1999/REC-html401-19991224/loose.dtd">
+<HTML><HEAD><TITLE>British Museum Friends: Donate</TITLE>
+<META http-equiv="Content-Type" content="text/html; charset=windows-1252">
+    <type="text/css" rel="stylesheet"/>
+
+    <STYLE>
+    .style2 {
+	FONT-SIZE: 14px; COLOR: #463428; FONT-FAMILY: Arial, Helvetica, sans-serif; BACKGROUND-COLOR: #ffffff
+}	
+.style4 {
+	FONT-SIZE: small; COLOR: #463428; FONT-FAMILY: Arial, Helvetica, sans-serif; BACKGROUND-COLOR: #ffffff
+}
+.style5 {
+	FONT-SIZE: small; COLOR: #000000; FONT-FAMILY: Arial, Helvetica, sans-serif; BACKGROUND-COLOR: #ffffff
+}
+.style8 {
+	FONT-WEIGHT: 900; COLOR: #7f0000
+}
+.style9 {
+	FONT-WEIGHT: bolder; FONT-SIZE: small; COLOR: #463428; FONT-FAMILY: Arial, Helvetica, sans-serif; BACKGROUND-COLOR: #ffffff
+}
+.style10 {
+	FONT-WEIGHT: 500; COLOR: #7f0000
+}
+.style11 {
+	FONT-WEIGHT: 900
+}
+.style14 {
+	FONT-SIZE: small; COLOR: #7f0000
+}
+.style16 {
+	FONT-WEIGHT: bolder
+}
+</STYLE>
+<script src="/friends/validate_functions.js"></script>
+<!-- <SCRIPT src="donate_files/validate_functions.js"></SCRIPT> -->
+
+<SCRIPT language="Javascript">
+      //
+      // validate subscription web form.
+      //
+      var bm_donate, err_bm_donate,  
+	  bm_b_title,  err_b_bm_title,
+      bm_b_first_name,  err_bm_b_first_name,
+      bm_b_surname,  err_bm_b_surname,
+      btelephonenumber, err_btelephonenumber,
+      baddr1,  err_baddr1,
+      baddr2,  err_baddr2,
+      baddr3,  err_baddr3,
+      bcity,  err_bcity,
+      bcountyprovince,  err_bcountyprovince,
+      bstate,  stateCode,
+      err_bstate,  bcountry,
+      err_bcountry,  bpostalcode,
+      err_bpostalcode,  email,
+      err_email,  
+      bgiftaid;
+      
+
+
+      // From Javascript - DHTML examples on http://www.quirksmode.org/cross_dhtml.html
+      var DHTML = false;
+      
+function setDHTML_flag() {
+   var _dhtml = false;
+//   alert(document.getElementById);
+   if (document.getElementById) {
+      _dhmtl = true;
+      }
+   else if (document.all.baddr1) {
+     _dhtml = true;
+   }
+   else if (document.layers.baddr1) {
+     _dhtml = true;
+   };
+//   alert("returning " + _dhtml);
+   return _dhtml;
+}
+
+
+
+function validate_form() {
+  var form_ok = false;
+  var fields_ok_count = 0;
+//  if (validate_field(bm_donate, "Donation", true, err_bm_donate)) {
+//    fields_ok_count++;
+//  }
+  if (validate_decimal_number_field(bm_donate, "Donation", true, err_bm_donate)) {
+     fields_ok_count++;
+  }
+  if (validate_field(bm_b_title, "Title", true, err_bm_b_title)) {
+    fields_ok_count++;
+  }
+  if (validate_field(bm_b_first_name, "First Name", true, err_bm_b_first_name)) {
+    fields_ok_count++;
+  }
+  if (validate_field(bm_b_surname, "Surname", true, err_bm_b_surname)) {
+    fields_ok_count++;
+  }
+
+  if (validate_field(baddr1, "Address Line 1", true, err_baddr1)) {
+    fields_ok_count++;
+  }
+  if (validate_field(bcity, "City", true, err_bcity)) {
+    fields_ok_count ++;
+  }
+  // Validate State and Country tie-in
+  if (validate_us_state(bstate, bcountry, "State", "Country", err_bstate)) {
+    fields_ok_count ++;
+  }
+  if (validate_country(bcountry, "Country of Residence", err_bcountry)) {
+    fields_ok_count++;
+  }
+  if (validate_field(bpostalcode, "Postal or ZIP Code", true, err_bpostalcode)) {
+      fields_ok_count ++;
+  }
+  if (validate_email(email, "Payer's Email Address", true, err_email)) {
+      fields_ok_count ++;
+  }
+
+  if (fields_ok_count != 10) {
+      alert( "Error(s) seen processing your application:\n"
+         + "Please review all messages marked in red, and\n"
+         + "re-send your donation details.\n\n"
+         + "Thankyou.");
+      form_ok = false;
+  }
+  else {
+      form_ok = true;
+  }
+  return form_ok;
+}
+
+function clearErrorDisplays() {
+	clearError(err_bm_donate);
+	clearError(err_bm_b_title);
+	clearError(err_bm_b_first_name);
+	clearError(err_bm_b_surname);
+	clearError(err_baddr1);
+	clearError(err_baddr2);
+	clearError(err_baddr3);
+	clearError(err_bcity);
+	clearError(err_bcountyprovince);
+	clearError(err_bstate);
+	clearError(err_bcountry);
+	clearError(err_bpostalcode);
+	clearError(err_email);
+	return true;
+}
+
+function load_controls() {
+  // generally, IE has an all property in its document object, and Mozilla|Firefox|Netscape
+  // don't. FF 1.5 gets upset when I test the form variables and error message elements.
+  // 
+  if (null != document.all) {
+	// IE branch.
+	if (null ==  bm_b_title) {
+		bm_b_title = document.getElementById("bm_b_title");
+	};
+	if (null ==  err_bm_b_title) {
+		err_bm_b_title = document.getElementById("err_bm_b_title");
+	};
+	if (null ==  bm_donate) {
+		bm_donate = document.getElementById("bm_donate");
+	};
+	if (null == err_bm_donate) {
+		err_bm_donate = document.getElementById("err_bm_donate");
+	};
+	if (null ==  bm_b_first_name) {
+		bm_b_first_name = document.getElementById("bm_b_first_name");
+	};
+	if (null ==  err_bm_b_first_name) {
+		err_bm_b_first_name = document.getElementById("err_bm_b_first_name");
+	}
+	if (null ==  bm_b_surname) {
+		bm_b_surname = document.getElementById("bm_b_surname");
+	};
+	if (null ==  err_bm_b_surname) {
+		err_bm_b_surname = document.getElementById("err_bm_b_surname");
+	};
+	if (null ==  baddr1) {
+		baddr1 = document.getElementById("baddr1");
+	};
+	if (null == err_baddr1) {
+		err_baddr1 = document.getElementById("err_baddr1");
+	};
+	if (null == baddr2) {
+		baddr2 = document.getElementById("baddr2");
+	};
+	if (null ==  err_baddr2) {
+		err_baddr2 = document.getElementById("err_baddr2");
+	};
+	if (null == baddr3) {
+		baddr3 = document.getElementById("baddr3");
+	}
+	if (null == err_baddr3) {
+		err_baddr3 = document.getElementById("err_baddr3");
+	};
+
+	if (null == bcity) {
+		bcity = document.getElementById("bcity");
+	};
+	if (null == err_bcity) {
+		err_bcity = document.getElementById("err_bcity");
+	};
+	  
+	if (null == bcountyprovince) {
+		bcountyprovince = document.getElementById("bcountyprovince");
+	};
+	  
+	if (null == err_bcountyprovince) {
+		err_bcountyprovince = document.getElementById("err_bcountyprovince");
+	};
+	  
+	if (null == bstate) {
+		bstate = document.getElementById("bstate");
+	}
+	  
+	if (null == err_bstate) {
+		err_bstate = document.getElementById("err_bstate");
+	};
+	  
+	if (null == bcountry) {
+		bcountry = document.getElementById("bcountry");
+	};
+	  
+	if (null == err_bcountry) {
+		err_bcountry = document.getElementById("err_bcountry");
+	};
+	  
+	if (null == bpostalcode) {
+		bpostalcode = document.getElementById("bpostalcode");
+	};
+	  
+	if (null == err_bpostalcode) {
+		err_bpostalcode = document.getElementById("err_bpostalcode");
+	};
+
+	if (null == email) {
+		email = document.getElementById("email");
+	};
+	err_email = document.getElementById("err_email");
+	  
+	if (null == bgiftaid) {
+		bgiftaid = document.getElementById("bgiftaid");
+	};
+  }
+  else {
+      //
+      // Mozilla branch. Goodness knows what Opera, Safari, and Konqueror
+      // will make of all this (not to mention Netscape).
+      //
+      bm_donate = document.getElementById("bm_donate");
+	  err_bm_donate = document.getElementById("err_bm_donate");
+	  bm_b_title = document.getElementById("bm_b_title");
+      err_bm_b_title = document.getElementById("err_bm_b_title");
+      err_bm_b_first_name = document.getElementById("err_bm_b_first_name");
+      bm_b_first_name = document.getElementById("bm_b_first_name");
+      err_bm_b_first_name = document.getElementById("err_bm_b_first_name");
+      bm_b_surname = document.getElementById("bm_b_surname");
+      err_bm_b_surname = document.getElementById("err_bm_b_surname");
+      //
+      // Address
+      baddr1 = document.getElementById("baddr1");
+      err_baddr1 = document.getElementById("err_baddr1");
+      baddr2 = document.getElementById("baddr2");
+      err_baddr2 = document.getElementById("err_baddr2");
+      baddr3 = document.getElementById("baddr3");
+      err_baddr3 = document.getElementById("err_baddr3");
+      bcity = document.getElementById("bcity");
+      err_bcity = document.getElementById("err_bcity");
+      bcountyprovince = document.getElementById("bcountyprovince");
+      err_bcountyprovince = document.getElementById("err_bcountyprovince");
+      bstate = document.getElementById("bstate");
+      err_bstate = document.getElementById("err_bstate");
+      bcountry = document.getElementById("bcountry");
+      err_bcountry = document.getElementById("err_bcountry");
+      bpostalcode = document.getElementById("bpostalcode");
+      err_bpostalcode = document.getElementById("err_bpostalcode");
+      // Email
+      email = document.getElementById("email");
+      err_email = document.getElementById("err_email");
+      //
+      // 
+      bgiftaid = document.getElementById("bgiftaid");
+  }
+}	
+    </SCRIPT>
+</HEAD>
+    <BODY onLoad="return load_controls()">
+      <FORM id="donation" action="/cgi-bin/friends_subscription" method="post">
+	<INPUT 
+	  type="hidden" value="donation" name="form_type"> 
+	<TABLE cellSpacing="0" cellPadding="0" width="100%" border="0">
+	  <TBODY>
+	    <TR>
+	      <TD width="30%" bgColor=#b18564><IMG height="115" 
+		  src="images/bm-logo.gif" width="230" useMap="#Map" border=0> </TD>
+	      <TD width="39%" bgColor=#b18564><MAP name=Map><AREA shape=RECT 
+							      alt="Click here to return to the British Museum home page" 
+							      coords=11,7,138,96 href=""></MAP></TD>
+	      <TD width="31%" bgColor="#b18564">&nbsp;</TD></TR></TBODY></TABLE>
+	<TABLE cellPadding=0 width="100%" valign="top">
+	  <TBODY>
+	    <TR>
+	      <TD vAlign=top width="1%"></TD>
+	      <TD width="68%"></TD>
+	      <TD colSpan=2></TD></TR>
+	    <TR>
+	      <TD colSpan=4>&nbsp;</TD></TR>
+	    <TR>
+	      <TD vAlign=top colSpan=2 height=186>
+		<SPAN class=style2>
+		  <STRONG>Help purchase a new Scanning Electron Microscope (SEM)</STRONG></SPAN>
+		
+		<P class=style4>
+		  Over the last 20 years scientific analysis at the
+		  British Museum has relied heavily on one
+		  <BR>fundamental piece of equipment: a Scanning
+		  Electron Microscope, or SEM for short. It is an
+		  essential piece of equipment in enabling scientific
+		  research. Unfortunately, the current instrument is
+		  well beyond its life expectancy and overdue for
+		  replacement. A modern, advanced SEM would help us to
+		  make great leaps forward, opening a wide array of
+		  new scientific possibilities for our Conservation
+		  and Science Department.<BR><BR>Please help us to
+		  purchase a new Scanning Electron Microscope, by
+		  donating online now. <BR>Every penny will count in
+		  acquiring this vital piece of equipment.
+		</P>
+
+	      </TD>
+	      <TD vAlign=top width="27%">
+		<DIV align=center><IMG height=164 alt="Gold torc from Norfolk, England" 
+		    src="images/gold_torc.jpg" width=160></DIV></TD>
+    <TD vAlign=top width="4%">&nbsp;</TD></TR></TBODY></TABLE>
+	<TABLE height=829 cellPadding=0 width="100%" valign="top">
+	  <TBODY>
+	    <TR>
+	      <TD vAlign=top width="23%"></TD>
+	      <TD colSpan=3></TD>
+	      <TD width="1%"></TD></TR>
+	    <TR>
+	      <TD vAlign=top colSpan=3 height=20>
+		<H3 class=style4>I would like to support the Museum's important research 
+		  work, </H3></TD>
+	      <TD vAlign=top width="24%" rowSpan=7>
+		<DIV align=right>
+		  <SPAN class=style4>In 2005 the Museum purchased the
+		  Sedgeford torc terminal which, through work
+		  conducted using our SEM, we discovered to be the
+		  missing terminal ring from an Iron Age torc already
+		  in the collection. Found at a site close to the
+		  original by an amateur archaeologist, SEM
+		  examination work of the terminal and its broken
+		  wires allowed detailed records of the construction,
+		  workmanship, composition and condition of the
+		  terminal to be compared to the original.</SPAN>
+		</DIV>
+	      </TD>
+	      <TD vAlign=top rowSpan=6>&nbsp;</TD></TR>
+	    <TR>
+	      <TD vAlign=top>
+		<DIV align=left>
+		  <H3 class=style4>please accept my donation of £</H3></DIV></TD>
+	      <TD vAlign=top colSpan=2><INPUT id=bm_donate maxLength=20 
+		name=amount></TD></TR>
+	    <TR>
+	      <TD colspan="4">
+		<DIV class=style10 id="err_bm_donate"></DIV></TD></TR>
+	    <TR>
+	      <TD vAlign=top colSpan=3 height=52>
+		<H3 class=style5 span><SPAN class=style5>Your details </SPAN><BR>(All 
+		  fields marked with an asterisk<SPAN class=style14> *</SPAN> 
+		  <STRONG>must</STRONG> be completed to process your 
+		  donation.)</H3><BR></TD></TR>
+	    <TR>
+	      <TD vAlign=top><SPAN class=style8>*</SPAN> <SPAN 
+		  class=style9>Title:</SPAN> </TD>
+	      <TD vAlign=top colSpan=2><INPUT id=bm_b_title maxLength=20 name=title> 
+		<BR></TD></TR>
+	    <TR>
+	      <TD colspan="4">
+		<DIV class=style10 id="err_bm_b_title"></DIV></TD>
+	      <TD colSpan=2>&nbsp;</TD></TR>
+	    <TR>
+	      <TD vAlign=top><SPAN class=style8>*</SPAN> <SPAN class=style9>First 
+		  Name:</SPAN> </TD>
+	      <TD vAlign=top colSpan=2><INPUT id=bm_b_first_name maxLength=80 size=60 
+		name=firstname> <BR></TD></TR>
+	    <TR>
+	      <TD colspan="4">
+		<DIV class=style10 id=err_bm_b_first_name></DIV></TD>
+	    </TR>
+	    <TR>
+	      <TD vAlign=top><SPAN class=style8>*</SPAN> <SPAN 
+		  class=style9>Surname:</SPAN> </TD>
+	      <TD vAlign=top colSpan=3><INPUT id=bm_b_surname maxLength=80 size=60 
+		name=lastname> <BR></TD>
+	      <TD vAlign=top>&nbsp;</TD></TR>
+	    <TR>
+	      <TD colspan="4">
+		<DIV class=style10 id=err_bm_b_surname></DIV></TD>
+	      <TD vAlign=top>&nbsp;</TD></TR>
+	    <TR>
+	      <TD vAlign=top><SPAN class=style8>*</SPAN> <SPAN class=style9>Address Line 
+		  1: </SPAN></TD>
+	      <TD vAlign=top colSpan=3><INPUT id=baddr1 maxLength=60 size=60 
+		  name=address_1> <BR></TD>
+	      <TD vAlign=top>&nbsp;</TD></TR>
+	    <TR>
+	      <TD colspan="4">
+		<DIV class=style10 id=err_baddr1></DIV></TD>
+	      <TD vAlign=top>&nbsp;</TD></TR>
+	    <TR>
+	      <TD vAlign=top><SPAN class=style11>&nbsp;</SPAN> <SPAN 
+		  class=style9>Address Line 2:</SPAN> </TD>
+	      <TD vAlign=top colSpan=3>
+		<P><INPUT id=baddr2 maxLength=60 size=60 name=address_2></P>
+	      </TD>
+	    </TR>
+	    <TR>
+	      <TD colspan="4">
+		<DIV class=style10 id=err_baddr2></DIV></TD>
+	      </TR>
+	    <TR>
+	      <TD vAlign=top><SPAN class=style11>&nbsp;</SPAN> <SPAN 
+		  class=style9>Address Line 3:</SPAN> </TD>
+	      <TD vAlign=top colSpan=3><INPUT id=baddr3 maxLength=60 size=60 
+		  name=address_3> </TD>
+	      <TD vAlign=top>&nbsp;</TD></TR>
+	    <TR>
+	      <TD class=error_message colspan="4" vAlign=top>
+		<DIV class=style10 id=err_baddr3></DIV></TD></TR>
+	    <TR>
+	      <TD vAlign=top height=33><SPAN class=style8>*</SPAN> <SPAN 
+		  class=style9>City/Town:</SPAN> </TD>
+	      <TD vAlign=top colSpan=3><INPUT id=bcity maxLength=25 size=25 name=city> 
+	      </TD>
+	      <TD vAlign=top>&nbsp;</TD></TR>
+	    <TR>
+	      <TD class=error_message colspan="4">
+		<DIV class=style10 id=err_bcity></DIV></TD></TR>
+	    <TR>
+	      <TD vAlign=top height=31><SPAN class=style11>&nbsp;</SPAN> <SPAN 
+		  class=style9>County or Province: </SPAN></TD>
+	      <TD vAlign=top colSpan=3><INPUT id=bcountyprovince maxLength=25 
+		  name=county> <BR></TD>
+	      <TD vAlign=top>&nbsp;</TD></TR>
+	    <TR>
+	      <TD class=error_message colspan="4" vAlign=top>
+		<DIV class=style10 id=err_bcountyprovince></DIV></TD></TR>
+	    <TR>
+	      <TD vAlign=top><SPAN class=mustfill_USA>&nbsp;</SPAN> <SPAN 
+		  class=style9>State:</SPAN> </TD>
+	      <TD vAlign=top colSpan=3>
+		<SELECT id=bstate name=state> 
+		  <OPTION value="">U.S. Residents: Please select a State or District</OPTION> 
+		  <OPTION value="AL">Alabama</OPTION>
+		  <OPTION value="AK">Alaska</OPTION> 
+		  <OPTION value="AS">American Samoa</OPTION> 
+		  <OPTION value="AZ">Arizona</OPTION> 
+		  <OPTION value="AR">Arkansas</OPTION>
+		  <OPTION value="CA">California</OPTION> 
+		  <OPTION value="CO">Colorado</OPTION>
+		  <OPTION value="CT">Connecticut</OPTION>
+		  <OPTION value="DE">Delaware</OPTION> 
+		  <OPTION value="DC">District of Columbia</OPTION>
+		  <OPTION value="FL">Florida</OPTION> 
+		  <OPTION value="GA">Georgia</OPTION> 
+		  <OPTION value="GU">Guam</OPTION> 
+		  <OPTION value="HI">Hawaii</OPTION> 
+		  <OPTION value="ID">Idaho</OPTION> 
+		  <OPTION value="IL">Illinois</OPTION> 
+		  <OPTION value="IN">Indiana</OPTION>
+		  <OPTION value="IA">Iowa</OPTION> 
+		  <OPTION value="KS">Kansas</OPTION>
+		  <OPTION value="KY">Kentucky</OPTION> 
+		  <OPTION value="LA">Louisiana</OPTION>
+		  <OPTION value="ME">Maine</OPTION>
+		  <OPTION value="MH">Marshall Islands</OPTION> 
+		  <OPTION value="MD">Maryland</OPTION>
+		  <OPTION value="MI">Michigan</OPTION> 
+		  <OPTION value="MN">Minnesota</OPTION> 
+		  <OPTION value="MS">Mississippi</OPTION>
+		  <OPTION value="MO">Missouri</OPTION> 
+		  <OPTION value="MT">Montana</OPTION>
+		  <OPTION value="NE">Nebraska</OPTION> 
+		  <OPTION value="NV">Nevada</OPTION> 
+		  <OPTION value="NJ">New Jersey</OPTION>
+		  <OPTION value="NM">New Mexico</OPTION>
+		  <OPTION value="NY">New York</OPTION>
+		  <OPTION value="NC">North Carolina</OPTION>
+		  <OPTION value="ND">North Dakota</OPTION> 
+		  <OPTION value="OH">Ohio</OPTION>
+		  <OPTION value="OK">Oklahoma</OPTION> 
+		  <OPTION value="OR">Oregon</OPTION>
+		  <OPTION value="PA">Pennsylvania</OPTION>
+		  <OPTION value="PR">Puerto Rico</OPTION> 
+		  <OPTION value="PW">Palau</OPTION>
+		  <OPTION value="RI">Rhode Island</OPTION>
+		  <OPTION value="SC">South Carolina</OPTION>
+		  <OPTION value="SD">South Dakota</OPTION>
+		  <OPTION value="TN">Tennessee</OPTION>
+		  <OPTION value="TX">Texas</OPTION>
+		  <OPTION value="UT">Utah</OPTION>
+		  <OPTION value="VA">Virginia</OPTION> 
+		  <OPTION value="VI">Virgin Islands</OPTION> 
+		  <OPTION value="VT">Vermont</OPTION> 
+		  <OPTION value="WA">Washington</OPTION> 
+		  <OPTION value="WV">West Virginia</OPTION>
+		  <OPTION value="WI">Wisconsin</OPTION>
+		  <OPTION value="WY">Wyoming</OPTION>
+		</SELECT> 
+	      </TD>
+	      <TD vAlign=top>&nbsp;</TD></TR>
+	    <TR>
+	      <TD class=error_message colspan="4">
+		<DIV class=style10 id=err_bstate></DIV></TD></TR>
+	    <TR>
+	      <TD vAlign=top><SPAN class=style8>*</SPAN> <SPAN 
+		  class=style9>Postcode:&nbsp;</SPAN> </TD>
+	      <TD vAlign=top colSpan=3><INPUT id=bpostalcode name=postcode> </TD>
+	      <TD vAlign=top>&nbsp;</TD></TR>
+	    <TR>
+	      <TD colSpan=4>
+		<DIV class=style10 id=err_bpostalcode></DIV></TD></TR>
+	    <TR>
+	      <TD vAlign=top><SPAN class=style8>*</SPAN> <SPAN 
+		  class=style9>Country:</SPAN> </TD>
+	      <TD vAlign=top colSpan=3>
+		<SELECT id=bcountry name=country> 
+		  <OPTION value="--">Please select your country</OPTION>
+		  <OPTION value="AX">Aaland Islands</OPTION>
+		  <OPTION value="AF">Afghanistan</OPTION>
+		  <OPTION value="AL">Albania</OPTION>
+		  <OPTION value="DZ">Algeria</OPTION>
+		  <OPTION value="AS">American Samoa</OPTION>
+		  <OPTION value="AD">Andorra</OPTION>
+		  <OPTION value="AO">Angola</OPTION>
+		  <OPTION value="AI">Anguilla</OPTION>
+		  <OPTION value="AQ">Antarctica</OPTION>
+		  <OPTION value="AG">Antigua and Barbuda</OPTION>
+		  <OPTION value="AR">Argentina</OPTION>
+		  <OPTION value="AM">Armenia</OPTION>
+		  <OPTION value="AW">Aruba</OPTION>
+		  <OPTION value="AU">Australia</OPTION>
+		  <OPTION value="AT">Austria</OPTION>
+		  <OPTION value="AZ">Azerbaijan</OPTION>
+		  <OPTION value="BS">Bahamas</OPTION>
+		  <OPTION value="BH">Bahrain</OPTION>
+		  <OPTION value="BD">Bangladesh</OPTION>
+		  <OPTION value="BB">Barbados</OPTION>
+		  <OPTION value="BY">Belarus</OPTION>
+		  <OPTION value="BE">Belgium</OPTION>
+		  <OPTION value="BZ">Belize</OPTION>
+		  <OPTION value="BJ">Benin</OPTION>
+		  <OPTION value="BM">Bermuda</OPTION>
+		  <OPTION value="BT">Bhutan</OPTION>
+		  <OPTION value="BO">Bolivia</OPTION>
+		  <OPTION value="BA">Bosnia and Herzegowina</OPTION>
+		  <OPTION value="BW">Botswana</OPTION>
+		  <OPTION value="BV">Bouvet Island</OPTION>
+		  <OPTION value="BR">Brazil</OPTION>
+		  <OPTION value="IO">British Indian Ocean Territory</OPTION>
+		  <OPTION value="BN">Brunei Darussalam</OPTION>
+		  <OPTION value="BG">Bulgaria</OPTION>
+		  <OPTION value="BF">Burkina Faso</OPTION>
+		  <OPTION value="BI">Burundi</OPTION>
+		  <OPTION value="KH">Cambodia</OPTION>
+		  <OPTION value="CM">Cameroon</OPTION>
+		  <OPTION value="CA">Canada</OPTION>
+		  <OPTION value="CV">Cape Verde</OPTION>
+		  <OPTION value="KY">Cayman Islands</OPTION>
+		  <OPTION value="CF">Central African Republic</OPTION>
+		  <OPTION value="TD">Chad</OPTION>
+		  <OPTION value="CL">Chile</OPTION>
+		  <OPTION value="CN">China</OPTION>
+		  <OPTION value="CX">Christmas Island</OPTION>
+		  <OPTION value="CC">Cocos (Keeling) Islands</OPTION>
+		  <OPTION value="CO">Colombia</OPTION>
+		  <OPTION value="KM">Comoros</OPTION>
+		  <OPTION value="CD">Congo, Democratic Republic of (was Zaire)</OPTION>
+		  <OPTION value="CG">Congo, Republic of</OPTION>
+		  <OPTION value="CK">Cook Islands</OPTION>
+		  <OPTION value="CR">Costa Rica</OPTION>
+		  <OPTION value="CI">Cote d'Ivoire</OPTION>
+		  <OPTION value="HR">Croatia (local name: Hrvatska)</OPTION>
+		  <OPTION value="CU">Cuba</OPTION>
+		  <OPTION value="CY">Cyprus</OPTION>
+		  <OPTION value="CZ">Czech REPUBLIC</OPTION>
+		  <OPTION value="DK">Denmark</OPTION>
+		  <OPTION value="DJ">Djiouti</OPTION>
+		  <OPTION value="DM">Dominica</OPTION>
+		  <OPTION value="DO">Dominican Republic</OPTION>
+		  <OPTION value="EC">Ecuador</OPTION>
+		  <OPTION value="EG">Egypt</OPTION>
+		  <OPTION value="SV">El Salvador</OPTION>
+		  <OPTION value="GQ">Equatorial Guinea</OPTION>
+		  <OPTION value="ER">Eritrea</OPTION>
+		  <OPTION value="EE">Estonia</OPTION>
+		  <OPTION value="ET">Ethiopia</OPTION>
+		  <OPTION value="FK">Falkland Islands (Malvinas)</OPTION>
+		  <OPTION value="FO">Faroe Islands</OPTION>
+		  <OPTION value="FJ">Fiji</OPTION>
+		  <OPTION value="FI">Finland</OPTION>
+		  <OPTION value="FR">France</OPTION>
+		  <OPTION value="GF">French Guiana</OPTION>
+		  <OPTION value="PF">French Polynesia</OPTION>
+		  <OPTION value="TF">French Southern Territories</OPTION>
+		  <OPTION value="GA">Gabon</OPTION>
+		  <OPTION value="GM">Gambia</OPTION>
+		  <OPTION value="GE">Georgia</OPTION>
+		  <OPTION value="DE">Germany</OPTION>
+		  <OPTION value="GH">Ghana</OPTION>
+		  <OPTION value="GI">Gibraltar</OPTION>
+		  <OPTION value="GR">Greece</OPTION>
+		  <OPTION value="GL">Greenland</OPTION>
+		  <OPTION value="GD">Grenada</OPTION>
+		  <OPTION value="GP">Guadeloupe</OPTION>
+		  <OPTION value="GU">Guam</OPTION>
+		  <OPTION value="GT">Guatemala</OPTION>
+		  <OPTION value="GN">Guinea</OPTION>
+		  <OPTION value="GW">Guinea-Bissau</OPTION>
+		  <OPTION value="GY">Guyana</OPTION>
+		  <OPTION value="HT">Haiti</OPTION>
+		  <OPTION value="HM">Heard And Mc Donald Islands</OPTION>
+		  <OPTION value="HN">Honduras</OPTION>
+		  <OPTION value="HK">Hong Kong</OPTION>
+		  <OPTION value="HU">Hungary</OPTION>
+		  <OPTION value="IS">Iceland</OPTION>
+		  <OPTION value="IN">India</OPTION>
+		  <OPTION value="ID">Indonesia</OPTION>
+		  <OPTION value="IR">Iran (Islamic Republic of)</OPTION>
+		  <OPTION value="IQ">Iraq</OPTION>
+		  <OPTION value="IE">Ireland</OPTION>
+		  <OPTION value="IL">Israel</OPTION>
+		  <OPTION value="IT">Italy</OPTION>
+		  <OPTION value="JM">Jamaica</OPTION>
+		  <OPTION value="JP">Japan</OPTION>
+		  <OPTION value="JO">Jordan</OPTION>
+		  <OPTION value="KZ">Kazakhstan</OPTION>
+		  <OPTION value="KE">Kenya</OPTION>
+		  <OPTION value="KI">Kiribati</OPTION>
+		  <OPTION value="KP">Korea, Democratic People's Republic of</OPTION>
+		  <OPTION value="KR">Korea, Republic of</OPTION>
+		  <OPTION value="KW">Kuwait</OPTION>
+		  <OPTION value="KG">Kyrgyzstan</OPTION>
+		  <OPTION value="LA">Lao People's Democratic Republic</OPTION>
+		  <OPTION value="LV">Latvia</OPTION>
+		  <OPTION value="LB">Lebanon</OPTION>
+		  <OPTION value="LS">Lesotho</OPTION>
+		  <OPTION value="LR">Liberia</OPTION>
+		  <OPTION value="LY">Libyan Arab Jamahiriya</OPTION>
+		  <OPTION value="LI">Liechtenstein</OPTION>
+		  <OPTION value="LT">Lithuania</OPTION>
+		  <OPTION value="LU">Luxembourg</OPTION>
+		  <OPTION value="MO">Macau</OPTION>
+		  <OPTION value="MK">Macedonia, The Former Yugoslav Republic of</OPTION>
+		  <OPTION value="MG">Madagascar</OPTION>
+		  <OPTION value="MW">Malawi</OPTION>
+		  <OPTION value="MY">Malaysia</OPTION>
+		  <OPTION value="MV">Maldives</OPTION>
+		  <OPTION value="ML">Mali</OPTION>
+		  <OPTION value="MT">Malta</OPTION>
+		  <OPTION value="MH">Marshall Islands</OPTION>
+		  <OPTION value="MQ">Martinique</OPTION>
+		  <OPTION value="MR">Mauritania</OPTION>
+		  <OPTION value="MU">Mauritius</OPTION>
+		  <OPTION value="YT">Mayotte</OPTION>
+		  <OPTION value="MX">Mexico</OPTION>
+		  <OPTION value="FM">Micronesia, Federated States of</OPTION>
+		  <OPTION value="MD">Moldova, Republic of</OPTION>
+		  <OPTION value="MC">Monaco</OPTION>
+		  <OPTION value="MN">Mongolia</OPTION>
+		  <OPTION value="MS">Montserrat</OPTION>
+		  <OPTION value="MA">Morocco</OPTION>
+		  <OPTION value="MZ">Mozambique</OPTION>
+		  <OPTION value="MM">Myanmar</OPTION>
+		  <OPTION value="NA">Namibia</OPTION>
+		  <OPTION value="NR">Nauru</OPTION>
+		  <OPTION value="NP">Nepal</OPTION>
+		  <OPTION value="NL">Netherlands</OPTION>
+		  <OPTION value="AN">Netherlands Antilles</OPTION>
+		  <OPTION value="NC">New Caledonia</OPTION>
+		  <OPTION value="NZ">New Zealand</OPTION>
+		  <OPTION value="NI">Nicaragua</OPTION>
+		  <OPTION value="NE">Niger</OPTION>
+		  <OPTION value="NG">Nigeria</OPTION>
+		  <OPTION value="NU">Niue</OPTION>
+		  <OPTION value="NF">Norfolk Island</OPTION>
+		  <OPTION value="MP">Northern Mariana Islands</OPTION>
+		  <OPTION value="NO">Norway</OPTION>
+		  <OPTION value="OM">Oman</OPTION>
+		  <OPTION value="PK">Pakistan</OPTION>
+		  <OPTION value="PW">Palau</OPTION>
+		  <OPTION value="PS">Palestinian Territory, Occupied</OPTION>
+		  <OPTION value="PA">Panama</OPTION>
+		  <OPTION value="PG">Papua New Guinea</OPTION>
+		  <OPTION value="PY">Paraguay</OPTION>
+		  <OPTION value="PE">Peru</OPTION>
+		  <OPTION value="PH">Philippines</OPTION>
+		  <OPTION value="PN">Pitcairn</OPTION>
+		  <OPTION value="PL">Poland</OPTION>
+		  <OPTION value="PT">Portugal</OPTION>
+		  <OPTION value="PR">Puerto Rico</OPTION>
+		  <OPTION value="QA">Qatar</OPTION>
+		  <OPTION value="RE">Reunion</OPTION>
+		  <OPTION value="RO">Romania</OPTION>
+		  <OPTION value="RU">Russian Federation</OPTION>
+		  <OPTION value="RW">Rwanda</OPTION>
+		  <OPTION value="SH">Saint Helena</OPTION>
+		  <OPTION value="KN">Saint Kitts and Nevis</OPTION>
+		  <OPTION value="LC">Saint Lucia</OPTION>
+		  <OPTION value="PM">Saint Pierre and Miquelon</OPTION>
+		  <OPTION value="VC">Saint Vincent and the Grenadines</OPTION>
+		  <OPTION value="WS">Samoa</OPTION>
+		  <OPTION value="SM">San Marino</OPTION>
+		  <OPTION value="ST">Sao Tome and Principe</OPTION>
+		  <OPTION value="SA">Saudi Arabia</OPTION>
+		  <OPTION value="SN">Senegal</OPTION>
+		  <OPTION value="CS">Serbia and Montenegro</OPTION>
+		  <OPTION value="SC">Seychelles</OPTION>
+		  <OPTION value="SL">Sierra Leone</OPTION>
+		  <OPTION value="SG">Singapore</OPTION>
+		  <OPTION value="SK">Slovakia</OPTION>
+		  <OPTION value="SI">Slovenia</OPTION>
+		  <OPTION value="SB">Solomon Islands</OPTION>
+		  <OPTION value="SO">Somalia</OPTION>
+		  <OPTION value="ZA">South Africa</OPTION>
+		  <OPTION value="GS">South Georgia and the South Sandwich Islands</OPTION>
+		  <OPTION value="ES">Spain</OPTION>
+		  <OPTION value="LK">Sri Lanka</OPTION>
+		  <OPTION value="SD">Sudan</OPTION>
+		  <OPTION value="SR">Suriname</OPTION>
+		  <OPTION value="SJ">Svalbard and Jan Mayen Islands</OPTION>
+		  <OPTION value="SZ">Swaziland</OPTION>
+		  <OPTION value="SE">Sweden</OPTION>
+		  <OPTION value="CH">Switzerland</OPTION>
+		  <OPTION value="SY">Syrian Arab Republic</OPTION>
+		  <OPTION value="TW">Taiwan</OPTION>
+		  <OPTION value="TJ">Tajikistan</OPTION>
+		  <OPTION value="TZ">Tanzania, United Republic of</OPTION>
+		  <OPTION value="TH">Thailand</OPTION>
+		  <OPTION value="TL">Timor-Leste</OPTION>
+		  <OPTION value="TG">Togo</OPTION>
+		  <OPTION value="TK">Tokelau</OPTION>
+		  <OPTION value="TO">Tonga</OPTION>
+		  <OPTION value="TT">Trinidad and Tobago</OPTION>
+		  <OPTION value="TN">Tunisia</OPTION>
+		  <OPTION value="TR">Turkey</OPTION>
+		  <OPTION value="TM">Turkmenistan</OPTION>
+		  <OPTION value="TC">Turks and Caicos Islands</OPTION>
+		  <OPTION value="TV">Tuvalu</OPTION>
+		  <OPTION value="UG">Uganda</OPTION>
+		  <OPTION value="UA">Ukraine</OPTION>
+		  <OPTION value="AE">United Arab Emirates</OPTION>
+		  <OPTION value="GB" selected="selected">United Kingdom</OPTION>
+		  <OPTION value="US">United States</OPTION>
+		  <OPTION value="UM">United States Minor Outlying Islands</OPTION>
+		  <OPTION value="UY">Uruguay</OPTION>
+		  <OPTION value="UZ">Uzbekistan</OPTION>
+		  <OPTION value="VU">Vanuatu</OPTION>
+		  <OPTION value="VA">Vatican City State (Holy See)</OPTION>
+		  <OPTION value="VE">Venezuela</OPTION>
+		  <OPTION value="VN">Viet Nam</OPTION>
+		  <OPTION value="VG">Virgin Islands (British)</OPTION>
+		  <OPTION value="VI">Virgin Islands (U.S.)</OPTION>
+		  <OPTION value="WF">Wallis and Futuna Islands</OPTION>
+		  <OPTION value="EH">Western Sahara</OPTION>
+		  <OPTION value="YE">Yemen</OPTION>
+		  <OPTION value="ZM">Zambia</OPTION>
+		  <OPTION value="ZW">Zimbabwe</OPTION>
+		</SELECT> </TD>
+	      <TD vAlign=top>&nbsp;</TD></TR>
+	    <TR>
+	      <TD class=error_message colspan="4"
+		<P class=style10 id=err_bcountry></P></TD></TR>
+	    <TR>
+	      <TD vAlign=top><SPAN class=style8>*</SPAN> <SPAN class=style9>Email:&nbsp; 
+		</SPAN></TD>
+	      <TD vAlign=top colSpan=3><INPUT id=email maxLength=64 name=email> <BR></TD>
+	      <TD vAlign=top>&nbsp;</TD></TR>
+	    <TR>
+	      <TD colSpan=4 height=8>
+		<DIV class=style10 id=err_email></DIV></TD></TD></TR>
+	    <TR vAlign=top>
+	      <TD colSpan=2 height=8><SPAN class=style10><SPAN class=style9>Please enter 
+		    the code that is printed on your donation form below your address details 
+		    e.g. (F/1006SEMX)</SPAN></SPAN></TD>
+	      <TD colSpan=2 height=8><SPAN class=style10><SPAN 
+		    class=style9></SPAN></SPAN><SPAN class=style10><SPAN class=style9><INPUT 
+		      id=email25 maxLength=64 name=donation_code> </SPAN></SPAN></TD>
+	      <TD height=8>&nbsp;</TD></TR>
+	    <TR>
+	      <TD colSpan=2 height=3>&nbsp;</TD>
+	      <TD width="1%">&nbsp;</TD>
+	      <TD height=3>&nbsp;</TD>
+	      <TD height=3>&nbsp;</TD></TR></TBODY></TABLE>
+	<TABLE height=298 cellPadding=0 valign="top">
+	  <TBODY>
+	    <TR>
+	      <TD vAlign=top width=136 height=128><SPAN class=style11>&nbsp;</SPAN> 
+		<SPAN class=style16><IMG height=32 src="images/giftaid.jpg" 
+		    width=61></SPAN> </TD>
+	      <TD vAlign=top width=622>
+		<P class=style4>
+		  Gift Aid is an additional way to support the Museum
+		  at no extra cost to you. <BR>If you are a UK tax
+		  payer using Gift Aid means that for every pound you
+		  give, <BR>we get an extra 28 pence from the Inland
+		  Revenue. Simply tick the box to <BR>make your
+		  donation go further.
+		</P>
+		<P class=style4><INPUT id=bm_giftaid5 type=checkbox value=Y name=giftaid> 
+		  <STRONG>
+		    I want all subscriptions and/or donations made by
+		    me to the British <BR>Museum Friends to be treated
+		    as Gift Aid.  
+		  </STRONG><BR>
+		</P>
+	      </TD>
+	    </TR>
+	    <TR>
+	      <TD vAlign=top height=112>
+		<SPAN class=style11>&nbsp;</SPAN> <SPAN 
+		  class=style9>Data Protection:</SPAN>
+	      </TD>
+	      <TD vAlign=top>
+		<P class=style4>
+		  We promise that any information you give will be
+		  used for British Museum <BR>Friends, British Museum
+		  and British Museum Company purposes only. <BR>From
+		  time to time we may send you information from other
+		  organisations, <BR>which we think may be of interest
+		  to you. 
+		</P> 
+		<P class=style4>
+		  <INPUT
+		  id="bm_send_no_circulars5" type="checkbox" value="Y"
+		  name="data_protection"> If you would prefer
+		  <STRONG>not</STRONG> to receive such information,
+		  please tick the checkbox. 
+		</P>
+	      </TD>
+	    </TR>
+	    <TR>
+	      <TD vAlign=top height=48>&nbsp;</TD>
+	      <TD vAlign=top>
+		<SPAN class=style4>
+		  <INPUT id="bm_send_no_circulars" type="checkbox" value="Y" name="return_donation"> 
+		  If in the unlikely event that we are unable to buy the
+		Scanning Electron Microscope,<BR>we would like to put
+		your donation towards a similar research related
+		project. If you <BR>would prefer us to return your
+		donation, please tick this
+		box. </SPAN>
+	      </TD>
+	    </TR>
+	  </TBODY>
+	</TABLE>
+	<P><INPUT
+		onclick="return validate_form()" type="submit"
+		value="Submit Form" name="submit"> <INPUT
+		onclick="return clearErrorDisplays()" type=reset
+		value="Clear Form" name=reset>
+	</P>
+	<P>&nbsp;</P>
+	</FORM>
+    </BODY>
+</HTML>

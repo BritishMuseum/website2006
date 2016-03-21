@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+BEGIN:VEVENT
+DTSTART:20060520T090000Z
+DTEND:20060520T163000Z
+LOCATION:BP Lecture Theatre\, The British Museum
+TRANSP:OPAQUE
+SEQUENCE:0
+DESCRIPTION:This day introduces some of the artists in the exhibition Word
+  into Art: Artists of the Modern Middle East who discuss their work. An
+  international line up of critics\, writers and artists discuss the roots
+  and global impact of Middle Eastern art. Includes Venetia Porter\, Sheila
+  Blair\, Nada Shabout \, Dinneke Huizenga\, Rana Salam\, Tina Cherwell and
+  artist Janane al-Ani. \n\nFollowed by reception at 17.30\n\nAdmission £18\,
+  concessions £12\, booking required.\n\nCall: +44 (0)20 7323 8181 or
+  \nEmail: boxoffice@thebritishmuseum.ac.uk\n\nThis event is part of the
+  Middle East Now season running at the British Museum from 18 May - 3
+  September
+  2006\n\nhttp://www.thebritishmuseum.ac.uk/middleeastnow/events/day_mean.ht
+ ml\n
+SUMMARY:Middle East Art Now - Study Day
+PRIORITY:5
+CLASS:PUBLIC
+BEGIN:VALARM
+TRIGGER:-P1D
+ACTION:DISPLAY
+DESCRIPTION:Reminder
+END:VALARM
+END:VEVENT
+END:VCALENDAR

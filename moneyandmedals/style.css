@@ -1,0 +1,86 @@
+body
+	{
+	background-color: #D9D1CA;
+	color: #000000;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 1em;
+	margin: 0px;
+	}
+	
+img
+	{
+	border-style: none;
+	border-with: 0px;
+	}
+#logo
+	{
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	}
+	
+#title
+	{
+	background-color: #A5032D;
+	height: 108px;
+	width: 100%;
+	text-align: center;
+	background-image: url(images/coin.jpg);
+	background-repeat: no-repeat;
+	background-position: left top;
+	padding: 0px;
+	margin: 0px;
+	}
+#container
+	{
+	position: relative;
+	left: 166px;
+	width: 477px;
+	}
+
+#info
+	{
+	font-style: italic;
+	font-size: 14px;
+	height: 45px;
+	padding-top: 10px;
+	font-weight: bold;
+	}
+
+#room
+	{
+	font-style: normal;
+	font-weight: bold;
+	position: relative;
+	float: right;
+
+	}
+	
+#admission
+	{
+	font-size: 12px;
+	}
+	
+#col1, #col2
+	{
+	width: 223px;
+	}
+	
+#col1
+	{
+	position: relative;
+	float: left;
+	}
+
+
+#col2
+	{
+	position: relative;
+	float: right;
+	}
+	
+#banner
+	{
+	text-align: center;
+	padding-top: 2em;
+	}

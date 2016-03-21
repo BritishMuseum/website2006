@@ -1,0 +1,626 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+
+<HTML>
+<HEAD>
+<TITLE>Museum Plans</TITLE>
+<META http-equiv=Content-Type content="text/html; charset=iso-8859-1">
+<META 
+content="multiple scrolling content script, text scroller, scroller script, multiple scroller javascript, dhtml scroller" 
+name=keywords>
+<META 
+content="Simply the Best DHTML scripts and javascripts: multiple scrolling content script." 
+name=description>
+<META 
+content="multiple scrolling content script, scroller dhtml script, text scroller" 
+name=target>
+<META content="copyright 1997-2003 SimplytheBest.net" name=copyright>
+<META content="30 days" name=revisit-after>
+<META content=all name=robots>
+<LINK 
+href="scripts.css" 
+type=text/css rel=stylesheet>
+<STYLE type=text/css>BODY {
+	MARGIN: 0px; WIDTH: 100%; HEIGHT: 100%
+}
+#links {
+	LEFT: 120px; POSITION: absolute; TOP: 280px
+}
+#up {
+	LEFT: 158px; CURSOR: pointer; POSITION: absolute; TOP: 20px}
+#down {
+	LEFT: 158px; CURSOR: pointer; POSITION: absolute; TOP: 571px}
+#cont {
+	BORDER-RIGHT: #ffffff 1px solid; BORDER-TOP: #FFFFFF 1px solid; LEFT: -4px; OVERFLOW: hidden; BORDER-LEFT: #oooooo 1px solid; WIDTH: 159px; BORDER-BOTTOM: #FFFFFF 1px solid; POSITION: relative; TOP: 10px; HEIGHT: 643px}
+.txt {
+	PADDING-RIGHT: 5px;
+	PADDING-LEFT: 5px;
+	FONT-SIZE: 11px;
+	LEFT: 6px;
+	VISIBILITY: visible;
+	PADDING-BOTTOM: 5px;
+	WIDTH: 159px;
+	PADDING-TOP: 5px;
+	FONT-FAMILY: verdana,arial,helvetica,sans-serif;
+	POSITION: absolute;
+	TOP: 7px;
+	TEXT-ALIGN: left;
+	height: 472px;
+}
+.med {
+	font-size: 11px;
+}
+</STYLE>
+<SCRIPT type=text/javascript>
+/*
+Script made by Martial Boissonneault © 2001-2003 http://getElementById.com/
+This script may be used and changed freely as long as this msg is intact
+Visit http://getElementById.com/ for more free scripts and tutorials.
+Script featured at SimplytheBest.net http://simplythebest.net/scripts/
+*/
+
+timerID = null;
+var active = 0;
+
+function ChangePage(num){
+    	if(document.getElementById){
+    		obj[active].style.visibility = "hidden";
+    		active = num;
+    		obj[active].style.top = 0;
+    		obj[active].style.visibility = "visible";
+    	}
+}
+    
+function ScrollUp(speed){
+    	if(document.getElementById){
+    		if(parseInt(obj[active].style.top) < 0){
+    			obj[active].style.top = parseInt(obj[active].style.top) + speed + "px";
+		}
+    		timerID = setTimeout("ScrollUp("+speed+")",30);
+    	}
+}
+
+function ScrollDown(speed){
+    	if(document.getElementById){                        
+    		if(parseInt(obj[active].style.top) > document.getElementById('cont').offsetHeight - obj[active].offsetHeight){ 
+    			obj[active].style.top = parseInt(obj[active].style.top) - speed + "px";
+		}
+    		timerID = setTimeout("ScrollDown("+speed+")",30);
+    	}
+}
+
+function ScrollStop(){
+    	if(document.getElementById){
+    		clearTimeout(timerID);
+    	}
+}
+
+function ScrollPageInit() {
+    	if(document.getElementById){
+    		obj = document.getElementById("cont").getElementsByTagName("div");
+    		obj['page1'].style.visibility = "visible";
+    		obj['page1'].style.top = 0;	
+    	}	
+    	if(document.addEventListener){
+    		for(i=0;i<document.getElementsByTagName('a').length;i++){
+    			document.getElementsByTagName('a')[i].style.position = "relative";
+		}
+    	}
+}
+</SCRIPT>
+<META content="MSHTML 6.00.2800.1226" name=GENERATOR>
+<script language="JavaScript" type="text/JavaScript">
+<!--
+function MM_reloadPage(init) {  //reloads the window if Nav4 resized
+  if (init==true) with (navigator) {if ((appName=="Netscape")&&(parseInt(appVersion)==4)) {
+    document.MM_pgW=innerWidth; document.MM_pgH=innerHeight; onresize=MM_reloadPage; }}
+  else if (innerWidth!=document.MM_pgW || innerHeight!=document.MM_pgH) location.reload();
+}
+MM_reloadPage(true);
+
+function MM_goToURL() { //v3.0
+  var i, args=MM_goToURL.arguments; document.MM_returnValue = false;
+  for (i=0; i<(args.length-1); i+=2) eval(args[i]+".location='"+args[i+1]+"'");
+}
+//-->
+</script>
+</HEAD>
+<BODY text=#000000 vLink=#0000a0 aLink=#0000a0 link=#0000a0 bgColor=#ffffff 
+leftMargin=0 topMargin=0 onload=ScrollPageInit();return;MM_goToURL('parent.frames[\'leftFrame\']','left2.htm');return document.MM_returnValue document.MM_returnValue marginwidth="0" 
+marginheight="0">
+<!-- multiple scrolling content script, javascript scroller, dhtml scroller, text scroller, DHTML scripts -->
+<body bgcolor="#FAFAF5" onLoad="MM_goToURL('parent.frames[\'leftFrame\']','left2.htm');return document.MM_returnValue">
+<A 
+name=top></A> 
+<div class=txt id=page4><br>
+  <br>
+</div>
+<div class=txt id=page3><br>
+</div>
+<table class=body cellspacing=0 cellpadding=0 width="100%" border=0>
+  <tbody>
+    <tr> 
+      <td> <table class=body cellspacing=0 cellpadding=0 width="100%" border=0>
+          <tbody>
+            <tr> 
+              <td valign=top bgcolor="#FAFAF5" class=body> 
+                <p class=author> 
+                  <!-- Scroller start -->
+                  <img 
+            style="DISPLAY: none" 
+            src="/up_over.gif"> <img style="DISPLAY: none" 
+            src="bottomarrow.gif"> <img id=down 
+            onMouseOver="ScrollDown(5); this.src='bottomarrow_o.gif'" 
+            onMouseOut="ScrollStop(); this.src='bottomarrow.gif'" 
+            height=16 alt="" 
+            src="bottomarrow.gif" 
+            width=18 border=0 name=b2> <img id=up 
+            onMouseOver="ScrollUp(5); this.src='up_outo.gif';" 
+            onMouseOut="ScrollStop(); this.src='up_out.gif'" 
+            height=26 alt="" 
+            src="up_out.gif" 
+            width=22 border=0 name=b1> 
+                <div id=cont> 
+                  <div class=txt id=page1> 
+                    <table width="147" height="42" border="0" cellpadding="2" cellspacing="2" bgcolor="#000000">
+                      <tr> 
+                        <td width="141" height="20"><font face="Arial, Helvetica, sans-serif"><font color="#000000"><strong><font size="2"><font color="#FFFFFF">Main 
+                          Floor Rooms<br>
+                          <span class="authorlink"><font face="Arial, Helvetica, sans-serif"><font color="#000000"><strong><font color="#CCCCCC">1, 
+                          4-24, 26-27, 33-35,67</font></strong></font></font></span></font></font></strong></font></font></td>
+                      </tr>
+                      <tr> 
+                        <td bgcolor="#FCFCF8" class =><a href="middle_print.htm" target="_blank"><img src="print.gif" width="100" height="22" border="0"></a> 
+                        </td>
+                      </tr>
+                    </table>
+                    <br>
+                    <TABLE width=145 height=87 border=0 align="center" cellPadding=0 cellSpacing=0>
+                      <TBODY>
+                        <TR> 
+                          <TD colSpan=2 rowSpan=2><IMG height=10 alt="" 
+            src="images/t_left.gif" width=10 border=0></TD>
+                          <TD width=296 bgColor=#C9D6C9 height=1><IMG height=1 
+            src="w_files/blnk.gif" width=1></TD>
+                          <TD colSpan=2 rowSpan=2><IMG height=10 alt="" 
+            src="images/t_right.gif" width=10 border=0></TD>
+                        </TR>
+                        <TR> 
+                          <TD height=9 bgcolor="#FFFFFF"><IMG height=1 src="images/blnk.gif" 
+            width=1></TD>
+                        </TR>
+                        <TR> 
+                          <TD width=1 bgColor=#C9D6C9 height=67><IMG height=1 
+            src="w_files/blnk.gif" width=1></TD>
+                          <TD width=9 bgcolor="#FFFFFF"><IMG height=8 src="w_files/blnk.gif" 
+            width=9></TD>
+                          <TD align="left" vAlign=top bgcolor="#F3F3F5"> <div align="left" class="med"> 
+                              <table width="100%" border="0" cellspacing="3" cellpadding="0">
+                                <tr> 
+                                  <td class="med"><font face="Arial, Helvetica, sans-serif"><strong><font color="#400080"><img src="images/enli.gif" width="6" height="6">&nbsp;King&#8217;s 
+                                    Library</font></strong></font><br> <font face="Arial, Helvetica, sans-serif"><strong>1</strong> 
+                                    Enlightenment: Discovering the world in the 
+                                    18th century </font></td>
+                                </tr>
+                              </table>
+                              <font face="Arial, Helvetica, sans-serif"> </font></div></TD>
+                          <TD width=10 bgcolor="#FFFFFF"><IMG height=8 src="w_files/blnk.gif" 
+            width=9></TD>
+                          <TD width=1 bgColor=#C9D6C9><IMG height=1 src="w_files/blnk.gif" 
+            width=1></TD>
+                        </TR>
+                        <TR> 
+                          <TD colSpan=2 rowSpan=2><IMG height=10 alt="" 
+            src="images/b_left.gif" width=10 border=0></TD>
+                          <TD height=9 align=right bgcolor="#FFFFFF"><IMG height=1 
+            src="images/blnk.gif" width=1></TD>
+                          <TD colSpan=2 rowSpan=2><IMG height=10 alt="" 
+            src="images/b_right.gif" width=10 border=0></TD>
+                        </TR>
+                        <TR> 
+                          <TD bgColor=#C9D6C9 height=1><IMG height=1 src="w_files/blnk.gif" 
+            width=1></TD>
+                        </TR>
+                      </TBODY>
+                    </TABLE>
+                    <br>
+                    <table width=144 height=49 border=0 align="center" cellpadding=0 cellspacing=0>
+                      <tbody>
+                        <tr> 
+                          <td colspan=2 rowspan=2><img height=10 alt="" 
+            src="images/t_left.gif" width=10 border=0></td>
+                          <td width=124 bgcolor=#C9D6C9 height=1><img height=1 
+            src="w_files/blnk.gif" width=1></td>
+                          <td colspan=2 rowspan=2><img height=10 alt="" 
+            src="images/t_right.gif" width=10 border=0></td>
+                        </tr>
+                        <tr> 
+                          <td height=9 bgcolor="#FFFFFF"><img height=1 src="images/blnk.gif" 
+            width=1></td>
+                        </tr>
+                        <tr> 
+                          <td width=1 bgcolor=#C9D6C9 height=28><img height=1 
+            src="w_files/blnk.gif" width=1></td>
+                          <td width=9 bgcolor="#FFFFFF"><img height=8 src="w_files/blnk.gif" 
+            width=9></td>
+                          <td align="left" valign=top bgcolor="#EFF8F8"> <div align="left" class="med"> 
+                              <table width="100%" border="0" cellspacing="3" cellpadding="0">
+                                <tr> 
+                                  <td class="med"><font face="Arial, Helvetica, sans-serif"><strong><font color="#319393"><img src="images/sp.gif" width="6" height="6">&nbsp;Special 
+                                    exhibitions</font></strong><br>
+                                    <strong>5, 35</strong> Exhibitions </font></td>
+                                </tr>
+                              </table>
+                            </div></td>
+                          <td width=9 bgcolor="#FFFFFF"><img height=8 src="w_files/blnk.gif" 
+            width=9></td>
+                          <td width=1 bgcolor=#C9D6C9><img height=1 src="w_files/blnk.gif" 
+            width=1></td>
+                        </tr>
+                        <tr> 
+                          <td colspan=2 rowspan=2><img height=10 alt="" 
+            src="images/b_left.gif" width=10 border=0></td>
+                          <td height=9 align=right bgcolor="#FFFFFF"><img height=1 
+            src="images/blnk.gif" width=1></td>
+                          <td colspan=2 rowspan=2><img height=10 alt="" 
+            src="images/b_right.gif" width=10 border=0></td>
+                        </tr>
+                        <tr> 
+                          <td bgcolor=#C9D6C9 height=1><img height=1 src="w_files/blnk.gif" 
+            width=1></td>
+                        </tr>
+                      </tbody>
+                    </table>
+                    <br>
+                    <table width=145 height=48 border=0 align="center" cellpadding=0 cellspacing=0>
+                      <tbody>
+                        <tr> 
+                          <td colspan=2 rowspan=2><img height=10 alt="" 
+            src="images/t_left.gif" width=10 border=0></td>
+                          <td width=296 bgcolor=#C9D6C9 height=1><img height=1 
+            src="w_files/blnk.gif" width=1></td>
+                          <td colspan=2 rowspan=2><img height=10 alt="" 
+            src="images/t_right.gif" width=10 border=0></td>
+                        </tr>
+                        <tr> 
+                          <td height=9 bgcolor="#FFFFFF"><img height=1 src="images/blnk.gif" 
+            width=1></td>
+                        </tr>
+                        <tr> 
+                          <td width=1 bgcolor=#C9D6C9 height=28><img height=1 
+            src="w_files/blnk.gif" width=1></td>
+                          <td width=9 bgcolor="#FFFFFF"><img height=8 src="w_files/blnk.gif" 
+            width=9></td>
+                          <td align="left" valign=top bgcolor="#FFF4F4"> <div align="left" class="med"> 
+                              <table width="100%" border="0" cellspacing="3" cellpadding="0">
+                                <tr> 
+                                  <td class="med"><font face="Arial, Helvetica, sans-serif"><strong><font color="#C60000"><img src="images/eg.gif" width="6" height="6">&nbsp;Egypt</font></strong><br>
+                                    <strong>4</strong> Egyptian sculpture</font></td>
+                                </tr>
+                              </table>
+                            </div></td>
+                          <td width=10 bgcolor="#FFFFFF"><img height=8 src="w_files/blnk.gif" 
+            width=9></td>
+                          <td width=1 bgcolor=#C9D6C9><img height=1 src="w_files/blnk.gif" 
+            width=1></td>
+                        </tr>
+                        <tr> 
+                          <td colspan=2 rowspan=2><img height=10 alt="" 
+            src="images/b_left.gif" width=10 border=0></td>
+                          <td height=9 align=right bgcolor="#FFFFFF"><img height=1 
+            src="images/blnk.gif" width=1></td>
+                          <td colspan=2 rowspan=2><img height=10 alt="" 
+            src="images/b_right.gif" width=10 border=0></td>
+                        </tr>
+                        <tr> 
+                          <td bgcolor=#C9D6C9 height=1><img height=1 src="w_files/blnk.gif" 
+            width=1></td>
+                        </tr>
+                      </tbody>
+                    </table>
+                    <br>
+                    <TABLE width=145 height=87 border=0 align="center" cellPadding=0 cellSpacing=0>
+                      <TBODY>
+                        <TR> 
+                          <TD colSpan=2 rowSpan=2><IMG height=10 alt="" 
+            src="images/t_left.gif" width=10 border=0></TD>
+                          <TD width=124 bgColor=#C9D6C9 height=1><IMG height=1 
+            src="w_files/blnk.gif" width=1></TD>
+                          <TD colSpan=2 rowSpan=2><IMG height=10 alt="" 
+            src="images/t_right.gif" width=10 border=0></TD>
+                        </TR>
+                        <TR> 
+                          <TD height=9 bgcolor="#FFFFFF"><IMG height=1 src="images/blnk.gif" 
+            width=1></TD>
+                        </TR>
+                        <TR> 
+                          <TD width=1 bgColor=#C9D6C9 height=67><IMG height=1 
+            src="w_files/blnk.gif" width=1></TD>
+                          <TD width=9 bgcolor="#FFFFFF"><IMG height=8 src="w_files/blnk.gif" 
+            width=9></TD>
+                          <TD align="left" vAlign=top bgcolor="#F8F8FA"> <div align="left" class="med"><font face="Arial, Helvetica, sans-serif"> 
+                              </font> 
+                              <table width="100%" border="0" cellspacing="3" cellpadding="0">
+                                <tr> 
+                                  <td class="med"><font face="Arial, Helvetica, sans-serif"><strong><font color="#333399"><img src="images/ane.gif" width="6" height="6">&nbsp;Ancient 
+                                    Near East</font></strong><br>
+                                    <strong>6 </strong>Assyrian sculpture <br>
+                                    <strong>7, 8</strong> Nimrud Palace Reliefs<br>
+                                    <strong>9</strong> Nineveh Palace Reliefs<br>
+                                    <strong>10</strong> Khorsabad Palace reliefs 
+                                    &amp; Assyrian sculpture</font></td>
+                                </tr>
+                              </table>
+                              <font face="Arial, Helvetica, sans-serif"> </font></div></TD>
+                          <TD width=10 bgcolor="#FFFFFF"><IMG height=8 src="w_files/blnk.gif" 
+            width=9></TD>
+                          <TD width=1 bgColor=#C9D6C9><IMG height=1 src="w_files/blnk.gif" 
+            width=1></TD>
+                        </TR>
+                        <TR> 
+                          <TD colSpan=2 rowSpan=2><IMG height=10 alt="" 
+            src="images/b_left.gif" width=10 border=0></TD>
+                          <TD height=9 align=right bgcolor="#FFFFFF"><IMG height=1 
+            src="images/blnk.gif" width=1></TD>
+                          <TD colSpan=2 rowSpan=2><IMG height=10 alt="" 
+            src="images/b_right.gif" width=10 border=0></TD>
+                        </TR>
+                        <TR> 
+                          <TD bgColor=#C9D6C9 height=1><IMG height=1 src="w_files/blnk.gif" 
+            width=1></TD>
+                        </TR>
+                      </TBODY>
+                    </TABLE>
+                    <br>
+                    <table width=145 height=48 border=0 align="center" cellpadding=0 cellspacing=0>
+                      <tbody>
+                        <tr> 
+                          <td colspan=2 rowspan=2><img height=10 alt="" 
+            src="images/t_left.gif" width=10 border=0></td>
+                          <td width=296 bgcolor=#C9D6C9 height=1><img height=1 
+            src="w_files/blnk.gif" width=1></td>
+                          <td colspan=2 rowspan=2><img height=10 alt="" 
+            src="images/t_right.gif" width=10 border=0></td>
+                        </tr>
+                        <tr> 
+                          <td height=9 bgcolor="#FFFFFF"><img height=1 src="images/blnk.gif" 
+            width=1></td>
+                        </tr>
+                        <tr> 
+                          <td width=1 bgcolor=#C9D6C9 height=28><img height=1 
+            src="w_files/blnk.gif" width=1></td>
+                          <td width=9 bgcolor="#FFFFFF"><img height=8 src="w_files/blnk.gif" 
+            width=9></td>
+                          <td align="left" valign=top bgcolor="#F3F5F3"> <div align="left" class="med"> 
+                              <table width="100%" border="0" cellspacing="3" cellpadding="0">
+                                <tr> 
+                                  <td class="med"><font face="Arial, Helvetica, sans-serif"><strong><font face="Arial, Helvetica, sans-serif"><strong><font color="#006666"><img src="images/gr.gif" width="6" height="6"></font></strong></font> 
+                                    <font color="#004831">Greece &amp; Rome </font></strong><br>
+                                    <strong>11 </strong>The Cyclades in the Bronze 
+                                    Age<br>
+                                    <strong>12</strong> <em>The Arthur I Fleischman 
+                                    Gallery </em><br>
+                                    Greek Bronze Age<br>
+                                    <strong>13&#8211;14</strong> Geometric &amp; 
+                                    Archaic Greece<br>
+                                    <strong>15</strong> Greece: 5th century BC<br>
+                                    <strong>16</strong> Bassae sculptures (mezzanine)<br>
+                                    <strong>17</strong> Nereid Monument<br>
+                                    <strong>18 </strong>The Parthenon Galleries<br>
+                                    <strong>19</strong> Greece: The Acropolis 
+                                    &amp; the late 5th century BC<br>
+                                    <strong>20</strong> Greece: 4th century BC 
+                                    and the Payava Tomb<br>
+                                    <strong>21</strong> Mausoleum of Halikarnassos<br>
+                                    <strong>22</strong> The Hellenistic world<br>
+                                    <strong>23 </strong>Greek &amp; Roman sculpture</font></td>
+                                </tr>
+                              </table>
+                            </div></td>
+                          <td width=10 bgcolor="#FFFFFF"><img height=8 src="w_files/blnk.gif" 
+            width=9></td>
+                          <td width=1 bgcolor=#C9D6C9><img height=1 src="w_files/blnk.gif" 
+            width=1></td>
+                        </tr>
+                        <tr> 
+                          <td colspan=2 rowspan=2><img height=10 alt="" 
+            src="images/b_left.gif" width=10 border=0></td>
+                          <td height=9 align=right bgcolor="#FFFFFF"><img height=1 
+            src="images/blnk.gif" width=1></td>
+                          <td colspan=2 rowspan=2><img height=10 alt="" 
+            src="images/b_right.gif" width=10 border=0></td>
+                        </tr>
+                        <tr> 
+                          <td bgcolor=#C9D6C9 height=1><img height=1 src="w_files/blnk.gif" 
+            width=1></td>
+                        </tr>
+                      </tbody>
+                    </table>
+                    <br>
+                    <table width=145 height=48 border=0 align="center" cellpadding=0 cellspacing=0>
+                      <tbody>
+                        <tr> 
+                          <td colspan=2 rowspan=2><img height=10 alt="" 
+            src="images/t_left.gif" width=10 border=0></td>
+                          <td width=296 bgcolor=#C9D6C9 height=1><img height=1 
+            src="w_files/blnk.gif" width=1></td>
+                          <td colspan=2 rowspan=2><img height=10 alt="" 
+            src="images/t_right.gif" width=10 border=0></td>
+                        </tr>
+                        <tr> 
+                          <td height=9 bgcolor="#FFFFFF"><img height=1 src="images/blnk.gif" 
+            width=1></td>
+                        </tr>
+                        <tr> 
+                          <td width=1 bgcolor=#C9D6C9 height=28><img height=1 
+            src="w_files/blnk.gif" width=1></td>
+                          <td width=9 bgcolor="#FFFFFF"><img height=8 src="w_files/blnk.gif" 
+            width=9></td>
+                          <td align="left" valign=top bgcolor="#F0F7FF"> <div align="left" class="med"> 
+                              <table width="100%" border="0" cellspacing="3" cellpadding="0">
+                                <tr> 
+                                  <td class="med"><font face="Arial, Helvetica, sans-serif"><strong><font color="#AE002C"><span class="med"><font face="Arial, Helvetica, sans-serif"><strong><font face="Arial, Helvetica, sans-serif"><strong><font color="#9D0027"><img src="images/wc.gif" width="6" height="6"></font></strong></font></strong></font></span> 
+                                    Living and dying </font></strong><br>
+                                    <strong>24</strong> <em>Wellcome Trust Gallery</em><br>
+                                    Living and dying <br>
+                                    </font></td>
+                                </tr>
+                              </table>
+                          </div></td>
+                          <td width=10 bgcolor="#FFFFFF"><img height=8 src="w_files/blnk.gif" 
+            width=9></td>
+                          <td width=1 bgcolor=#C9D6C9><img height=1 src="w_files/blnk.gif" 
+            width=1></td>
+                        </tr>
+                        <tr> 
+                          <td colspan=2 rowspan=2><img height=10 alt="" 
+            src="images/b_left.gif" width=10 border=0></td>
+                          <td height=9 align=right bgcolor="#FFFFFF"><img height=1 
+            src="images/blnk.gif" width=1></td>
+                          <td colspan=2 rowspan=2><img height=10 alt="" 
+            src="images/b_right.gif" width=10 border=0></td>
+                        </tr>
+                        <tr> 
+                          <td bgcolor=#C9D6C9 height=1><img height=1 src="w_files/blnk.gif" 
+            width=1></td>
+                        </tr>
+                      </tbody>
+                    </table>
+                    <br>
+                    <table width=145 height=48 border=0 align="center" cellpadding=0 cellspacing=0>
+                      <tbody>
+                        <tr>
+                          <td colspan=2 rowspan=2><img height=10 alt="" 
+            src="images/t_left.gif" width=10 border=0></td>
+                          <td width=296 bgcolor=#C9D6C9 height=1><img height=1 
+            src="w_files/blnk.gif" width=1></td>
+                          <td colspan=2 rowspan=2><img height=10 alt="" 
+            src="images/t_right.gif" width=10 border=0></td>
+                        </tr>
+                        <tr>
+                          <td height=9 bgcolor="#FFFFFF"><img height=1 src="images/blnk.gif" 
+            width=1></td>
+                        </tr>
+                        <tr>
+                          <td width=1 bgcolor=#C9D6C9 height=28><img height=1 
+            src="w_files/blnk.gif" width=1></td>
+                          <td width=9 bgcolor="#FFFFFF"><img height=8 src="w_files/blnk.gif" 
+            width=9></td>
+                          <td align="left" valign=top bgcolor="#FFF4FA"><div align="left" class="med">
+                              <table width="100%" border="0" cellspacing="3" cellpadding="0">
+                                <tr>
+                                  <td class="med"><font face="Arial, Helvetica, sans-serif"><strong><font color="#AE002C"><font face="Arial, Helvetica, sans-serif"><strong><font face="Arial, Helvetica, sans-serif"><strong><font color="#9D0027"><img src="images/wc.gif" width="6" height="6"></font></strong></font></strong></font> The Americas </font></strong><br>
+                                    <strong>26</strong> <em>The JP Morgan Chase Gallery</em> <br>
+                North America<br>
+                <strong>27</strong> Mexico</font></td>
+                                </tr>
+                              </table>
+                          </div></td>
+                          <td width=10 bgcolor="#FFFFFF"><img height=8 src="w_files/blnk.gif" 
+            width=9></td>
+                          <td width=1 bgcolor=#C9D6C9><img height=1 src="w_files/blnk.gif" 
+            width=1></td>
+                        </tr>
+                        <tr>
+                          <td colspan=2 rowspan=2><img height=10 alt="" 
+            src="images/b_left.gif" width=10 border=0></td>
+                          <td height=9 align=right bgcolor="#FFFFFF"><img height=1 
+            src="images/blnk.gif" width=1></td>
+                          <td colspan=2 rowspan=2><img height=10 alt="" 
+            src="images/b_right.gif" width=10 border=0></td>
+                        </tr>
+                        <tr>
+                          <td bgcolor=#C9D6C9 height=1><img height=1 src="w_files/blnk.gif" 
+            width=1></td>
+                        </tr>
+                      </tbody>
+                    </table>
+                    <br>
+                    <table width=145 height=48 border=0 align="center" cellpadding=0 cellspacing=0>
+                      <tbody>
+                        <tr> 
+                          <td colspan=2 rowspan=2><img height=10 alt="" 
+            src="images/t_left.gif" width=10 border=0></td>
+                          <td width=296 bgcolor=#C9D6C9 height=1><img height=1 
+            src="w_files/blnk.gif" width=1></td>
+                          <td colspan=2 rowspan=2><img height=10 alt="" 
+            src="images/t_right.gif" width=10 border=0></td>
+                        </tr>
+                        <tr> 
+                          <td height=9 bgcolor="#FFFFFF"><img height=1 src="images/blnk.gif" 
+            width=1></td>
+                        </tr>
+                        <tr> 
+                          <td width=1 bgcolor=#C9D6C9 height=28><img height=1 
+            src="w_files/blnk.gif" width=1></td>
+                          <td width=9 bgcolor="#FFFFFF"><img height=8 src="w_files/blnk.gif" 
+            width=9></td>
+                          <td align="left" valign=top bgcolor="#FFF5F0"> <div align="left" class="med"> 
+                              <table width="100%" border="0" cellpadding="0" cellspacing="3">
+                                <tr> 
+                                  <td class="med"><font face="Arial, Helvetica, sans-serif"><strong><font color="#B94A00"><img src="images/as.gif" width="6" height="6"> 
+                                    Asia</font></strong><br>
+                                    <strong>33</strong> <em>The Joseph E Hotung 
+                                    Gallery </em><br>
+                                    China, South &amp; Southeast Asia<br>
+                                    <strong>33a</strong> <em>The Asahi Shimbun 
+                                    Gallery </em><br>
+                                    Amaravati sculpture<br>
+                                    <strong>33b</strong> <em>The Selwyn and Ellie 
+                                    Alleyne Gallery </em><br>
+                                    Chinese jade<br>
+                                    <strong>34</strong> <em>The John Addis Gallery 
+                                    </em><br>
+                                    Islamic art<br>
+                                    <strong>67</strong> The Korea Foundation Gallery</font></td>
+                                </tr>
+                              </table>
+                            </div></td>
+                          <td width=10 bgcolor="#FFFFFF"><img height=8 src="w_files/blnk.gif" 
+            width=9></td>
+                          <td width=1 bgcolor=#C9D6C9><img height=1 src="w_files/blnk.gif" 
+            width=1></td>
+                        </tr>
+                        <tr> 
+                          <td colspan=2 rowspan=2><img height=10 alt="" 
+            src="images/b_left.gif" width=10 border=0></td>
+                          <td height=9 align=right bgcolor="#FFFFFF"><img height=1 
+            src="images/blnk.gif" width=1></td>
+                          <td colspan=2 rowspan=2><img height=10 alt="" 
+            src="images/b_right.gif" width=10 border=0></td>
+                        </tr>
+                        <tr> 
+                          <td bgcolor=#C9D6C9 height=1><img height=1 src="w_files/blnk.gif" 
+            width=1></td>
+                        </tr>
+                      </tbody>
+                    </table>
+                    <p>&nbsp;</p>
+                    <p><font face="Arial, Helvetica, sans-serif"><br>
+                      <strong><br>
+                      </strong></font></p>
+                    <p><font face="Arial, Helvetica, sans-serif"><br>
+                      <br>
+                      <br>
+                      <br>
+                      </font></p>
+                    <p>&nbsp;</p>
+                  </div>
+                </div>
+                <!-- Scroller end -->
+                <p align=left><br>
+                </p>
+                <p align=left>&nbsp; </p>
+                <p align=left>&nbsp;</p>
+                <p align=left>&nbsp;</p>
+                <p>&nbsp;</p></td>
+            </tr>
+          </tbody>
+        </table>
+        <table cellspacing=0 cellpadding=0 width="100%" border=0>
+          <tbody>
+          </tbody>
+        </table></td>
+    </tr>
+  </tbody>
+</table>
+</BODY></HTML>

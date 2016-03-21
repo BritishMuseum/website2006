@@ -1,0 +1,262 @@
+H3
+{
+    FONT-WEIGHT: bold;
+    FONT-SIZE: 22px;
+    COLOR: #ff9c00;
+    FONT-FAMILY: Arial;
+}
+H4
+{
+    FONT-WEIGHT: bold;
+    FONT-SIZE: 16px;
+    COLOR: #4689bb;
+    FONT-FAMILY: Arial;
+}
+BODY
+{
+    COLOR: #000000;
+    BACKGROUND-COLOR: #ffffff;
+}
+img.box{
+    margin-right: 100px;
+    margin-top: 100px;
+    margin-left: 100px;
+    margin-bottom: 100px;
+}
+
+.breadcrumb 
+{
+	color : #000066;
+	background-color : transparent;
+	FONT-FAMILY: Arial;
+}
+.cap
+{
+    FONT-WEIGHT: normal;
+    FONT-SIZE: 9px;
+    COLOR: #4689bb;
+    FONT-FAMILY: Tahoma;
+    TEXT-DECORATION: none
+}
+.txt
+{
+    FONT-SIZE: 12px;
+    COLOR: #000000;
+    FONT-FAMILY: Arial;
+}
+:link
+{
+    COLOR: #000066;
+    TEXT-DECORATION: underline;
+}
+:active
+{
+    COLOR: #000066;
+    TEXT-DECORATION: underline;
+}
+:visited
+{
+    COLOR: #000066;
+    TEXT-DECORATION: underline;
+}
+:hover
+{
+    COLOR: #999900;
+    TEXT-DECORATION: underline;
+}
+.topnav:link
+{
+    COLOR: #ffffff;
+    TEXT-DECORATION: underline;
+}
+.topnav:active
+{
+    COLOR: #ffffff;
+    TEXT-DECORATION: none
+}
+.topnav:visited
+{
+    COLOR: #ffffff;
+    TEXT-DECORATION: none
+}
+.topnav:hover
+{
+    COLOR: #ff9c00;
+    TEXT-DECORATION: none
+}
+.newslink:link
+{
+    COLOR: #4689bb;
+    TEXT-DECORATION: none
+}
+.newslink:active
+{
+    COLOR: #4689bb;
+    TEXT-DECORATION: none
+}
+.newslink:visited
+{
+    COLOR: #4689bb;
+    TEXT-DECORATION: none
+}
+.newslink:hover
+{
+    COLOR: #ff9c00;
+    TEXT-DECORATION: none
+}
+.footerlink:link
+{
+    COLOR: #4689bb;
+    TEXT-DECORATION: none
+}
+.footerlink:active
+{
+    COLOR: #4689bb;
+    TEXT-DECORATION: none
+}
+.footerlink:visited
+{
+    COLOR: #4689bb;
+    TEXT-DECORATION: none
+}
+.footerlink:hover
+{
+    COLOR: #ff9c00;
+    TEXT-DECORATION: none
+}
+TD
+{
+    BACKGROUND-COLOR: transparent
+}
+TD.news
+{
+    BACKGROUND-IMAGE: url(../images/newsBox.jpg);
+    BACKGROUND-REPEAT: no-repeat
+}
+TD.newsLeft
+{
+    BACKGROUND-IMAGE: url(../images/newsleft.jpg);
+    BACKGROUND-REPEAT: no-repeat
+}
+TD.newsRight
+{
+    BACKGROUND-IMAGE: url(../images/newsright.jpg);
+    BACKGROUND-REPEAT: no-repeat
+}
+TD.mainbg
+{
+    BACKGROUND-IMAGE: url(../images/content.jpg);
+    BACKGROUND-REPEAT: no-repeat
+}
+
+#content
+{ 
+	width:730px;
+	margin: 10px auto;
+}
+
+#sideNav
+{
+	float:right;
+    width:170px;
+    padding-left:10;
+    margin-top: 5px;
+   BORDER-RIGHT: #333333 1px solid;
+    BORDER-TOP: #333333 1px solid;
+    BORDER-LEFT: #333333 1px solid;
+    BORDER-BOTTOM: #333333 1px solid;
+}
+
+
+#contentBox
+{
+	WIDTH: 544px;
+	BORDER-RIGHT: #333333 1px solid;
+    BORDER-TOP: #333333 1px solid;
+    BORDER-LEFT: #333333 1px solid;
+    BORDER-BOTTOM: #333333 1px solid;
+    margin-top: 5px;
+	BACKGROUND-COLOR:#ffffee;
+}
+
+
+#color1
+{
+	PADDING-RIGHT: 10px;
+	PADDING-LEFT: 10px;
+	PADDING-TOP: 5px;
+	PADDING-BOTTOM: 5px;
+	TEXT-ALIGN:left;
+	BACKGROUND-COLOR:#ffffee;
+	HEIGHT:100%;
+}
+#color2
+{
+	PADDING-RIGHT: 10px;
+	PADDING-LEFT: 10px;
+	PADDING-TOP: 5px;
+	PADDING-BOTTOM: 5px;
+	TEXT-ALIGN:left;
+	BACKGROUND-COLOR:#ffffdd;
+	HEIGHT:100%;
+}
+#topBox
+{
+	width: 730px;
+	height: 70px;
+	TEXT-ALIGN:right;
+	BACKGROUND-COLOR:#000066;
+}
+#bottomBox
+{
+	width: 730px;
+	height: 30px;
+	TEXT-ALIGN:left;
+	COLOR:#ffffff;
+	BACKGROUND-COLOR:#999933;
+}
+.newsHead
+{
+    FONT-WEIGHT: bold;
+    FONT-SIZE: 12px;
+    COLOR: #666666;
+    FONT-FAMILY: Tahoma
+}
+.newstxt
+{
+    FONT-WEIGHT: normal;
+    FONT-SIZE: 10px;
+    COLOR: #666666;
+    FONT-FAMILY: Tahoma
+}
+.date
+{
+    FONT-SIZE: 10px;
+    COLOR: #ffffff;
+    FONT-FAMILY: Tahoma
+}
+.toptxt
+{
+    FONT-WEIGHT: bold;
+    FONT-SIZE: 9px;
+    COLOR: #ffffff;
+    FONT-FAMILY: Tahoma;
+    TEXT-DECORATION: none
+}
+.footer
+{
+    FONT-WEIGHT: normal;
+    FONT-SIZE: 9px;
+    COLOR: #026a96;
+    FONT-FAMILY: Tahoma;
+    TEXT-DECORATION: none
+}
+.copyright
+{
+    FONT-WEIGHT: bold;
+    FONT-SIZE: 9px;
+    COLOR: #ffffff;
+    FONT-FAMILY: Tahoma;
+    BACKGROUND-COLOR: #4689bb;
+    TEXT-DECORATION: none
+}

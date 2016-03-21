@@ -1,0 +1,19 @@
+A {
+	COLOR: #002261; TEXT-DECORATION: none
+; font-size: 11px
+; font-weight: bold
+}
+A:hover {
+	TEXT-DECORATION: none
+; color: #C47500
+}
+}
+A:visited {
+	TEXT-DECORATION: none
+; color: #858585
+}
+TD {
+	FONT-WEIGHT: normal; FONT-SIZE: 11px; COLOR: #333333; FONT-FAMILY: Arial, Helvetica, sans-serif
+}
+red {  font-family: Arial, Helvetica, sans-serif; font-size: 10px; color: #CC3300}
+red {  }

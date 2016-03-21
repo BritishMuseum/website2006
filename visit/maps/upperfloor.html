@@ -1,0 +1,214 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<title>Museum Plans - Middle Floor</title>
+<link href="style/floor.css" rel="stylesheet" type="text/css" media="screen">
+<link href="style/print.css" rel="stylesheet" type="text/css" media="print">
+<style>
+#colleft, #colright
+	{
+	position: absolute;
+	top: 640px;
+	}
+	
+#colleft
+	{
+	position: absolute;
+	left: 10px;
+	width: 276px;
+	}
+#colright
+	{
+	position: absolute;
+	left: 360px;	
+	}
+.style3 {font-size: 8pt; color: #666666; }
+</style>
+<script src="javascript/findDOM.js"></script>
+<script>
+
+function toggleVisibility(objectID)
+	{
+
+	var dom = findDOM(objectID,1);
+	state = dom.visibility;
+	
+	if (state == 'hidden' || state == 'hide')
+		dom.visibility = 'visible';
+	else
+		{
+		if (state == 'visible' || state == 'show')
+			dom.visibility = 'hidden';
+	else dom.visibility = 'visible';
+
+
+		}
+
+
+	}
+
+</script>
+</head>
+
+<body>
+<div id="header">
+<h1 style="float: left;">Upper floor</h1>
+<a href="upperfloor.html">Upper floor</a> | <a href="mainfloor.html">Main floor</a> | <a href="lowerfloor.html">Lower floor</a> | <a href="greatcourt.html">Great Court</a>
+</div>
+<img src="images/to_06.gif" alt="Map of the British Museum, top floor." usemap="#mi_06_imagemaps_Map" id="map"/>
+<map name="mi_06_imagemaps_Map">
+  <area shape="poly" onMouseOver="toggleVisibility('improvementpopup')" onMouseOut="toggleVisibility('improvementpopup')" alt="improvement" coords="458,268,338,415,363,427,483,276" href="#">
+  <area shape="poly" onMouseOver="toggleVisibility('improvementpopup')" onMouseOut="toggleVisibility('improvementpopup')" alt="improvement" coords="439,496,403,544,421,557,457,506" href="#">
+  <area shape="poly" onMouseOver="toggleVisibility('middlepopup')" onMouseOut="toggleVisibility('middlepopup')" alt="" coords="309,160,303,166,467,264,473,262" href="#">
+  <area shape="poly" onMouseOver="toggleVisibility('temppopup')" onMouseOut="toggleVisibility('temppopup')" alt="Temporary exhibitions" coords="445,145,402,120,370,101,336,79,358,58,448,108,489,132,469,156" href="#">
+  <area shape="poly" onMouseOver="toggleVisibility('asiadpopup')" onMouseOut="toggleVisibility('asiadpopup')" alt="" coords="444,88,401,63,369,44,335,22,357,1,510,87,491,114,473,104" href="#">
+  <area shape="poly" onMouseOver="toggleVisibility('egyptpopup')" onMouseOut="toggleVisibility('egyptpopup')" alt="Egypt" coords="303,131,410,194,424,175,432,182,419,200,512,255,498,269,494,268,497,262,495,265,492,266,491,265,478,259,474,256,471,254,292,142" href="#">
+  <area shape="poly" onMouseOver="toggleVisibility('britainpopup')" onMouseOut="toggleVisibility('britainpopup')" alt="" coords="234,371,202,405,230,424,234,419,255,435,252,439,296,474,272,503,268,501,249,524,281,547,303,516,381,572,383,572,401,583,420,562,396,547,430,499,354,449,358,437,333,422,325,431,314,424,308,429,259,395,264,389" href="#">
+  <area shape="poly" onMouseOver="toggleVisibility('moneypopup')" onMouseOut="toggleVisibility('moneypopup')" alt="" coords="154,350, 141,363, 199,404, 212,389" href="#">
+  <area shape="poly" onMouseOver="toggleVisibility('greeceromepopup')" onMouseOut="toggleVisibility('greeceromepopup')" alt="Middle East" coords="143,318,125,333,109,320,110,315,130,297,125,294,99,318,105,321,124,335,115,344,140,362,318,180,315,178,319,182,318,180,319,179,319,181,318,180,318,180,319,180,306,173,301,171,299,168,147,318" href="#">
+  <area shape="poly" onMouseOver="toggleVisibility('temppopup')" onMouseOut="toggleVisibility('temppopup')" alt="" coords="128,312, 121,319, 129,326, 137,318" href="#" onClick="window.open('cm/cmnoex.html', 'myWin', 'status, width=800, height=580, screenX=0,screenY=0,left=0,top=0, scrollbars=1'); return false">
+</map>
+<div id="middlepopup" class="box">
+<div id="middle"></div><h1>Middle East</h1>
+54&ndash;59: South Arabia, Iran, Anatolia, Mesopotamia and Levant<br />
+<span class="style3">(Rooms 51&ndash;53 re&ndash;opening Spring 2007)</span><br>
+</div>
+<div id="greeceromepopup" class="box">
+<div id="greecerome"></div><h1>Greece &amp; Rome</h1>
+69: Greece &amp; Rome daily life <br>
+70&ndash;73: Rome, Italy and Cyprus
+<br>
+</div>
+<div id="moneypopup" class="box">
+<div id="money"></div><h1>Money</h1>
+68: Money
+</div>
+<div id="egyptpopup" class="box">
+<div id="egypt"></div><h1>Egypt</h1>
+61&ndash;66: Egyptian life and funerary archaeology
+</div>
+<div id="britainpopup" class="box">
+<div id="britain"></div><h1>Britain &amp; Europe</h1>
+41&ndash;42: Medieval<br />
+44: Clocks &amp; watches<br />
+45: The Waddesdon Bequest<br />
+46&ndash;48: 15th&ndash;20th century<br />
+49: Roman Britain <br>
+<span class="style3">(Room 49 re&ndash;opening Spring 2007)</span><br />
+50: Bronze Age &amp; Celtic<br>
+<span class="style3"> (Room 50 re&ndash;opening</span><span class="style3"> Spring  2007)
+</span>
+</div>
+
+<div id="temppopup" class="box">
+<div id="temp"></div><h1>Temporary exhibitions</h1>
+<p>Rooms: 69a,90&ndash;91</p>
+<br />
+</div>
+
+<div id="asiadpopup" class="box">
+<div id="asia"></div>
+<h1>Asia</h1>
+92-94 Japan
+</div>
+
+<div id="temporarypopup" class="box">
+<div id="temp"></div>
+<h1>Temporary exhibitions</h1>
+<p>90-91 Paintings & Drawings</p>
+</div>
+<div id="improvementpopup" class="box">
+<div id="improvement"></div>
+<h1>Gallery improvements</h1>
+Rooms 49&ndash;53 and the East stairs: <br />re&ndash;opening Spring 2007<br>
+Room 43 will be closed until mid 2008<br>
+Room 44 will be closed until mid 2008
+</div>
+
+<div id="key">
+<h1>Key</h1>
+<ul>
+<li id="info">Information Desk &amp; Box Office</li>
+<li id="toilets">Toilets</li>
+<li id="accessible">Accessible toilets</li>
+<li id="babycare">Babycare</li>
+<li id="cloakroom">Cloakroom</li>
+<li id="lostproperty">Lost property</li>
+<li id="restaurant">Restaurant</li>
+<li id="cafe">Caf&eacute;</li>
+<li id="shop">Shop</li>
+<li id="audio">Audio Tour</li>
+<li id="telephone">Telephone</li>
+<li id="lift">Lift</li>
+</ul>
+</div>
+
+<div id="colleft">
+<div class="containers">
+<div id="britain"></div>
+<h1>Europe</h1>
+
+41&ndash;42: Medieval<br />
+44: Clocks &amp; watches<br />
+45: The Waddesdon Bequest<br />
+46&ndash;48: 15th&ndash;20th century<br />
+49: Roman Britain <br>
+<span class="style3">(Room 49 re&ndash;opening Spring 2007)</span><br />
+50: Bronze Age &amp; Celtic<br>
+<span class="style3"> (Room 50 re&ndash;opening</span><span class="style3"> Spring  2007)
+</span></div>
+
+<div class="containers">
+<div id="middle"></div>
+<h1>Middle East </h1>
+51&ndash;59: South Arabia, Iran, Anatolia, Mesopotamia and Levant <br>
+<span class="style3">(Rooms 51&ndash;53 re&ndash;opening Spring 2007)</span><br>
+</div>
+<div class="containers">
+<div id="egypt"></div>
+<h1>Ancient Egypt</h1>
+61&ndash;66: Egyptian life and funerary archaeology 
+
+</div>
+<div class="containers">
+<div id="money"></div>
+<h1>Themes</h1>
+68: Money
+<br>
+<br>
+</div>
+</div>
+
+<div id="colright">
+<div class="containers">
+<div id="greecerome"></div>
+<h1>Ancient Greece &amp; Rome</h1>
+69: Greece &amp; Rome daily life <br>
+70&ndash;73: Rome, Italy and Cyprus
+<br>
+</div>
+
+
+<div class="containers">
+<div class="containers">
+<div id="temp"></div><h1>Temporary exhibitions</h1>
+69a: Encounters<br />
+90: Prints & Drawings<br />
+91: Asia</div>
+ <div class="containers">
+<div id="asia"></div><h1>Asia</h1>
+92&ndash;94: Japan<br />
+</div>
+<div class="containers">
+<div id="improvement"></div><h1>Gallery improvements</h1>
+Rooms 49&ndash;53 and the East stairs: <br />re&ndash;opening Spring 2007<br>
+Room 43 will be closed until mid 2008<br>
+Room 44 will be closed until mid 2008
+</div>
+</div>
+
+</div>
+
+</html>

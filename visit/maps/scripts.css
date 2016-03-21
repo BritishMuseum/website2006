@@ -1,0 +1,108 @@
+.body {
+	FONT-SIZE: 10pt; FONT-FAMILY: arial, helvetica, sans serif; TEXT-DECORATION: none
+}
+.bodylink {
+	FONT-SIZE: 10pt; COLOR: #000080; FONT-FAMILY: arial, helvetica, sans serif; TEXT-DECORATION: none
+}
+.bodylink:hover {
+	FONT-SIZE: 10pt; CURSOR: hand; COLOR: #ff2200; FONT-FAMILY: arial, helvetica, sans serif; TEXT-DECORATION: underline
+}
+.search {
+	FONT-SIZE: 8pt; FONT-FAMILY: arial, helvetica, sans serif; TEXT-DECORATION: none
+}
+.listingtitle {
+	FONT-SIZE: 11pt; COLOR: #0000a0; FONT-FAMILY: arial, helvetica, sans serif; TEXT-DECORATION: none
+}
+.listingtitle:hover {
+	FONT-SIZE: 11pt; CURSOR: hand; COLOR: #ff2200; FONT-FAMILY: arial, helvetica, sans serif; TEXT-DECORATION: underline
+}
+.listingtable {
+	FONT-SIZE: 10pt; COLOR: #000000; FONT-FAMILY: arial, helvetica, sans serif; TEXT-DECORATION: none
+}
+.path {
+	FONT-SIZE: 8pt; FONT-FAMILY: arial, helvetica, sans serif; TEXT-DECORATION: none
+}
+.pathlink {
+	FONT-SIZE: 8pt; COLOR: #000080; FONT-FAMILY: arial, helvetica, sans serif; TEXT-DECORATION: none
+}
+.pathlink:hover {
+	FONT-SIZE: 8pt; CURSOR: hand; COLOR: #ff2200; FONT-FAMILY: arial, helvetica, sans serif; TEXT-DECORATION: none
+}
+.adinfo {
+	FONT-SIZE: 8pt; COLOR: #000080; FONT-FAMILY: arial, helvetica, sans serif; TEXT-DECORATION: none
+}
+.adinfo:hover {
+	FONT-SIZE: 8pt; CURSOR: hand; COLOR: #ff2200; FONT-FAMILY: arial, helvetica, sans serif; TEXT-DECORATION: none
+}
+.author {
+	FONT-SIZE: 10px; FONT-FAMILY: arial, helvetica, sans serif; TEXT-DECORATION: none
+}
+.authorlink {
+	FONT-SIZE: 10px; COLOR: #000080; FONT-FAMILY: arial, helvetica, sans serif; TEXT-DECORATION: none
+}
+.authorlink:hover {
+	FONT-SIZE: 10px; CURSOR: hand; COLOR: #ff2200; FONT-FAMILY: arial, helvetica, sans serif; TEXT-DECORATION: underline
+}
+H1 {
+	FONT-WEIGHT: normal; FONT-SIZE: 14pt; COLOR: #000000; FONT-FAMILY: trebuchet ms, arial, helvetica; TEXT-DECORATION: none
+}
+H2 {
+	FONT-WEIGHT: normal; FONT-SIZE: 12pt; COLOR: #000000; FONT-FAMILY: trebuchet ms, arial, helvetica; TEXT-DECORATION: none
+}
+.header {
+	FONT-WEIGHT: bold; FONT-SIZE: 14pt; FONT-FAMILY: tahoma, helvetica, sans serif; TEXT-DECORATION: none
+}
+.headertext {
+	FONT-SIZE: 13pt; COLOR: #000000; FONT-FAMILY: trebuchet ms, arial, helvetica; TEXT-DECORATION: none
+}
+.leftbartext {
+	FONT-SIZE: 8pt; FONT-FAMILY: ms sans serif, sans serif; TEXT-DECORATION: none
+}
+.leftbarcat {
+	FONT-SIZE: 10px; COLOR: #000080; FONT-FAMILY: ms sans serif, sans serif; TEXT-DECORATION: none
+}
+.leftbarcat:hover {
+	FONT-SIZE: 10px; CURSOR: hand; COLOR: #ffffff; FONT-FAMILY: ms sans serif, sans serif; TEXT-DECORATION: none
+}
+.seealso {
+	FONT-SIZE: 8pt; COLOR: #000080; FONT-FAMILY: verdana, geneva, sans serif; TEXT-DECORATION: none
+}
+.seealso:hover {
+	FONT-SIZE: 8pt; CURSOR: hand; COLOR: #ff2200; FONT-FAMILY: verdana, geneva, sans serif; TEXT-DECORATION: underline
+}
+.backtop {
+	FONT-SIZE: 0.9em; COLOR: #000000; FONT-FAMILY: Arial, Helvetica, sans-serif; TEXT-DECORATION: none
+}
+.backtop:hover {
+	FONT-SIZE: 8pt; CURSOR: hand; COLOR: #ff2200; FONT-FAMILY: arial, helvetica, sans serif; TEXT-DECORATION: underline
+}
+.maincat {
+	FONT-SIZE: 12em; COLOR: #000000; FONT-FAMILY: Arial, Helvetica, sans-serif; TEXT-DECORATION: none
+}
+.maincat:hover {
+	FONT-SIZE: 10px; CURSOR: hand; COLOR: #ff2200; FONT-FAMILY: ms sans serif, sans serif; TEXT-DECORATION: underline
+}
+.copy {
+	FONT-SIZE: 8pt; FONT-FAMILY: arial, helvetica, sans serif; TEXT-DECORATION: none
+}
+.copylink {
+	FONT-SIZE: 8pt; COLOR: #000080; FONT-FAMILY: arial, helvetica, sans serif; TEXT-DECORATION: none
+}
+.copylink:hover {
+	FONT-SIZE: 8pt; CURSOR: hand; COLOR: #ff2200; FONT-FAMILY: arial, helvetica, sans serif; TEXT-DECORATION: none
+}
+.button {
+	FONT-SIZE: 8pt; FONT-FAMILY: verdana, geneva, sans serif; BACKGROUND-COLOR: #ffffcc; TEXT-DECORATION: none
+}
+.news {
+	COLOR: #000080; FONT-FAMILY: ms sans serif, sans serif; TEXT-DECORATION: none
+}
+.news:hover {
+	CURSOR: hand; COLOR: #ff2200; FONT-FAMILY: ms sans serif, sans serif; BACKGROUND-COLOR: #ffffff; TEXT-DECORATION: none
+}
+.prevnext {
+	FONT-WEIGHT: bold; FONT-SIZE: 8pt; COLOR: #000080; FONT-FAMILY: verdana, geneva, sans-serif; TEXT-DECORATION: none
+}
+.prevnext:hover {
+	FONT-WEIGHT: bold; FONT-SIZE: 8pt; CURSOR: hand; COLOR: #ff2200; FONT-FAMILY: verdana, geneva, sans-serif; TEXT-DECORATION: underline
+}
